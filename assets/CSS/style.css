@@ -240,6 +240,9 @@ a {
   direction: rtl;
   font-size: 70px;
   opacity: 0;
+  border-right: 5px solid var(--orange);
+  border-radius: 3px;
+  padding-right: 15px;
 }
 
 #body-text {
@@ -251,6 +254,9 @@ a {
   direction: rtl;
   font-size: 23px;
   opacity: 0;
+  border-right: 5px solid var(--blue);
+  border-radius: 3px;
+  padding-right: 15px;
 }
 
 #body-text .text-box {
