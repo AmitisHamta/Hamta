@@ -6,13 +6,7 @@ const navBtns = $.querySelectorAll('.nav-btn');
 const underlines = $.querySelectorAll('.underline');
 
 const setHeaderAnimation = () => {
-    setTimeout(() => {
-        header.classList.add('slide-in-blurred-top');
-    }, 1000);
-
-    // if ($.readyState === 'complete') {
-    //     header.classList.add('slide-in-blurred-top');
-    // }
+    header.classList.add('slide-in-blurred-top');
 }
 
 const resizeHeader = () => {
