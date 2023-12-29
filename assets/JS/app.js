@@ -5,7 +5,8 @@ const header = $.getElementById('header');
 const navBtns = $.querySelectorAll('.nav-btn');
 const underlines = $.querySelectorAll('.underline');
 const mainText = $.getElementById('main-text');
-const mainDescript = $.getElementById('main-descript')
+const mainDescript = $.getElementById('main-descript');
+const textBoxes = $.querySelectorAll('.text-box')
 
 const resizeHeader = () => {
     if ($.documentElement.scrollTop >= 30) {
@@ -34,6 +35,12 @@ const hideUnderline = btn => {
     })
 }
 
+const setBoxesAnimation = () => {
+    textBoxes.forEach(box => {
+        box.classList.add('swipe-in-out-right')
+    })
+}
+
 const showMainTexts = () => {
     setTimeout(() => {
         mainText.style.opacity = 1;
@@ -42,7 +49,8 @@ const showMainTexts = () => {
 }
 
 window.addEventListener('load', () => {
-    showMainTexts()
+    setBoxesAnimation();
+    showMainTexts();
 })
 
 window.addEventListener('scroll', () => {
