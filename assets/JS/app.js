@@ -38,7 +38,7 @@ const showMainTexts = () => {
     setTimeout(() => {
         mainText.style.opacity = 1;
         mainDescript.style.opacity = 1;
-    }, 1500);
+    }, 1400);
 }
 
 window.addEventListener('load', () => {
