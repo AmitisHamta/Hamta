@@ -5,10 +5,6 @@ const header = $.getElementById('header');
 const navBtns = $.querySelectorAll('.nav-btn');
 const underlines = $.querySelectorAll('.underline');
 
-const setHeaderAnimation = () => {
-    header.classList.add('slide-in-blurred-top');
-}
-
 const resizeHeader = () => {
     if ($.documentElement.scrollTop >= 30) {
         header.classList.add('moved');
@@ -35,10 +31,6 @@ const hideUnderline = btn => {
         }
     })
 }
-
-window.addEventListener('DOMContentLoaded', () => {
-    setHeaderAnimation();
-})
 
 window.addEventListener('scroll', () => {
     resizeHeader();
