@@ -4,6 +4,8 @@ const $ = document;
 const header = $.getElementById('header');
 const navBtns = $.querySelectorAll('.nav-btn');
 const underlines = $.querySelectorAll('.underline');
+const mainText = $.getElementById('main-text');
+const mainDescript = $.getElementById('main-descript')
 
 const resizeHeader = () => {
     if ($.documentElement.scrollTop >= 30) {
@@ -31,6 +33,17 @@ const hideUnderline = btn => {
         }
     })
 }
+
+const showMainTexts = () => {
+    setTimeout(() => {
+        mainText.style.opacity = 1;
+        mainDescript.style.opacity = 1;
+    }, 1500);
+}
+
+window.addEventListener('load', () => {
+    showMainTexts()
+})
 
 window.addEventListener('scroll', () => {
     resizeHeader();
