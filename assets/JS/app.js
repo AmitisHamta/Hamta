@@ -172,11 +172,12 @@ const setUnderlines = () => {
 }
 
 window.addEventListener('load', () => {
-    resizeHeader();
-    setUnderlines();
+    
 })
 
 window.addEventListener('DOMContentLoaded', () => {
+    resizeHeader();
+    setUnderlines();
     setBoxesAnimation();
     showMainTexts();
 })
