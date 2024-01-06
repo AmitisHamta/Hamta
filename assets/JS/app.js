@@ -13,7 +13,7 @@ const productsLists = $.querySelectorAll('.products-list li');
 const productsHr = $.querySelectorAll('.products-list hr');
 const dropdownBox = $.querySelector('.dropdown-box');
 const productsList = $.querySelector('.list-container');
-const certifications = $.querySelectorAll('.certification img');
+const certifications = $.querySelectorAll('.certification');
 
 const resizeHeader = () => {
     if ($.documentElement.scrollTop >= 30) {
@@ -236,7 +236,5 @@ productsBtn.addEventListener('mouseleave', () => {
 certifications.forEach(certificate => {
     certificate.addEventListener('contextmenu', event => {
         event.preventDefault();
-        event.stopPropagation();
-        console.log('right clicked');
     })
 })
