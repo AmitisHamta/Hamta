@@ -12,7 +12,8 @@ const productsDropdown = $.querySelector('.products-dropdown');
 const productsLists = $.querySelectorAll('.products-list li');
 const productsHr = $.querySelectorAll('.products-list hr');
 const dropdownBox = $.querySelector('.dropdown-box');
-const productsList = $.querySelector('.list-container')
+const productsList = $.querySelector('.list-container');
+const certifications = $.querySelectorAll('.certifications img');
 
 const resizeHeader = () => {
     if ($.documentElement.scrollTop >= 30) {
@@ -177,6 +178,10 @@ const setUnderlines = () => {
     }
 }
 
+const rightClickHandler = event => {
+    event.preventDefault();
+}
+
 window.addEventListener('load', () => {
     
 })
@@ -230,4 +235,10 @@ productsBtn.addEventListener('mouseenter', () => {
 
 productsBtn.addEventListener('mouseleave', () => {
     hideProductsMenu();
+})
+
+certifications.forEach(certificate => {
+    certificate.addEventListener('contextmenu', event => {
+        rightClickHandler()
+    })
 })

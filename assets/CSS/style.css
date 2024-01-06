@@ -806,6 +806,55 @@ a {
   height: auto;
 }
 
+#certifications {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: auto;
+  padding: 50px;
+  padding-top: 100px;
+}
+
+#certifications .section-title h1 {
+  color: #333;
+  font-size: 40px;
+}
+
+#certifications-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.certification {
+  width: 15%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: transform 0.3s;
+}
+
+.certification img {
+  width: 100%;
+  height: auto;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.certification:hover {
+  transform: scale(1.1);
+}
+
 #footer {
   width: 100%;
   height: auto;
