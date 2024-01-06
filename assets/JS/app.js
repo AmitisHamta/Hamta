@@ -7,6 +7,12 @@ const underlines = $.querySelectorAll('.underline');
 const mainText = $.getElementById('main-text');
 const mainDescript = $.getElementById('main-descript');
 const textBoxes = $.querySelectorAll('.text-box');
+const productsBtn = $.getElementById('products-btn');
+const productsDropdown = $.querySelector('.products-dropdown');
+const productsLists = $.querySelectorAll('.products-list li');
+const productsHr = $.querySelectorAll('.products-list hr');
+const dropdownBox = $.querySelector('.dropdown-box');
+const productsList = $.querySelector('.list-container')
 
 const resizeHeader = () => {
     if ($.documentElement.scrollTop >= 30) {
@@ -197,4 +203,31 @@ navBtns.forEach(btn => {
     btn.addEventListener('mouseleave', () => {
         hideUnderline(btn);
     })
+})
+
+const showProductsMenu = () => {
+    productsList.classList.remove('display-flex');
+    dropdownBox.classList.remove('display-none');
+    dropdownBox.classList.add('dropdown');
+    productsDropdown.classList.remove('hide-products');
+    productsDropdown.classList.add('show-products');
+    setTimeout(() => {
+        dropdownBox.classList.add('display-none');
+    }, 1000);
+    setTimeout(() => {
+        productsList.classList.add('display-flex')
+    }, 500);
+}
+
+const hideProductsMenu = () => {
+    productsDropdown.classList.remove('show-products');
+    productsDropdown.classList.add('hide-products');
+}
+
+productsBtn.addEventListener('mouseenter', () => {
+    showProductsMenu();
+})
+
+productsBtn.addEventListener('mouseleave', () => {
+    hideProductsMenu();
 })
