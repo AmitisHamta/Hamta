@@ -137,6 +137,10 @@ a {
     border-radius: 20px;
 }
 
+.nav-btn .underline {
+  height: 2px;
+}
+
 .display-none {
     display: none;
 }
