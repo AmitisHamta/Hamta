@@ -14,115 +14,7 @@
 </head>
 <body>
     <div id="container">
-        <header id="header" class="animate__animated animate__fadeInDown">
-            <nav id="navbar">
-                <a id="header-logo" href="index.html">
-                    <img src="assets/Images/HamtaLogo.png" alt="">
-                    <h1 id="header-logo-name">
-                        آمیتیس همتا
-                    </h1>
-                </a>
-                <div id="nav-list">
-                    <!-- <button class="nav-btn">
-                        <a href="">صفحه اصلی</a>
-                        <div class="underline display-none"></div>
-                    </button> -->
-                    <button class="nav-btn">
-                        <a href="#about">درباره ما</a>
-                        <div class="underline display-none"></div>
-                    </button>
-                    <button class="nav-btn">
-                        <a href="#service">خدمات</a>
-                        <div class="underline display-none"></div>
-                    </button>
-                    <button class="nav-btn" id="products-btn">
-                        <a href="">محصولات</a>
-                        <div class="underline display-none"></div>
-                        <div class="products-dropdown">
-                            <div class="list-container">
-                                <ul class="products-list" style="border-right: 1px solid #fffafa;">
-                                    <li>
-                                        <h1>عنوان</h1>
-                                    </li>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                </ul>
-                                <ul class="products-list" style="border-right: 1px solid #fffafa;">
-                                    <li>
-                                        <h1>عنوان</h1>
-                                    </li>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                </ul>
-                                <ul class="products-list">
-                                    <li>
-                                        <h1>عنوان</h1>
-                                    </li>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-box"></div>
-                        </div>
-                    </button>
-                    <button class="nav-btn">
-                        <a href="">ارتباط با ما</a>
-                        <div class="underline display-none"></div>
-                    </button>
-                </div>
-            </nav>
-        </header>
+        <site-header></site-header>
         <div id="main">
             <video id="intro-video" autoplay muted loop>
                 <source src="assets/Videos/Business.mp4" type="video/mp4">
@@ -158,57 +50,113 @@
                         <div class="underline"></div>
                     </h1>
                     <p data-aos="fade-up">
-                        عموم افراد حاضر در این شرکت از میان فعالان حوزه پرداخت های الکترونیکی بویژه در زمینه POS و ATM 
-                        و ... و تعدادی از مدیران،کارشناسان و صاحب نظران شاغل و بازنشسته در حوزه های مالی و بانکی می باشند.
+                        همتا -  هسته مرکزی تراکنش های الکترونیکی :
+                        شرکت آمیتیس همتا
+                        ، در راستای بسط و توسعه سیاستهای کلی کشور
+                        و جهت راه‌اندازی کسب و کارهای الکترونیکی و مجازی
+                        در حوزه تراکنش‌های مالی و بانکی با استفاده از ابزارهای مربوطه و با هدف ایجاد اشتغالزایی برای افراد مختلف در این حوزه
+                        و تسهیل بیشتر در گردش های مالی و بانکی
+                        از طریق ابزارهای نوین الکترونیکی برای مشاغل و صنوف و با اتکا به تجربیات و تلاش های سالیان گذشته کارکنان خود تشکیل شده است.
                     </p>
                 </div>
                 <div id="about-body">
-                    <div class="about-info" data-aos="fade-right">
-                        <h3 class="about-title">عنوان</h1>
+                    <div class="about-info" data-about="structure">
+                        <h3 class="about-title">ساختار شرکت</h1>
                         <p>
-                            • واگذاری 170 هزار دستگاه POS سیار در سال های 98 و 99 به شرکت های همکار و مشاغل خرد
-                            • نصب و راه اندازی بیش از 1500 دستگاه خودپرداز مشارکتی و ایجاد درآمدزایی و اشتغال برای پذیرندگان در بانک های شهر، انصار، قوامین و کوثر از سال 92 تا 99
-                            • عقد قرارداد اتصال سوئیچ پرداخت همتا با شرکت پرداخت نوین آرین به عنوان زیر سوئیچ به منظور نصب دستگاه های کارتخوان در سال 99
+                            ساختار این شرکت بر اساس 2 محور مهم و بنیادی
+                             " نیروی انسانی متخصص و زبده "  و " شرکای تجاری ارزشمند " بنا نهاده شده است . به طوریکه عموم افراد حاضر در این شرکت از میان فعالان متخصص ، مشاوران خبره
+                             و تعدادی از مدیران ، کارشناسان رسمی و صاحب نظران شاغل و بازنشسته در حوزه های مالی و بانکی و پرداخت‌های الکترونیکی تشکیل و از وجود شرکای تجاری قدرتمند
+                             و ارزشمند در قالب مشارکت و انعقاد قراردادهای تجاری و توسعه ای به ویژه در زمینه خدمات پرداخت و درگاههای الکترونیکی بهره مند می باشد.
                         </p>
-                        <div class="topline"></div>
+                        <div class="about-btn-container">
+                            <button class="about-btn" data-about="structure">
+                                <a href="about.html#structure">بیشتر بدانید</a>
+                            </button>
+                            <button class="about-arrow-btn">
+                                <i class="bi bi-arrow-left-short"></i>
+                            </button>
+                        </div>
+                        <!-- <div class="topline"></div> -->
                         <div class="rightline"></div>
-                        <div class="underline"></div>
-                        <div class="leftline"></div>
+                        <!-- <div class="underline"></div> -->
+                        <!-- <div class="leftline"></div> -->
                     </div>
-                    <div class="about-info" data-aos="fade-up">
-                        <h3 class="about-title">عنوان</h1>
+                    <div class="about-info" data-about="activity">
+                        <h3 class="about-title">
+                            فعالیت ها
+                        </h1>
                         <p>
-                            • واگذاری 170 هزار دستگاه POS سیار در سال های 98 و 99 به شرکت های همکار و مشاغل خرد
-                            • نصب و راه اندازی بیش از 1500 دستگاه خودپرداز مشارکتی و ایجاد درآمدزایی و اشتغال برای پذیرندگان در بانک های شهر، انصار، قوامین و کوثر از سال 92 تا 99
-                            • عقد قرارداد اتصال سوئیچ پرداخت همتا با شرکت پرداخت نوین آرین به عنوان زیر سوئیچ به منظور نصب دستگاه های کارتخوان در سال 99
+                            فعالیت های اصلی شرکت به صورت کلی در بخش های ذیل می باشد :
+                            - طراحی و ترسیم کسب و کارهای مبتنی بر سوئیچ بانکی و پرداخت در حوزه‌ تراکنش‌های مربوط به POS ، ATM ، Cashless ،  عقد قرارداد هدایت تراکنش با نمایندگان
+                             ، ایجاد درگاه  IPG ، طراحی کیف پول
+                             ، ایجاد باشگاه مشتریان و ... از طریق همکاری با psp های رسمی کشور به عنوان زیر سوئیچ شاپرکی و انعقاد قرارداد با بانک های کشور جهت توسعه درگاههای شتابی
+                            - تامین ، واگذاری و توزیع دستگاه های الکترونیکی مالی و بانکی به صاحبان کسب وکار شامل صندوق های فروشگاهی ، POS ، ATM ، Cashless ،  Kioskو ... در سراسر کشور
+                            - گارانتی ، پشتیبانی و تعمیرات دستگاه های POS و ATM و Cashless و ...
+                            - بازاریابی و جذب پذیرندگان دستگاههای پرداخت الکترونیکی و اتصال آن به سوئیچ همتا یا بانک های طرف قرارداد  شامل: جذب حدود 50 هزار پذیرنده دستگاه Pos ،  
+                            راه اندازی و جذب حدود
+                             1500 دستگاه خود پرداز نقدی بخش خصوصی با تأمین دستگاه ، پولگذاری ، پول رسانی ، جاگذاری ، پشتیبانی ، پرستاری و ...  و راه اندازی بیش از 000ر8  خودپرداز غیر نقدی 
+                             (Cashless)
                         </p>
+                        <div class="about-btn-container">
+                            <button class="about-btn" data-about="activity">
+                                <a href="about.html">بیشتر بدانید</a>
+                            </button>
+                            <button class="about-arrow-btn">
+                                <i class="bi bi-arrow-left-short"></i>
+                            </button>
+                        </div>
                         <div class="topline"></div>
-                        <div class="rightline"></div>
-                        <div class="underline"></div>
-                        <div class="leftline"></div>
+                        <!-- <div class="rightline"></div> -->
+                        <!-- <div class="underline"></div> -->
+                        <!-- <div class="leftline"></div> -->
                     </div>
-                    <div class="about-info" data-aos="fade-up">
-                        <h3 class="about-title">عنوان</h1>
+                    <div class="about-info" data-about="experience">
+                        <h3 class="about-title">سوابق و تجربیات</h1>
                         <p>
-                            • واگذاری 170 هزار دستگاه POS سیار در سال های 98 و 99 به شرکت های همکار و مشاغل خرد
-                            • نصب و راه اندازی بیش از 1500 دستگاه خودپرداز مشارکتی و ایجاد درآمدزایی و اشتغال برای پذیرندگان در بانک های شهر، انصار، قوامین و کوثر از سال 92 تا 99
-                            • عقد قرارداد اتصال سوئیچ پرداخت همتا با شرکت پرداخت نوین آرین به عنوان زیر سوئیچ به منظور نصب دستگاه های کارتخوان در سال 99
+                            از سوابق قبلی موسسین و عملکرد مدیران فعلی شرکت می توان به موارد ذیل اشاره نمود :
+                            - واگذاری 250 هزار دستگاه pos  سیار در سال های 98 و 99 و 400 به شرکت های همکار و مشاغل خرد 
+                            - نصب و راه اندازی بیش از 1500 دستگاه خودپرداز نقدی ATM مشارکتی به صورت اختصاصی در بانک های شهر ، انصار ، قوامین و کوثر و ... از سال 92 تا 99 و کارآفرین و اقتصاد نوین از سال 1400 و بانک گردشگری در سال 1401
+                            - استقرار سوئیچ در دو شرکت پرداخت الکترونیک (PSP) به منظور اتصال دستگاههای کارتخوان و عقد قرارداد اتصال پرداخت سوئیچ همتا به PSP به عنوان زیر سوئیچ به منظور نصب دستگاه های کارتخوان در سال 400
+                            - عقد قرارداد با 5 شرکت پرداخت الکترونیک (psp) کشور در قالب هدایت تراکنش جهت توسعه دستگاههای کارتخوان (پایانه های فروشگاهی) در سال های 99 و 400 
+                            - نصب و راه اندازی بیش از 8000 دستگاه خودپرداز غیر نقدی Cashless و Kiosk  به صورت اختصاصی در بانک های ایران زمین ، گردشگری و موسسه اعتباری نور و ... از سال 401 
+                            - عقد قرارداد با شرکت پارسیان کیش به عنوان شریک تجاری جهت انجام طرح ها و پروژه های مشترک
+                            - مذاکره و توافق با دو بانک خصوصی کشور به منظور نصب و پشتیبانی حداقل 50 هزار دستگاه کارتخوان سیار طی مدت یکسال بصورت اجاره ماهانه
+                            - مذاکره و توافق با 4 بانک به منظور نصب و پشتیبانی حداقل 20 هزار دستگاه کش لس و کیوسک بصورت اختصاصی برای هر بانک 
+                            - انعقاد قرارداد با بیش از 10 شرکت مختلف به عنوان شرکای تجاری ارزشمند جهت تامین ، توسعه ، پشتیبانی ، طراحی و ... در ارتباط با دستگاههای الکترونیکی قابل اتصال به شبکه شتاب و شاپرک
                         </p>
+                        <div class="about-btn-container">
+                            <button class="about-btn" data-about="experience">
+                                <a href="about.html">بیشتر بدانید</a>
+                            </button>
+                            <button class="about-arrow-btn">
+                                <i class="bi bi-arrow-left-short"></i>
+                            </button>
+                        </div>
                         <div class="topline"></div>
-                        <div class="rightline"></div>
-                        <div class="underline"></div>
-                        <div class="leftline"></div>
+                        <!-- <div class="rightline"></div> -->
+                        <!-- <div class="underline"></div> -->
+                        <!-- <div class="leftline"></div> -->
                     </div>
-                    <div class="about-info" data-aos="fade-left">
-                        <h3 class="about-title">عنوان</h1>
+                    <div class="about-info" data-about="facility">
+                        <h3 class="about-title">امکانات و ظرفیت ها</h1>
                         <p>
-                            • واگذاری 170 هزار دستگاه POS سیار در سال های 98 و 99 به شرکت های همکار و مشاغل خرد
-                            • نصب و راه اندازی بیش از 1500 دستگاه خودپرداز مشارکتی و ایجاد درآمدزایی و اشتغال برای پذیرندگان در بانک های شهر، انصار، قوامین و کوثر از سال 92 تا 99
-                            • عقد قرارداد اتصال سوئیچ پرداخت همتا با شرکت پرداخت نوین آرین به عنوان زیر سوئیچ به منظور نصب دستگاه های کارتخوان در سال 99
+                            - برخورداری از سوئیچ فنی معتبر و دارای تاییدیه های قانونی رسمی از مراجع ذیصلاح و طرف قرارداد
+                            - استقرار سوئیچ فعال شاپرکی و شتابی در بانک ها و شرکت های پرداخت الکترونیک (PSP) کشور 
+                            - بیش از 500 نماینده رسمی در سراسرکشور با انعقاد قرارداد و اخذ تضامین لازم .
+                            - پشتیبانی 24 ساعته دستگاهها از طریق callcenter
+                            - تعمیرات و گارانتی دستگاهها به صورت مستقیم یا همکاری با شرکای تجاری در سراسر کشور
                         </p>
-                        <div class="topline"></div>
-                        <div class="rightline"></div>
-                        <div class="underline"></div>
+                        <div class="about-btn-container">
+                            <button class="about-btn" data-about="facility">
+                                <a href="about.html">بیشتر بدانید</a>
+                            </button>
+                            <button class="about-arrow-btn">
+                                <i class="bi bi-arrow-left-short"></i>
+                            </button>
+                        </div>
+                        <!-- <div class="topline"></div> -->
+                        <!-- <div class="rightline"></div> -->
+                        <!-- <div class="underline"></div> -->
                         <div class="leftline"></div>
                     </div>
                 </div>
@@ -328,7 +276,7 @@
             <div id="companies-content">
                 <div class="section-title">
                     <h1 data-aos="fade-up">
-                        شرکت های طرف قرارداد
+                        شرکت های همکار و طرف قرارداد
                     </h1>
                 </div>
                 <div id="companies-body">
@@ -377,7 +325,7 @@
                         </div>
                         <div class="company" data-aos="zoom-in" style="width: 170px;">
                             <a href="https://tourismit.ir/">
-                                <img src="https://tourismit.ir/images/logo%20tit%204.webp" alt="">
+                                <img src="assets/Images/TIT.svg" alt="">
                             </a>
                         </div>
                         <div class="company" data-aos="zoom-in" style="width: 130px;">
@@ -441,7 +389,7 @@
                 </div>
             </div>
         </div>
-        <div id="certifications">
+        <!-- <div id="certifications">
             <div class="section-title">
                 <h1 data-aos="fade-up">
                     گواهینامه ها
@@ -469,107 +417,14 @@
                     <h3>عنوان</h3>
                 </div>
             </div>
-        </div>
-        <footer id="footer">
-            <div class="wave-bg">
-                <img src="assets/Images/wave-haikei (3).svg" alt="">
-            </div>
-            <div id="footer-content">
-                <h1>
-                    شرکت آمیتیس همتا
-                </h1>
-                <hr>
-                <div id="footer-info">
-                    <div class="footer-list footer-description">
-                        <p>
-                            عموم افراد حاضر در این شرکت از میان فعالان حوزه پرداخت های الکترونیکی بویژه در زمینه POS و ATM 
-                            و ... و تعدادی از مدیران،کارشناسان و صاحب نظران شاغل و بازنشسته در حوزه های مالی و بانکی می باشند.
-                        </p>
-                        <p>
-                            <i class="bi bi-geo-alt-fill"></i>
-                            آدرس: خیابان میزاری شیرازی، کوچه شهدا، پلاک 23،طبقه پنجم، واحد 11
-                        </p>
-                        <div id="social-btns-list">
-                            <button class="social-btns">
-                                <a href="" target="_blank" title="Website">
-                                    <i class="bi bi-globe2"></i>
-                                </a>
-                            </button>
-                            <button class="social-btns">
-                                <a href="mailto:info@hamtasb.com" target="_blank" title="Email">
-                                    <i class="bi bi-envelope"></i>
-                                </a>
-                            </button>
-                            <button class="social-btns">
-                                <a href="tel:+9802158702" target="_blank" title="Phone">
-                                    <i class="fa-solid fa-phone"></i>
-                                </a>
-                            </button>
-                            <button class="social-btns">
-                                <a href="https://www.instagram.com/hamta.psp" target="_blank" title="Instagram">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </button>
-                            <button class="social-btns">
-                                <a href="https://maps.app.goo.gl/SnUcEP8mfzfehgKDA" target="_blank" title="Location">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                </a>
-                            </button>
-                        </div>
-                    </div>
-                    <div id="footer-lists">
-                        <div class="footer-list">
-                            <h3>منابع</h3>
-                            <ul>
-                                <li>
-                                    <a href="index.html">صفحه اصلی</a>
-                                </li>
-                                <li>
-                                    <a href="#about">درباره ما</a>
-                                </li>
-                                <li>
-                                    <a href="#service">خدمات</a>
-                                </li>
-                                <li>
-                                    <a href="#products">محصولات</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-list">
-                            <h3>ارتباط با ما</h3>
-                            <ul>
-                                <li>
-                                    <a href="index.html">
-                                        سایت
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailto:info@hamtasb.com" target="_blank">
-                                        ایمیل
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tel:+9802158702" target="_blank">
-                                        تلفن
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/hamta.psp" target="_blank">
-                                        اینیستاگرام
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </div> -->
+        <site-footer></site-footer>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/Libraries/swiper.js"></script>
-    <script src="assets/JS/app.js"></script>
+    <script type="module" src="assets/JS/app.js"></script>
     <script src="assets/Libraries/AOS.js"></script>
 </body>
 </html>

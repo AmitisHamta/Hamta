@@ -1,0 +1,212 @@
+"use strict"
+const $ = document;
+
+const template = $.createElement('template');
+template.innerHTML = `
+<link rel="stylesheet" href="assets/components/header/header.css">
+<header id="header" class="animate__animated animate__fadeInDown">
+            <nav id="navbar">
+                <a id="header-logo" href="index.html">
+                    <img src="../assets/Images/HamtaLogo.png" alt="">
+                    <h1 id="header-logo-name">
+                        آمیتیس همتا
+                    </h1>
+                </a>
+                <div id="nav-list">
+                    <!-- <button class="nav-btn">
+                        <a href="">صفحه اصلی</a>
+                        <div class="underline display-none"></div>
+                    </button> -->
+                    <button class="nav-btn">
+                        <a href="about.html">درباره ما</a>
+                        <div class="underline display-none"></div>
+                    </button>
+                    <button class="nav-btn">
+                        <a href="#service">خدمات</a>
+                        <div class="underline display-none"></div>
+                    </button>
+                    <button class="nav-btn" id="products-btn">
+                        <a href="">محصولات</a>
+                        <div class="underline display-none"></div>
+                        <div class="products-dropdown">
+                            <div class="list-container">
+                                <ul class="products-list" style="border-right: 1px solid #fffafa;">
+                                    <li>
+                                        <h1>عنوان</h1>
+                                    </li>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                </ul>
+                                <ul class="products-list" style="border-right: 1px solid #fffafa;">
+                                    <li>
+                                        <h1>عنوان</h1>
+                                    </li>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                </ul>
+                                <ul class="products-list">
+                                    <li>
+                                        <h1>عنوان</h1>
+                                    </li>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a href="">محصول</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-box"></div>
+                        </div>
+                    </button>
+                    <button class="nav-btn">
+                        <a href="">ارتباط با ما</a>
+                        <div class="underline display-none"></div>
+                    </button>
+                </div>
+            </nav>
+        </header>
+`
+
+class Header extends HTMLElement {
+    constructor () {
+        super();
+
+        this.attachShadow({mode: 'open'});
+        this.shadowRoot.appendChild(template.content.cloneNode(true));
+    }
+
+    connectedCallback () {
+        const header = this.shadowRoot.getElementById('header');
+        const navBtns = this.shadowRoot.querySelectorAll('.nav-btn');
+        const underlines = this.shadowRoot.querySelectorAll('.underline');
+        const productsBtn = this.shadowRoot.getElementById('products-btn');
+        const productsDropdown = this.shadowRoot.querySelector('.products-dropdown');
+        const dropdownBox = this.shadowRoot.querySelector('.dropdown-box');
+        const productsList = this.shadowRoot.querySelector('.list-container');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            this.resizeHeader(header);
+        })
+
+        window.addEventListener('scroll', () => {
+            this.resizeHeader(header);
+        })
+
+        navBtns.forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                this.showUnderline(btn, underlines);
+            })
+        })
+        
+        navBtns.forEach(btn => {
+            btn.addEventListener('mouseleave', () => {
+                this.hideUnderline(btn, underlines);
+            })
+        })
+
+        productsBtn.addEventListener('mouseenter', () => {
+            this.showProductsMenu(productsList, dropdownBox, productsDropdown);
+        })
+        
+        productsBtn.addEventListener('mouseleave', () => {
+            this.hideProductsMenu(productsDropdown);
+        })
+    }
+
+    resizeHeader (header) {
+        if ($.documentElement.scrollTop >= 30) {
+            header.classList.add('moved');
+        }else {
+            header.classList.remove('moved');
+        }
+    }
+
+    showUnderline (btn, underlines) {
+        underlines.forEach(underline => {
+            if (btn.contains(underline)) {
+                underline.classList.remove('display-none');
+            }
+        })
+    }
+
+    hideUnderline (btn, underlines){
+        underlines.forEach(underline => {
+            if (btn.contains(underline)) {
+                underline.classList.add('exit-underline');
+                setTimeout(() => {
+                    underline.classList.add('display-none')
+                }, 350)
+            }
+        })
+    }
+
+    showProductsMenu (productsList, dropdownBox, productsDropdown) {
+        productsList.classList.remove('display-flex');
+        dropdownBox.classList.remove('display-none');
+        dropdownBox.classList.add('dropdown');
+        productsDropdown.classList.remove('hide-products');
+        productsDropdown.classList.add('show-products');
+        setTimeout(() => {
+            dropdownBox.classList.add('display-none');
+        }, 1000);
+        setTimeout(() => {
+            productsList.classList.add('display-flex')
+        }, 500);
+    }
+    
+    hideProductsMenu (productsDropdown) {
+        productsDropdown.classList.remove('show-products');
+        productsDropdown.classList.add('hide-products');
+    }
+    
+}
+
+export {Header};

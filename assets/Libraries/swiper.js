@@ -1,10 +1,10 @@
 "use strict"
 
 const setSwiper = () => {
-    const swiper = new Swiper(".banks-swiper", {
+    const banksSwiper = new Swiper(".banks-swiper", {
         loop: true,
         spaceBetween: 100,
-        centeredSlides: true,
+        // centeredSlides: true,
         slidesPerView: 5,
         speed: 1000,
         freeMode: true,

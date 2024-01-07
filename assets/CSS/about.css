@@ -1,0 +1,205 @@
+html, body {
+    width: 100%;
+    height: auto;
+    background-color: var(--theme);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iransans;
+}
+
+:root {
+    --theme: #fffafa;
+    --color: #333;
+    --orange: #dc8501;
+    --blue: #106ea5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--blue);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--theme);
+}
+
+@font-face {
+  font-family: iransans;
+  src: url(../fonts/IranSansXPro/Webfonts/fonts/woff/IRANSansX-Regular.woff);
+}
+
+a {
+    text-decoration: none;
+    color: #fffafa;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme);
+    color: var(--color);
+    overflow: hidden;
+}
+
+.wave-bg {
+    width: 100%;
+    height: auto;
+}
+
+.wave-bg img {
+    width: 100%;
+    height: auto;
+}
+
+#page-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18vh;
+}
+
+#title {
+    font-size: 50px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+#title .underline {
+    border: 2px solid var(--orange);
+}
+
+#about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    color: var(--theme);
+    padding: 50px 200px;
+    margin-top: -10px;
+    background-color: #106ea5;
+}
+
+#about-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    direction: rtl;
+    justify-content: center;
+    gap: 70px;
+}
+
+.about-name {
+    position: relative;
+    font-size: 45px;
+}
+
+.about-description {
+    padding: 15px;
+}
+
+.underline {
+    width: 100%;
+    height: 1px;
+    background-color: var(--orange);
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+}
+
+.show-underline {
+    animation: showUnderline 0.6s ease-in-out;
+  }
+  
+  @keyframes showUnderline {
+      from {
+          width: 0;
+      }
+      to {
+          width: 100%;
+      }
+  }
+  
+  .exit-underline {
+      animation: exitUnderline 0.4s ease-in-out;
+  }
+  
+  @keyframes exitUnderline {
+      from {
+          width: 100%;
+      }
+  
+      to {
+          width: 0;
+      }
+  }
+
+  .about-title h1 {
+    padding-bottom: 5px;
+  }
+
+  .about-title .underline {
+    border: 2px solid #dc8501;
+  }
+
+  #certifications {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: auto;
+    padding: 50px;
+    /* padding-top: 100px; */
+  }
+  
+  #certifications .section-title h1 {
+    color: #333;
+    font-size: 50px;
+  }
+  
+  #certifications-body {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .certification {
+    width: 20%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .certification img {
+    width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 10px;
+  }
+  
+  .certification:hover {
+    transform: scale(1.1) !important;
+  }
+  
