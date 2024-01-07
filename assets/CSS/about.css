@@ -87,7 +87,7 @@ a {
     flex-direction: column;
     gap: 100px;
     color: var(--theme);
-    padding: 50px 200px;
+    padding: 50px;
     margin-top: -10px;
     background-color: #106ea5;
 }
@@ -95,10 +95,19 @@ a {
 #about-body {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     direction: rtl;
     justify-content: center;
     gap: 70px;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 150px;
 }
 
 .about-name {
@@ -106,8 +115,29 @@ a {
     font-size: 45px;
 }
 
+.about-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-title p {
+    font-size: 20px;
+}
+
+.about-info p {
+    letter-spacing: 0.5px;
+}
+
 .about-description {
     padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    font-size: 14.5px;
 }
 
 .underline {

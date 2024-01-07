@@ -107,7 +107,7 @@ template.innerHTML = `
                         </div>
                     </button>
                     <button class="nav-btn">
-                        <a href="">ارتباط با ما</a>
+                        <a href="#footer">ارتباط با ما</a>
                         <div class="underline display-none"></div>
                     </button>
                 </div>
