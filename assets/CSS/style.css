@@ -480,7 +480,7 @@ a {
 
 .about-btn:hover ~ .about-arrow-btn {
   animation: swipeLeft 0.2s linear;
-  right: 60%;
+  right: 61%;
 }
 
 .info {
@@ -501,7 +501,7 @@ a {
     right: 50%;
   }
   to {
-    right: 60%;
+    right: 61%;
   }
 }
 
