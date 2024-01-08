@@ -14,7 +14,7 @@ template.innerHTML = `
                 </a>
                 <div id="nav-list">
                     <button class="nav-btn">
-                        <a href="">صفحه اصلی</a>
+                        <a href="index.html">صفحه اصلی</a>
                         <div class="underline display-none"></div>
                     </button>
                     <button class="nav-btn">

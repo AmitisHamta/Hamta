@@ -57,7 +57,7 @@ template.innerHTML = `
                             <h3>منابع</h3>
                             <ul>
                                 <li>
-                                    <a href="">صفحه اصلی</a>
+                                    <a href="index.html">صفحه اصلی</a>
                                 </li>
                                 <li>
                                     <a href="about.html">درباره ما</a>
