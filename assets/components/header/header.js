@@ -113,12 +113,12 @@ template.innerHTML = `
                 </div>
                 <div id="navbar-buttons">
                     <button class="panel-btn bg-blue">
-                        <a href="" target="_blank">
+                        <a href="https://plus.hamtabank.com" target="_blank">
                             پنل نمایندگان
                         </a>
                     </button>
                     <button class="panel-btn">
-                        <a href="" target="_blank">
+                        <a href="https://plus.hamtabank.com/agent-registration/new" target="_blank">
                             ثبت نام نماینده
                         </a>
                     </button>
