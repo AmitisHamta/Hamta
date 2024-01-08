@@ -24,7 +24,7 @@ const showMainTexts = () => {
     }, 1250);
 }
 
-const setUnderlines = () => {
+const setLines = () => {
     const aboutTarget = $.querySelector(`#about-content .section-title .underline`);
     if ($.documentElement.scrollTop >= 200) {
         aboutTarget.classList.remove('exit-underline')
@@ -152,11 +152,11 @@ window.addEventListener('load', () => {
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-    setUnderlines();
+    setLines();
     setBoxesAnimation();
     showMainTexts();
 })
 
 window.addEventListener('scroll', () => {
-    setUnderlines();
+    setLines();
 })
