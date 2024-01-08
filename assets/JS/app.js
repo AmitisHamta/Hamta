@@ -6,7 +6,7 @@ import { Loader } from "../components/loader/loader.js";
 
 window.customElements.define('site-header', Header);
 window.customElements.define('site-footer', Footer);
-window.customElements.define('site-footer', Loader);
+window.customElements.define('site-loader', Loader);
 
 const $ = document;
 const mainText = $.getElementById('main-text');
@@ -36,66 +36,9 @@ const setLines = () => {
         aboutTarget.classList.add('exit-underline')
     }
 
-    const aboutTopLines = $.querySelectorAll(`#about-content .about-info .topline`);
-    const aboutUnderLines = $.querySelectorAll(`#about-content .about-info .underline`);
-    const aboutLeftLines = $.querySelectorAll(`#about-content .about-info .leftline`);
-    const aboutRightLines = $.querySelectorAll(`#about-content .about-info .rightline`);
-
-    if ($.documentElement.scrollTop >= 200) {
-        aboutTopLines.forEach(line => {
-            line.classList.remove('hide-topline');
-            line.classList.add('show-topline');
-            line.style.animationDuration = '1s';
-            line.classList.add('width-100')
-        })
-        aboutUnderLines.forEach(line => {
-            line.classList.remove('hide-underline');
-            line.classList.add('show-underline');
-            line.style.animationDuration = '1s';
-            line.classList.add('width-100')
-        })
-        aboutRightLines.forEach(line => {
-            line.classList.remove('hide-rightline');
-            line.classList.add('show-rightline');
-            line.style.animationDuration = '1s';
-            line.classList.add('height-100')
-        })
-        aboutLeftLines.forEach(line => {
-            line.classList.remove('hide-leftline');
-            line.classList.add('show-leftline');
-            line.style.animationDuration = '1s';
-            line.classList.add('height-100')
-        })
-    }else {
-        aboutTopLines.forEach(line => {
-            line.classList.remove('show-topline');
-            line.classList.add('hide-topline');
-            line.style.animationDuration = '1s';
-            line.classList.remove('width-100')
-        })
-        aboutUnderLines.forEach(line => {
-            line.classList.remove('show-underline');
-            line.classList.add('hide-underline');
-            line.style.animationDuration = '1s';
-            line.classList.remove('width-100')
-        })
-        aboutRightLines.forEach(line => {
-            line.classList.remove('show-rightline');
-            line.classList.add('hide-rightline');
-            line.style.animationDuration = '1s';
-            line.classList.remove('height-100')
-        })
-        aboutLeftLines.forEach(line => {
-            line.classList.remove('show-leftline');
-            line.classList.add('hide-leftline');
-            line.style.animationDuration = '1s';
-            line.classList.remove('height-100')
-        })
-    }
-
     const serviceTarget = $.querySelector(`#service-content .section-title .underline`);
 
-    if ($.documentElement.scrollTop >= 1100) {
+    if ($.documentElement.scrollTop >= 1300) {
         serviceTarget.classList.remove('exit-underline')
         serviceTarget.classList.add('show-underline');
         serviceTarget.classList.add('width-100')
@@ -108,7 +51,7 @@ const setLines = () => {
     const serviceRight = $.querySelectorAll(`#service-content .service-info .rightline`);
     const serviceLeft = $.querySelectorAll(`#service-content .service-info .leftline`);
 
-    if ($.documentElement.scrollTop >= 1200) {
+    if ($.documentElement.scrollTop >= 1450) {
         serviceRight[0].classList.remove('exit-rightline');
         serviceRight[0].classList.add('show-rightline');
         serviceRight[0].classList.add('height-100')
@@ -118,7 +61,7 @@ const setLines = () => {
         serviceRight[0].classList.remove('height-100')
     }
 
-    if ($.documentElement.scrollTop >= 1550) {
+    if ($.documentElement.scrollTop >= 1800) {
         serviceRight[1].classList.remove('exit-rightline');
         serviceRight[1].classList.add('show-rightline');
         serviceRight[1].classList.add('height-100')
@@ -128,7 +71,7 @@ const setLines = () => {
         serviceRight[1].classList.add('height-100')
     }
 
-    if ($.documentElement.scrollTop >= 1400) {
+    if ($.documentElement.scrollTop >= 1650) {
         serviceLeft[0].classList.remove('exit-leftline');
         serviceLeft[0].classList.add('show-leftline');
         serviceLeft[0].classList.add('height-100')
@@ -138,7 +81,7 @@ const setLines = () => {
         serviceLeft[0].classList.remove('height-100')
     }
 
-    if ($.documentElement.scrollTop >= 1800) {
+    if ($.documentElement.scrollTop >= 2000) {
         serviceLeft[1].classList.remove('exit-leftline');
         serviceLeft[1].classList.add('show-leftline');
         serviceLeft[1].classList.add('height-100')
