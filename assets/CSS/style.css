@@ -37,7 +37,7 @@ html, body {
 
 @font-face {
   font-family: iransans;
-  src: url(../fonts/IranSansXPro/Webfonts/fonts/woff/IRANSansX-Regular.woff);
+  src: url(../fonts/woff/IRANSansX-Regular.woff);
 }
 
 #container {

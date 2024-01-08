@@ -40,7 +40,7 @@ const setLines = () => {
         titleUnderlines[2].classList.add('exit-underline')
     }
 
-    if ($.documentElement.scrollTop >= 1350) {
+    if ($.documentElement.scrollTop >= 1420) {
         titleUnderlines[3].classList.remove('exit-underline')
         titleUnderlines[3].classList.add('show-underline')
     }else {
@@ -59,11 +59,38 @@ const setLines = () => {
     }
 }
 
+const moveToSection = () => {
+    const scrollTop = $.documentElement.scrollTop;
+
+    if (location.hash.includes('activity')) {
+        $.documentElement.scrollTo({
+            top: 800,
+            behavior: 'smooth'
+        })
+    }else if (location.hash.includes('structure')) {
+        $.documentElement.scrollTo({
+            top: 300,
+            behavior: 'smooth'
+        })
+    }else if (location.hash.includes('experience')) {
+        $.documentElement.scrollTo({
+            top: 2100,
+            behavior: 'smooth'
+        })
+    }else if (location.hash.includes('facility')) {
+        $.documentElement.scrollTo({
+            top: 1400,
+            behavior: 'smooth'
+        })
+    }
+}
+
 window.addEventListener('load', () => {
     preventRightCLick();
     setLines();
+    moveToSection();
 })
 
 window.addEventListener('scroll', () => {
-    setLines()
+    setLines();
 })
