@@ -57,16 +57,16 @@ template.innerHTML = `
                             <h3>منابع</h3>
                             <ul>
                                 <li>
-                                    <a href="index.html">صفحه اصلی</a>
+                                    <a href="">صفحه اصلی</a>
                                 </li>
                                 <li>
-                                    <a href="#about">درباره ما</a>
+                                    <a href="about.html">درباره ما</a>
                                 </li>
                                 <li>
                                     <a href="#service">خدمات</a>
                                 </li>
                                 <li>
-                                    <a href="#products">محصولات</a>
+                                    <a href="">محصولات</a>
                                 </li>
                             </ul>
                         </div>
@@ -74,7 +74,7 @@ template.innerHTML = `
                             <h3>ارتباط با ما</h3>
                             <ul>
                                 <li>
-                                    <a href="index.html">
+                                    <a href="">
                                         سایت
                                     </a>
                                 </li>

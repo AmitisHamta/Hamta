@@ -40,6 +40,7 @@ a {
     align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
+    padding: 0 150px;
 }
 
 #header-logo {
@@ -50,7 +51,6 @@ a {
     justify-content: center;
     gap: 5px;
     direction: rtl;
-    margin-right: 150px;
     transition: width 0.3s;
 }
 
@@ -65,13 +65,12 @@ a {
 }
 
 #nav-list {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
     gap: 20px;
-    padding-left: 250px;
+    padding-right: 100px;
 }
 
 .nav-btn {
@@ -141,6 +140,45 @@ a {
         width: 0;
     }
 }
+
+#navbar-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.panel-btn {
+  outline: none;
+  background-color: #dc8501;
+  border: 1px solid #dc8501;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.2s, width 0.3s, height 0.3s, font-size 0.3s;
+}
+
+.bg-blue {
+  background-color: #106ea5; 
+  border-color: #106ea5;
+}
+
+
+.panel-btn a {
+  color: #fffafa;
+  transition: color 0.2s;
+}
+
+.panel-btn:hover a{
+  color: #333;
+} 
+
+.panel-btn:hover {
+  background-color: #fffafa;
+}
+
 
 /* header style onscroll */
 .moved {
@@ -277,4 +315,10 @@ a {
     opacity: 0;
     display: none;
   }
+}
+
+#header.moved .panel-btn {
+  width: 100px;
+  height: 35px;
+  font-size: 11px;
 }

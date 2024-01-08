@@ -6,17 +6,17 @@ template.innerHTML = `
 <link rel="stylesheet" href="assets/components/header/header.css">
 <header id="header" class="animate__animated animate__fadeInDown">
             <nav id="navbar">
-                <a id="header-logo" href="index.html">
+                <a id="header-logo" href="">
                     <img src="../assets/Images/HamtaLogo.png" alt="">
                     <h1 id="header-logo-name">
                         آمیتیس همتا
                     </h1>
                 </a>
                 <div id="nav-list">
-                    <!-- <button class="nav-btn">
+                    <button class="nav-btn">
                         <a href="">صفحه اصلی</a>
                         <div class="underline display-none"></div>
-                    </button> -->
+                    </button>
                     <button class="nav-btn">
                         <a href="about.html">درباره ما</a>
                         <div class="underline display-none"></div>
@@ -109,6 +109,18 @@ template.innerHTML = `
                     <button class="nav-btn">
                         <a href="#footer">ارتباط با ما</a>
                         <div class="underline display-none"></div>
+                    </button>
+                </div>
+                <div id="navbar-buttons">
+                    <button class="panel-btn bg-blue">
+                        <a href="" target="_blank">
+                            پنل نمایندگان
+                        </a>
+                    </button>
+                    <button class="panel-btn">
+                        <a href="" target="_blank">
+                            ثبت نام نماینده
+                        </a>
                     </button>
                 </div>
             </nav>
