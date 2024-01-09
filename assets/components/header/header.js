@@ -26,80 +26,33 @@ template.innerHTML = `
                         <div class="underline display-none"></div>
                     </button>
                     <button class="nav-btn" id="products-btn">
-                        <a href="">محصولات</a>
+                        <a href="products.html">محصولات</a>
                         <div class="underline display-none"></div>
                         <div class="products-dropdown">
                             <div class="list-container">
-                                <ul class="products-list" style="border-right: 1px solid #fffafa;">
-                                    <li>
-                                        <h1>عنوان</h1>
-                                    </li>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                </ul>
-                                <ul class="products-list" style="border-right: 1px solid #fffafa;">
-                                    <li>
-                                        <h1>عنوان</h1>
-                                    </li>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                </ul>
                                 <ul class="products-list">
                                     <li>
-                                        <h1>عنوان</h1>
+                                        <a href="products.html#cashless">کش لس</a>
+                                        <div class="underline"></div>
                                     </li>
+                                    
                                     <li>
-                                        <a href="">محصول</a>
+                                        <a href="products.html#pos">کارتخوان</a>
+                                        <div class="underline"></div>
                                     </li>
-                                    <hr>
+                                    
                                     <li>
-                                        <a href="">محصول</a>
+                                        <a href="products.html#atm">خودپرداز</a>
+                                        <div class="underline"></div>
                                     </li>
-                                    <hr>
+
                                     <li>
-                                        <a href="">محصول</a>
+                                        <a href="products.html#essentials">ملزومات بانکی</a>
+                                        <div class="underline"></div>
                                     </li>
-                                    <hr>
+                                    
                                     <li>
-                                        <a href="">محصول</a>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <a href="">محصول</a>
+                                        <a href="products.html#cashbox">صندوق فروشگاهی</a>
                                     </li>
                                 </ul>
                             </div>

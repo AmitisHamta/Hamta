@@ -9,9 +9,14 @@ window.customElements.define('site-footer', Footer);
 window.customElements.define('site-loader', Loader);
 
 const $ = document;
+const container = $.getElementById('container');
 const mainText = $.getElementById('main-text');
 const mainDescript = $.getElementById('main-descript');
 const textBoxes = $.querySelectorAll('.text-box');
+
+const removeFilter = () => {
+    container.style.filter = 'none';
+}
 
 const setBoxesAnimation = () => {
     textBoxes.forEach(box => {
@@ -93,13 +98,16 @@ const setLines = () => {
 }
 
 window.addEventListener('load', () => {
-    
+    removeFilter();
+    setBoxesAnimation();
+    showMainTexts();
+    setLines();
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-    setLines();
-    setBoxesAnimation();
-    showMainTexts();
+    // setLines();
+    // setBoxesAnimation();
+    // showMainTexts();
 })
 
 window.addEventListener('scroll', () => {

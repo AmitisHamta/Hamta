@@ -3,7 +3,11 @@ const $ = document;
 
 const template = $.createElement('template');
 template.innerHTML = `
-<link rel="stylesheet" href="assets/components/loader/loader.css">`
+<link rel="stylesheet" href="assets/components/loader/loader.css">
+<div id="loader-container">
+    <div class="loader"></div>
+</div>
+`
 
 class Loader extends HTMLElement {
     constructor () {
@@ -11,6 +15,18 @@ class Loader extends HTMLElement {
 
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true))
+    }
+
+    connectedCallback () {
+        let loader = this.shadowRoot.querySelector('#loader-container')
+
+        window.addEventListener('load', () => {
+            loader.classList.add('hidden');
+
+            loader.addEventListener('animationend', () => {
+                loader.classList.add('remove')
+            })
+        })
     }
 }
 

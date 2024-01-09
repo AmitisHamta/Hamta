@@ -1,0 +1,259 @@
+html, body {
+    width: 100%;
+    height: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue) var(--theme);
+    background-color: var(--theme);
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iransans;
+}
+
+:root {
+    --theme: #fffafa;
+    --color: #333;
+    --orange: #dc8501;
+    --blue: #106ea5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--blue);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--theme);
+}
+
+@font-face {
+  font-family: iransans;
+  src: url(../fonts/woff/IRANSansX-Regular.woff);
+}
+
+@font-face {
+    font-family: iransans-black;
+    src: url(../fonts/woff/IRANSansX-Black.woff);
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme);
+    color: var(--color);
+    filter: blur(5px);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+#page-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18vh;
+}
+
+#page-title h1 {
+    font-size: 50px;
+    position: relative;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.underline {
+    width: 100%;
+    height: 1px;
+    background-color: var(--orange);
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+}
+
+#page-title h1 .underline {
+    border: 2px solid #dc8501;
+}
+
+.show-underline {
+    animation: showUnderline 0.6s ease-in-out;
+}
+  
+@keyframes showUnderline {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+  
+.exit-underline {
+    animation: exitUnderline 0.6s ease-in-out;
+}
+  
+@keyframes exitUnderline {
+    from {
+        width: 100%;
+    }
+  
+    to {
+        width: 0;
+    }
+}
+
+.wave-bg {
+    width: 100%;
+    height: auto;
+}
+
+.wave-bg img {
+    width: 100%;
+    height: auto;
+}
+
+#products {
+    width: 100%;
+    height: auto;
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 150px;
+    color: #fffafa;
+    background: rgb(16,110,165);
+    background: linear-gradient(180deg, rgba(16,110,165,1) 0%, rgba(40,147,209,1) 50%, rgba(16,110,165,1) 100%);
+}
+
+#products-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    direction: rtl;
+}
+
+.product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-container {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    letter-spacing: 0.5px;
+    width: 60%;
+    position: relative;
+} 
+
+.product-title {
+    position: relative;
+    font-size: 35px;
+    padding-bottom: 5px;
+}
+
+.product-title .underline {
+    border: 2px solid var(--orange);
+}
+
+.product-description {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 27px;
+}
+
+.product-description span {
+    font-family: iransans-black;
+}
+
+.request-btn {
+    width: 130px;
+    height: 40px;
+    background-color: var(--orange);
+    outline: none;
+    border: 1px solid var(--orange);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.2s;
+}
+
+.request-btn a {
+    color: #fffafa;
+}
+
+.arrow-btn {
+    outline: none;
+    border: 1px solid #dc8501;
+    background-color: #dc8501;
+    color: #fffafa;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    z-index: 1;
+    font-size: 20px;
+    padding: 5px 7px 0px 7px;
+    border-radius: 50% 0% 0% 50%;
+    position: absolute;
+    right: 10%;
+    bottom: 0px;
+    z-index: 1;
+    transition: all 0.2s;
+}
+
+.request-btn:hover {
+    border-radius: 0px 20px 20px 0px;
+}
+
+.request-btn:hover ~ .arrow-btn {
+    animation: swipeLeft 0.2s linear;
+    right: 15.2%;
+}
+
+@keyframes swipeLeft {
+    from {
+      right: 10%;
+    }
+    to {
+      right: 15.2%;
+    }
+}
