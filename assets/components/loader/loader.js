@@ -4,7 +4,7 @@ const $ = document;
 const template = $.createElement('template');
 template.innerHTML = `
 <link rel="stylesheet" href="assets/components/loader/loader.css">
-<div id="loader-container">
+<div class="loader-container">
     <div class="loader"></div>
 </div>
 `
@@ -18,7 +18,7 @@ class Loader extends HTMLElement {
     }
 
     connectedCallback () {
-        let loader = this.shadowRoot.querySelector('#loader-container')
+        let loader = this.shadowRoot.querySelector('.loader-container')
 
         window.addEventListener('load', () => {
             loader.classList.add('hidden');
