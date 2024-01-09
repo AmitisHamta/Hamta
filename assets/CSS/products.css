@@ -246,7 +246,7 @@ a {
 
 .request-btn:hover ~ .arrow-btn {
     animation: swipeLeft 0.2s linear;
-    right: 15.2%;
+    right: 13.8%;
 }
 
 @keyframes swipeLeft {
@@ -254,6 +254,6 @@ a {
       right: 10%;
     }
     to {
-      right: 15.2%;
+      right: 13.8%;
     }
 }
