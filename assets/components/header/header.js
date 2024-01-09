@@ -6,15 +6,16 @@ template.innerHTML = `
 <link rel="stylesheet" href="assets/components/header/header.css">
 <header id="header" class="animate__animated animate__fadeInDown">
             <nav id="navbar">
-                <a id="header-logo" href="index.html">
+                <a id="header-logo" href="">
                     <img src="../assets/Images/HamtaLogo.png" alt="">
-                    <h1 id="header-logo-name">
+                    <!-- <h1 id="header-logo-name">
                         آمیتیس همتا
-                    </h1>
+                    </h1> -->
                 </a>
                 <div id="nav-list">
                     <button class="nav-btn">
                         <a href="index.html">صفحه اصلی</a>
+                        <div class="underline display-none"></div>
                     </button>
                     <button class="nav-btn">
                         <a href="about.html">درباره ما</a>
