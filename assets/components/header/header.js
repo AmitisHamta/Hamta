@@ -6,8 +6,8 @@ template.innerHTML = `
 <link rel="stylesheet" href="assets/components/header/header.css">
 <header id="header" class="animate__animated animate__fadeInDown">
             <nav id="navbar">
-                <a id="header-logo" href="">
-                    <img src="../assets/Images/HamtaLogo.png" alt="">
+                <a id="header-logo" href="index.html">
+                    <img src="./assets/Images/HamtaLogo.png" alt="">
                     <!-- <h1 id="header-logo-name">
                         آمیتیس همتا
                     </h1> -->
