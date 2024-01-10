@@ -44,7 +44,7 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
                     </div>
                 </div>
                 <button id="request-btn">ثبت درخواست</button>
-                <small> * لطفا اطلاعات رو تکمیل کنید</small>
+                <small class="msg"> * لطفا اطلاعات رو تکمیل کنید</small>
             </form>
         </div>
 `
@@ -60,6 +60,7 @@ class Form extends HTMLElement {
     connectedCallback () {
         const productBtn = this.shadowRoot.querySelector('#drop-btn');
         const items = this.shadowRoot.querySelectorAll('.dropdown-item');
+        const submitBtn = this.shadowRoot.getElementById('request-btn');
 
         productBtn.addEventListener('focus', () => {
             this.showMenu();
@@ -69,6 +70,11 @@ class Form extends HTMLElement {
             item.addEventListener('click', () => {
                 this.chooseItem(item);
             })
+        })
+
+        submitBtn.addEventListener('click', event => {
+            event.preventDefault();
+            this.checkInfo();
         })
     }
 
@@ -89,6 +95,40 @@ class Form extends HTMLElement {
         
         productBtn.textContent = item.textContent;
         this.hideMenu();
+    }
+
+    checkInfo () {
+        const inputs = this.shadowRoot.querySelectorAll('.input');
+
+        inputs.forEach(input => {
+            if (!input.value) {
+                this.showErrorMsg("* لطفا اطلاعات رو تکمیل کنید")
+            }else {
+                this.showSuccessMsg("* به زودی با شما تماس خواهیم گرفت")
+            }
+        })
+    }
+
+    showErrorMsg (message) {
+        const msg = this.shadowRoot.querySelector('small');
+        msg.textContent = message;
+        msg.classList.remove('success');
+        msg.classList.add('error');
+
+        setTimeout(() => {
+            msg.classList.remove('error');
+        }, 2000);
+    }
+
+    showSuccessMsg (message) {
+        const msg = this.shadowRoot.querySelector('small');
+        msg.classList.remove('error');
+        msg.classList.add('success');
+        msg.textContent = message;
+
+        setTimeout(() => {
+            msg.classList.remove('success');
+        }, 2000);
     }
 }
 

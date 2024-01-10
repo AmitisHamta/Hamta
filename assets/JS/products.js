@@ -12,7 +12,7 @@ window.customElements.define('request-form', Form);
 
 const $ = document;
 const container = $.getElementById('container');
-
+const requestBtns = $.querySelectorAll('.request-btn');
 
 const removeFilter = () => {
     container.style.filter = 'none';
@@ -93,6 +93,13 @@ const moveToSection = () => {
     }
 }
 
+const goToRequestForm = () => {
+    $.documentElement.scrollTo({
+        top: 3500,
+        behavior: 'smooth'
+    })
+}
+
 window.addEventListener('load', () => {
     setLines();
     moveToSection();
@@ -101,4 +108,10 @@ window.addEventListener('load', () => {
 
 window.addEventListener('scroll', () => {
     setLines();
+})
+
+requestBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        goToRequestForm();
+    })
 })

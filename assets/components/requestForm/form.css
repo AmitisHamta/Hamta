@@ -95,11 +95,21 @@
     background-color: #fffafa;
 }
 
-#request-form small {
+.msg {
     font-size: 12px;
     text-align: start;
     width: 77%;
+    display: none;
+}
+
+.error {
+    display: inline;
     color: tomato;
+}
+
+.success {
+    display: inline;
+    color: #106ea5;
 }
 
 .form-floating {
