@@ -184,7 +184,7 @@ a {
 .product-title {
     position: relative;
     font-size: 35px;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 .product-title .underline {
@@ -264,6 +264,7 @@ a {
     align-items: center;
     justify-content: center;
     direction: rtl;
+    transition: height 0.2s;
 }
 
 #request-form {
@@ -278,7 +279,20 @@ a {
     padding: 20px;
     box-shadow: 0 0px 5px 0 #dc8501;
     margin: 10x;
+    z-index: 2;
     transition: all 0.2s;
+}
+
+#form-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-logo {
+    width: 100px;
+    height: 100px;
 }
 
 #request-inputs {
@@ -294,11 +308,10 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    width: 100%;
 }
 
 .input {
-    width: 50%;
-    height: 40px;
     outline: none;
     border: 1px solid #dc8501;
     border-radius: 10px;
@@ -315,11 +328,13 @@ a {
     color: #fffafa;
     cursor: pointer;
     font-size: 18px;
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(220,133,1,1) 100%);
     transition: all 0.2s;
 }
 
 #request-btn:hover {
-    color: #333;
+    /* color: #333; */
     background-color: #fffafa;
 }
 
@@ -327,4 +342,106 @@ a {
     font-size: 12px;
     text-align: start;
     width: 77%;
+    color: tomato;
+}
+
+.form-floating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    direction: rtl;
+}
+
+.form-control {
+    font-size: 0.8rem;
+}
+
+.form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
+    min-height: 47px;
+    height: 47px;
+    padding-bottom: 1rem;
+}
+
+.form-floating>label {
+    right: 0;
+    padding: 0.7rem 0.7rem;
+    border: none;
+}
+
+.form-floating>.form-control-plaintext:focus, .form-floating>.form-control-plaintext:not(:placeholder-shown), 
+.form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+    padding-top: 2rem;
+    padding-bottom: 0.9rem;
+}
+
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, 
+.form-floating>.form-control:not(:placeholder-shown)~label, 
+.form-floating>.form-select~label {
+    transform: scale(.85) translateY(-.3rem) translateX(2.1rem);
+    font-size: 13px;
+}
+
+.form-control:focus {
+    border-color: #106ea5;
+}
+
+.form-floating>.form-control-plaintext~label::after, 
+.form-floating>.form-control:focus~label::after, 
+.form-floating>.form-control:not(:placeholder-shown) ~ label::after, .form-floating>.form-select~label::after {
+    background-color: transparent;
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+    direction: rtl;
+    background-color: #fffafa;
+    border: 1px solid #dc8501;
+    border-radius: 10px;
+    color: #333;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: #dc8501;
+    border-color: #dc8501;
+    color: #fffafa;
+}
+
+.btn:hover {
+    background-color: #dc8501;
+    border-color: #dc8501;
+    color: #fffafa;
+}
+
+.dropdown-menu {
+    border: 1px solid #dc8501;
+    text-align: right;
+    width: 100%;
+    padding: 5px;
+}
+
+.dropdown-menu li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    border-radius: 4px;
+    padding: 4px 7px;
+    color: #333;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #dc8501;
+    color: #fffafa;
 }
