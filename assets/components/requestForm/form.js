@@ -62,7 +62,7 @@ class Form extends HTMLElement {
         const items = this.shadowRoot.querySelectorAll('.dropdown-item');
         const submitBtn = this.shadowRoot.getElementById('request-btn');
 
-        productBtn.addEventListener('focus', () => {
+        productBtn.addEventListener('click', () => {
             this.showMenu();
         })
 
@@ -81,7 +81,7 @@ class Form extends HTMLElement {
     showMenu () {
         const menu = this.shadowRoot.querySelector('.dropdown-menu');
 
-        menu.classList.add('show');
+        menu.classList.toggle('show');
     }
 
     hideMenu () {
@@ -99,12 +99,17 @@ class Form extends HTMLElement {
 
     checkInfo () {
         const inputs = this.shadowRoot.querySelectorAll('.input');
+        const menuBtn = this.shadowRoot.getElementById('drop-btn');
 
         inputs.forEach(input => {
             if (!input.value) {
                 this.showErrorMsg("* لطفا اطلاعات رو تکمیل کنید")
             }else {
-                this.showSuccessMsg("* به زودی با شما تماس خواهیم گرفت")
+                if (menuBtn.textContent.includes('محصول')){
+                    this.showErrorMsg('* لطفا محصول مورد نظر را انتخاب نمایید')
+                }else {
+                    this.showSuccessMsg("* به زودی با شما تماس خواهیم گرفت")
+                }
             }
         })
     }
@@ -117,7 +122,7 @@ class Form extends HTMLElement {
 
         setTimeout(() => {
             msg.classList.remove('error');
-        }, 3000);
+        }, 5000);
     }
 
     showSuccessMsg (message) {
@@ -128,7 +133,7 @@ class Form extends HTMLElement {
 
         setTimeout(() => {
             msg.classList.remove('success');
-        }, 3000);
+        }, 5000);
     }
 }
 

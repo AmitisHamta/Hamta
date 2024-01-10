@@ -22,6 +22,7 @@
     justify-content: center;
     direction: rtl;
     transition: height 0.2s;
+    background-color: #fffafa;
 }
 
 #request-form {

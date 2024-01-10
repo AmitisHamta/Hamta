@@ -22,7 +22,7 @@ template.innerHTML = `
                         </p>
                         <p>
                             <i class="bi bi-geo-alt-fill"></i>
-                            آدرس: خیابان میزاری شیرازی، کوچه شهدا، پلاک 23،طبقه پنجم، واحد 11
+                            آدرس: خیابان میزاری شیرازی، کوچه شهدا، پلاک 23، طبقه پنجم، واحد 11
                         </p>
                         <div id="social-btns-list">
                             <button class="social-btns">

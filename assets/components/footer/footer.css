@@ -12,6 +12,7 @@ a {
 .wave-bg {
     width: 100%;
     height: auto;
+    margin-bottom: -10px;
 }
   
 .wave-bg img {
@@ -22,14 +23,14 @@ a {
 #footer {
     width: 100%;
     height: auto;
-    background-color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
+    background-color: transparent;
+}
   
-  #footer-content {
+#footer-content {
     width: 100%;
     height: 100%;
     display: flex;
@@ -38,8 +39,9 @@ a {
     flex-direction: column;
     gap: 20px;
     padding: 50px 200px;
+    background-color: var(--blue);
     color: #fffafa;
-  }
+}
   
   #footer-content hr {
     width: 100%;
@@ -134,7 +136,7 @@ a {
   .social-btns {
     outline: none;
     border: none;
-    border-radius: 50%;
+    border-radius: 10px;
     height: 40px;
     width: 40px;
     color: #fffafa;

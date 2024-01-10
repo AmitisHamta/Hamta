@@ -4,7 +4,6 @@ const setSwiper = () => {
     const banksSwiper = new Swiper(".banks-swiper", {
         loop: true,
         spaceBetween: 100,
-        // centeredSlides: true,
         slidesPerView: 5,
         speed: 1000,
         freeMode: true,

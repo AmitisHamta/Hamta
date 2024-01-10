@@ -1,10 +1,10 @@
 html, body {
     width: 100%;
     height: auto;
+    font-family: 'Vazirmatn', sans-serif;
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: var(--blue) var(--theme);
-    background-color: var(--theme);
     overflow-x: hidden;
 }
 
@@ -40,18 +40,13 @@ html, body {
   src: url(../fonts/woff/IRANSansX-Regular.woff);
 }
 
-@font-face {
-    font-family: iransans-black;
-    src: url(../fonts/woff/IRANSansX-Black.woff);
-}
-
 #container {
     width: 100%;
     height: 100%;
     background-color: var(--theme);
     color: var(--color);
+    overflow: hidden;
     filter: blur(5px);
-    /* background-color: #106ea5; */
 }
 
 a {
@@ -65,7 +60,6 @@ a {
     align-items: center;
     justify-content: center;
     margin-top: 18vh;
-    background-color: #fffafa;
 }
 
 #page-title h1 {
@@ -117,147 +111,72 @@ a {
     }
 }
 
-.wave-bg {
+#cashless-container {
     width: 100%;
-    height: auto;
-}
-
-.wave-bg img {
-    width: 100%;
-    height: auto;
-}
-
-#products {
-    width: 100%;
-    height: auto;
-    margin-top: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px 150px;
-    color: #fffafa;
-    background: rgb(16,110,165);
-    background: linear-gradient(180deg, rgba(16,110,165,1) 0%, rgba(40,147,209,1) 50%, rgba(16,110,165,1) 100%);
 }
 
 #products-list {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 50px;
-    direction: rtl;
+    flex-wrap: wrap;
 }
 
 .product {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.img-container {
-    width: 35%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    position: relative;
-}
-
-.img-container img {
-    width: 100%;
-    height: 100%;
-}
-
-.product-details {
+    width: 25%;
+    background-color: #d3d3d3;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 20px;
-    letter-spacing: 0.5px;
-    width: 60%;
-    position: relative;
-} 
-
-.product-title {
-    position: relative;
-    font-size: 35px;
-    padding-bottom: 8px;
+    gap: 10px;
+    padding: 20px;
+    direction: rtl;
+    border: 1px solid transparent;
+    border-radius: 10px;
 }
 
-.product-title .underline {
-    border: 2px solid var(--orange);
-}
-
-.product-description {
-    text-align: justify;
-    font-size: 15px;
-    line-height: 27px;
-}
-
-.product-description span {
-    font-family: iransans-black;
-}
-
-.request-btn {
-    width: 130px;
-    height: 40px;
-    background-color: var(--orange);
-    outline: none;
-    border: 1px solid var(--orange);
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    z-index: 2;
-    color: #fffafa;
-    transition: all 0.2s;
-}
-
-.request-btn a {
-    color: #fffafa;
-}
-
-.arrow-btn {
-    outline: none;
-    border: 1px solid #dc8501;
-    background-color: #dc8501;
-    color: #fffafa;
-    height: 40px;
-    cursor: pointer;
+.img-container {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-    z-index: 1;
-    font-size: 20px;
-    padding: 5px 7px 0px 7px;
-    border-radius: 50% 0% 0% 50%;
-    position: absolute;
-    right: 10%;
-    bottom: 0px;
-    z-index: 1;
-    transition: all 0.2s;
 }
 
-.request-btn:hover {
-    border-radius: 0px 20px 20px 0px;
+.img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.request-btn:hover ~ .arrow-btn {
-    animation: swipeLeft 0.2s linear;
-    right: 13.8%;
+.product-details {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
-@keyframes swipeLeft {
-    from {
-      right: 10%;
-    }
-    to {
-      right: 13.8%;
-    }
+.details-btn {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    background-color: #dc8501;
+    border: 1px solid #dc8501;
+    border-radius: 20px;
+    color: #fffafa;
+    cursor: pointer;
 }
 
+.details-btn a {
+    color: #fffafa;
+}
