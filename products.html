@@ -173,46 +173,7 @@
         <div class="wave-bg" style="transform: rotate(180deg); margin-top: -15px;">
             <img src="assets/Images/wave-haikei (3).svg" alt="">
         </div>
-        <div id="request-container">
-            <form id="request-form">
-                <div id="form-title">
-                    <img src="assets/Images/HamtaLogo.png" alt="" id="form-logo">
-                    <h1 id="request-title">درخواست محصول</h1>
-                </div>
-                <div id="request-inputs">
-                    <div class="inputs">
-                        <div class="form-floating">
-                            <input type="text" class="input form-control" id="name" placeholder="نام">
-                            <label for="name">نام</label>
-                        </div>
-                        <div class="form-floating">
-                            <input type="text" class="input form-control" id="lastname" placeholder="نام خانوادگی">
-                            <label for="lastname">نام خانوادگی</label>
-                        </div>
-                    </div>
-                    <div class="inputs">
-                        <div class="form-floating">
-                            <input type="text" placeholder="شماره تلفن" class="input form-control" id="phone">
-                            <label for="phone">شماره تلفن</label>
-                        </div>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                محصول
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item">کش لس</a></li>
-                              <li><a class="dropdown-item">کارتخوان</a></li>
-                              <li><a class="dropdown-item">خودپرداز</a></li>
-                              <li><a class="dropdown-item">ملزومات بانکی</a></li>
-                              <li><a class="dropdown-item">صندوق فروشگاهی</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <button id="request-btn">ثبت درخواست</button>
-                <small> * لطفا اطلاعات رو تکمیل کنید</small>
-            </form>
-        </div>
+        <request-form></request-form>
         <site-footer></site-footer>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
