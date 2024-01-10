@@ -95,7 +95,7 @@ const moveToSection = () => {
 
 const goToRequestForm = () => {
     $.documentElement.scrollTo({
-        top: 3500,
+        top: 3800,
         behavior: 'smooth'
     })
 }

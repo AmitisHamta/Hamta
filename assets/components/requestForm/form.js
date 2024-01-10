@@ -117,7 +117,7 @@ class Form extends HTMLElement {
 
         setTimeout(() => {
             msg.classList.remove('error');
-        }, 2000);
+        }, 3000);
     }
 
     showSuccessMsg (message) {
@@ -128,7 +128,7 @@ class Form extends HTMLElement {
 
         setTimeout(() => {
             msg.classList.remove('success');
-        }, 2000);
+        }, 3000);
     }
 }
 
