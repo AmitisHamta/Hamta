@@ -63,7 +63,7 @@ template.innerHTML = `
                                     <a href="about.html">درباره ما</a>
                                 </li>
                                 <li>
-                                    <a href="#service">خدمات</a>
+                                    <a href="service.html">خدمات</a>
                                 </li>
                                 <li>
                                     <a href="products.html">محصولات</a>

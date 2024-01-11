@@ -22,7 +22,7 @@ template.innerHTML = `
                         <div class="underline display-none"></div>
                     </button>
                     <button class="nav-btn">
-                        <a href="#service">خدمات</a>
+                        <a href="service.html">خدمات</a>
                         <div class="underline display-none"></div>
                     </button>
                     <button class="nav-btn" id="products-btn">
@@ -32,27 +32,27 @@ template.innerHTML = `
                             <div class="list-container">
                                 <ul class="products-list">
                                     <li>
-                                        <a href="products.html#cashless">کش لس</a>
+                                        <a href="product.html#cashless">کش لس</a>
                                         <div class="underline"></div>
                                     </li>
                                     
                                     <li>
-                                        <a href="products.html#pos">کارتخوان</a>
+                                        <a href="product.html#pos">کارتخوان</a>
                                         <div class="underline"></div>
                                     </li>
                                     
                                     <li>
-                                        <a href="products.html#atm">خودپرداز</a>
+                                        <a href="product.html#atm">خودپرداز</a>
                                         <div class="underline"></div>
                                     </li>
 
                                     <li>
-                                        <a href="products.html#essentials">ملزومات بانکی</a>
+                                        <a href="product.html#others">ملزومات بانکی</a>
                                         <div class="underline"></div>
                                     </li>
                                     
                                     <li>
-                                        <a href="products.html#cashbox">صندوق فروشگاهی</a>
+                                        <a href="product.html#cashbox">صندوق فروشگاهی</a>
                                     </li>
                                 </ul>
                             </div>

@@ -85,7 +85,7 @@ const moveToSection = () => {
             top: 2120,
             behavior: 'smooth'
         })
-    }else if (location.hash.includes('essentials')) {
+    }else if (location.hash.includes('others')) {
         $.documentElement.scrollTo({
             top: 2800,
             behavior: 'smooth'

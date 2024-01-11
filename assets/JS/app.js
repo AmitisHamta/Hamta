@@ -104,12 +104,6 @@ window.addEventListener('load', () => {
     setLines();
 })
 
-window.addEventListener('DOMContentLoaded', () => {
-    // setLines();
-    // setBoxesAnimation();
-    // showMainTexts();
-})
-
 window.addEventListener('scroll', () => {
     setLines();
 })
