@@ -21,7 +21,7 @@ const removeFilter = () => {
 const setLines = () => {
     const underlines = $.querySelectorAll('.service-title .underline');
     
-    if ($.documentElement.scrollTop >= 450) {
+    if ($.documentElement.scrollTop >= 320) {
         underlines[1].classList.remove('exit-underline');
         underlines[1].classList.add('show-underline');
     }else {
@@ -29,7 +29,7 @@ const setLines = () => {
         underlines[1].classList.add('exit-underline');
     }
 
-    if ($.documentElement.scrollTop >= 1200) {
+    if ($.documentElement.scrollTop >= 950) {
         underlines[2].classList.remove('exit-underline');
         underlines[2].classList.add('show-underline');
     }else {

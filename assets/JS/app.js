@@ -56,7 +56,7 @@ const setLines = () => {
     const serviceRight = $.querySelectorAll(`#service-content .service-info .rightline`);
     const serviceLeft = $.querySelectorAll(`#service-content .service-info .leftline`);
 
-    if ($.documentElement.scrollTop >= 1450) {
+    if ($.documentElement.scrollTop >= 1700) {
         serviceRight[0].classList.remove('exit-rightline');
         serviceRight[0].classList.add('show-rightline');
         serviceRight[0].classList.add('height-100')
@@ -66,7 +66,7 @@ const setLines = () => {
         serviceRight[0].classList.remove('height-100')
     }
 
-    if ($.documentElement.scrollTop >= 1800) {
+    if ($.documentElement.scrollTop >= 2100) {
         serviceRight[1].classList.remove('exit-rightline');
         serviceRight[1].classList.add('show-rightline');
         serviceRight[1].classList.add('height-100')
@@ -76,7 +76,7 @@ const setLines = () => {
         serviceRight[1].classList.add('height-100')
     }
 
-    if ($.documentElement.scrollTop >= 1650) {
+    if ($.documentElement.scrollTop >= 1900) {
         serviceLeft[0].classList.remove('exit-leftline');
         serviceLeft[0].classList.add('show-leftline');
         serviceLeft[0].classList.add('height-100')
@@ -84,16 +84,6 @@ const setLines = () => {
         serviceLeft[0].classList.remove('show-leftline');
         serviceLeft[0].classList.add('exit-leftline');
         serviceLeft[0].classList.remove('height-100')
-    }
-
-    if ($.documentElement.scrollTop >= 2000) {
-        serviceLeft[1].classList.remove('exit-leftline');
-        serviceLeft[1].classList.add('show-leftline');
-        serviceLeft[1].classList.add('height-100')
-    }else {
-        serviceLeft[1].classList.remove('show-leftline');
-        serviceLeft[1].classList.add('exit-leftline');
-        serviceLeft[1].classList.remove('height-100')
     }
 }
 

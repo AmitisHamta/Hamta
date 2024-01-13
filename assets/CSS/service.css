@@ -133,9 +133,8 @@ a {
 
 #page-description {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     width: 68%;
-    /* background-color: #d3d3d3; */
     border-radius: 20px 50px;
     padding: 20px;
 }
