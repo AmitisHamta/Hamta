@@ -144,6 +144,11 @@ a {
     font-size: 20px;
     padding-top: 2px;
     cursor: pointer;
+    transition: box-shadow 0.1s;
+  }
+
+  .social-btns:hover {
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
   }
   
   #footer-copyright {

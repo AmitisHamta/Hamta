@@ -175,7 +175,7 @@ class Form extends HTMLElement {
             const list = this.shadowRoot.querySelector('.dropdown-menu');
 
             productBtn.textContent = 'خدمت';
-            formTitle.textContent = 'درخواست خدمت';
+            formTitle.textContent = 'درخواست خدمات';
             list.innerHTML = '';
             list.insertAdjacentHTML(`beforeend`, `
                 <li><a class="dropdown-item">خدمات شتابی</a></li>

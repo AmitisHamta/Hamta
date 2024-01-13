@@ -4,6 +4,7 @@ const $ = document;
 const template = $.createElement('template');
 template.innerHTML = `
 <link rel="stylesheet" href="assets/components/header/header.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <header id="header" class="animate__animated animate__fadeInDown">
             <nav id="navbar">
                 <a id="header-logo" href="index.html">
