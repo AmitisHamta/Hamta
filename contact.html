@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/86ec138018.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/contact.css">
+    <link rel="shortcut icon" href="assets/Images/HamtaLogo.png" type="image/x-icon">
+    <title>Contact | Hamta</title>
+</head>
+<body>
+    <site-loader></site-loader>
+    <div id="container">
+        <site-header></site-header>
+        <div id="page-title">
+            <h1 id="title">
+                ارتباط با ما
+                <div class="underline show-underline"></div>
+            </h1>
+        </div>
+        <div id="contact-container">
+            <div id="contact">
+                <form id="contact-form">
+                    <h1>با ما در ارتباط باشید</h1>
+                    <p>پیامی کوتاه ارسال کنید</p>
+                    <div class="inputs-container">
+                        <div class="inputs">
+                            <input type="text" placeholder="آمیتیس" id="name" class="input">
+                            <label for="name">نام</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" placeholder="همتا" id="lastname" class="input">
+                            <label for="lastname">نام خانوادگی</label>
+                        </div>
+                    </div>
+                    <div class="inputs-container">
+                        <div class="inputs">
+                            <input type="text" placeholder="980912+" id="lastname" class="input">
+                            <label for="lastname">شماره تلفن</label>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                انتخاب
+                            </button>
+                            <label for="drop-btn">موضوع</label>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item">کش لس</a></li>
+                              <li><a class="dropdown-item">کارتخوان</a></li>
+                              <li><a class="dropdown-item">خودپرداز</a></li>
+                              <li><a class="dropdown-item">ملزومات بانکی</a></li>
+                              <li><a class="dropdown-item">صندوق فروشگاهی</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="checkBoxes">
+                        <div class="form-check form-check-reverse">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="agency">
+                            <label class="form-check-label" for="agency" id="agency-label">
+                                درخواست نمایندگی
+                            </label>
+                        </div>
+                        <div class="form-check form-check-reverse">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pos-customer">
+                            <label class="form-check-label" for="pos-customer" id="pos-customer-label">
+                                POS
+                            </label>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <textarea name="request-msg" id="msg" cols="30" rows="5" placeholder="پیام متنی"></textarea>
+                        <label for="request-msg">پیام</label>
+                    </div>
+                    <button id="submit-btn">ارسال پیام</button>
+                </form>
+                <div id="contact-info">
+                    <div class="contact-section">
+                        <h1>با ما در ارتباط باشید</h1>
+                        <p>
+                            عموم افراد حاضر در این شرکت از میان فعالان حوزه پرداخت های الکترونیکی بویژه در زمینه POS و 
+                            ATM و ... و تعدادی از مدیران،کارشناسان و صاحب نظران شاغل و بازنشسته در حوزه های مالی و بانکی می باشند.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="contact-section">
+                        <h1>آدرس</h1>
+                        <div class="info">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p>
+                                خیابان میزاری شیرازی، کوچه شهدا، پلاک 23، طبقه پنجم، واحد 11
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="contact-section">
+                        <h1>شماره های تماس</h1>
+                        <div class="info">
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>
+                                9802158702+
+                            </p>
+                            <p>
+                                9802158702+
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="contact-section">
+                        <h1>شبکه های احتماعی</h1>
+                        <div class="info">
+                            <p>
+                                <i class="bi bi-globe2"></i>
+                                سایت
+                            </p>
+                            <p>
+                                <i class="bi bi-envelope"></i>
+                                ایمیل
+                            </p>
+                            <p>
+                                <i class="bi bi-instagram"></i>
+                                اینیستاگرام
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <site-footer></site-footer>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="assets/JS/contact.js"></script>
+    <script src="assets/Libraries/AOS.js"></script>
+</body>
+</html>

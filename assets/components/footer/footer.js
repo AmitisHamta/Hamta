@@ -68,6 +68,9 @@ template.innerHTML = `
                                 <li>
                                     <a href="products.html">محصولات</a>
                                 </li>
+                                <li>
+                                    <a href="contact.html">ارتباط با ما</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="footer-list">
@@ -79,13 +82,18 @@ template.innerHTML = `
                                     </a>
                                 </li>
                                 <li>
+                                    <a href="tel:+9802158702" target="_blank">
+                                        تلفن
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="mailto:info@hamtasb.com" target="_blank">
                                         ایمیل
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="tel:+9802158702" target="_blank">
-                                        تلفن
+                                    <a href="https://maps.app.goo.gl/SnUcEP8mfzfehgKDA" target="_blank">
+                                        آدرس
                                     </a>
                                 </li>
                                 <li>

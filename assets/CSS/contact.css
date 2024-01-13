@@ -1,0 +1,366 @@
+html, body {
+    width: 100%;
+    height: auto;
+    background-color: var(--theme);
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue) var(--theme);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iransans;
+}
+
+:root {
+    --theme: #fffafa;
+    --color: #333;
+    --orange: #dc8501;
+    --blue: #106ea5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--blue);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--theme);
+}
+
+@font-face {
+  font-family: iransans;
+  src: url(../fonts/woff/IRANSansX-Regular.woff);
+}
+
+@font-face {
+    font-family: iransans-black;
+    src: url(../fonts/woff/IRANSansX-Black.woff);
+}
+
+a {
+    text-decoration: none;
+    color: #fffafa;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme);
+    color: var(--color);
+    overflow: hidden;
+    filter: blur(5px);
+}
+
+.wave-bg {
+    width: 100%;
+    height: auto;
+}
+
+.wave-bg img {
+    width: 100%;
+    height: auto;
+}
+
+.underline {
+    width: 100%;
+    height: 1px;
+    background-color: var(--orange);
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+}
+
+.show-underline {
+    animation: showUnderline 0.6s ease-in-out;
+}
+  
+@keyframes showUnderline {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+  
+.exit-underline {
+    animation: exitUnderline 0.6s ease-in-out;
+}
+  
+@keyframes exitUnderline {
+    from {
+        width: 100%;
+    }
+  
+    to {
+        width: 0;
+    }
+}
+
+#page-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18vh;
+}
+
+#title {
+    font-size: 50px;
+    position: relative;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title .underline {
+    border: 2px solid var(--orange);
+}
+
+#contact-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 50px 150px;
+    direction: rtl;
+}
+
+#contact-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+#contact-form h1 {
+    font-size: 30px;
+}
+
+.inputs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    height: 47px;
+    outline: none;
+    border: 1px solid #dc8501;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fffafa;
+}
+
+.info::placeholder {
+    opacity: 0.75;
+}
+
+.dropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn {
+    width: 100%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+    direction: rtl;
+    background-color: #fffafa;
+    border: 1px solid #dc8501;
+    border-radius: 10px;
+    color: #333;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: #dc8501;
+    border-color: #dc8501;
+    color: #fffafa;
+}
+
+.btn:hover {
+    background-color: #dc8501;
+    border-color: #dc8501;
+    color: #fffafa;
+}
+
+.dropdown-menu {
+    border: 1px solid #dc8501;
+    text-align: right;
+    width: 100%;
+    padding: 5px;
+    margin-top: 83px;
+}
+
+.dropdown-menu li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    border-radius: 4px;
+    padding: 4px 7px;
+    color: #333;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #dc8501;
+    color: #fffafa;
+}
+
+.checkBoxes {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+    display: none;
+}
+
+.form-check-input, .form-check-label {
+    cursor: pointer;
+}
+
+.display-flex {
+    display: flex;
+}
+
+#msg {
+    width: 100%;
+    outline: none;
+    border: 1px solid #dc8501;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fffafa;
+}
+
+#submit-btn {
+    width: 30%;
+    height: 40px;
+    outline: none;
+    border: 1px solid #dc8501;
+    border-radius: 10px;
+    background-color: #dc8501;
+    color: #fffafa;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+#submit-btn:hover {
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
+}
+
+#contact-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* gap: 10px; */
+    direction: rtl;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-section h1 {
+    font-size: 30px;
+}
+
+#contact-info hr {
+    width: 100%;
+    opacity: 0.75;
+    background-color: #dc8501;
+    color: #dc8501;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-section i {
+    font-size: 25px;
+}
+
+.bi-geo-alt-fill {
+    color: red;
+}
+
+.bi-telephone-fill {
+    color: rgb(87, 167, 87);
+}
+
+.info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.info p i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fffafa;
+    cursor: pointer;
+    background-color: #dc8501;
+    transition: box-shadow 0.2s;
+}
+
+.info p i:hover {
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
+}

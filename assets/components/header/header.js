@@ -61,7 +61,7 @@ template.innerHTML = `
                         </div>
                     </button>
                     <button class="nav-btn">
-                        <a href="#footer">ارتباط با ما</a>
+                        <a href="contact.html">ارتباط با ما</a>
                         <div class="underline display-none"></div>
                     </button>
                 </div>

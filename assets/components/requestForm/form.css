@@ -88,13 +88,11 @@
     color: #fffafa;
     cursor: pointer;
     font-size: 18px;
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(220,133,1,1) 100%);
     transition: all 0.2s;
 }
 
 #request-btn:hover {
-    background-color: #fffafa;
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
 }
 
 .msg {
