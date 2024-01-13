@@ -40,6 +40,11 @@ html, body {
   src: url(../fonts/woff/IRANSansX-Regular.woff);
 }
 
+@font-face {
+    font-family: iransans-black;
+    src: url(../fonts/woff/IRANSansX-Black.woff);
+}
+
 #container {
     width: 100%;
     height: 100%;
@@ -106,6 +111,7 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 15px;
     margin-top: 18vh;
     background-color: #fffafa;
     text-align: center;
@@ -125,6 +131,19 @@ a {
     border: 2px solid #dc8501;
 }
 
+#page-description {
+    text-align: center;
+    font-size: 20px;
+    width: 68%;
+    /* background-color: #d3d3d3; */
+    border-radius: 20px 50px;
+    padding: 20px;
+}
+
+#page-description span {
+    font-family: iransans-black;
+}
+
 #services {
     width: 100%;
     height: auto;
@@ -132,7 +151,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 150px;
+    padding: 0px 150px;
     color: #fffafa;
     background: rgb(16,110,165);
     background: linear-gradient(180deg, rgba(16,110,165,1) 0%, rgba(40,147,209,1) 50%, rgba(16,110,165,1) 100%);
@@ -146,14 +165,8 @@ a {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 50px 150px;
+    padding: 0px 150px;
     direction: rtl;
-}
-
-#page-description {
-    text-align: center;
-    width: 100%;
-    font-size: 20px;
 }
 
 .service {
@@ -205,6 +218,11 @@ a {
     line-height: 27px;
 }
 
+.service-description i {
+    color: var(--orange);
+    font-size: 17px;
+}
+
 .request-btn {
     width: 130px;
     height: 40px;
@@ -251,7 +269,7 @@ a {
 
 .request-btn:hover ~ .arrow-btn {
     animation: swipeLeft 0.2s linear;
-    right: 17%;
+    right: 17.3%;
 }
 
 @keyframes swipeLeft {
@@ -259,6 +277,6 @@ a {
       right: 10%;
     }
     to {
-      right: 17%;
+      right: 17.3%;
     }
 }
