@@ -81,7 +81,7 @@ const moveToSection = () => {
         })
     }else if (location.hash.includes('experience')) {
         $.documentElement.scrollTo({
-            top: 2100,
+            top: 2150,
             behavior: 'smooth'
         })
     }else if (location.hash.includes('facility')) {
