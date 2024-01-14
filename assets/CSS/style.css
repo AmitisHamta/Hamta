@@ -441,7 +441,7 @@ a {
   border-radius: 20px;
   background-color: #dc8501;
   color: #fffafa;
-  padding: 0 8px;
+  padding: 0 13px;
   height: 35px;
   cursor: pointer;
   display: flex;
@@ -471,7 +471,7 @@ a {
 
 .about-btn:hover ~ .about-arrow-btn {
   animation: swipeLeft 0.2s linear;
-  right: 61%;
+  right: 66%;
 }
 
 .info {
@@ -492,7 +492,7 @@ a {
     right: 50%;
   }
   to {
-    right: 61%;
+    right: 66%;
   }
 }
 
