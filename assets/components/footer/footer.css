@@ -43,33 +43,33 @@ a {
     color: #fffafa;
 }
   
-  #footer-content hr {
+#footer-content hr {
     width: 100%;
     margin: auto;
     opacity: 0.75;
-  }
+}
   
-  #footer-content > h1 {
+#footer-content > h1 {
     font-size: 40px;
-  }
+}
   
-  #footer-info {
+#footer-info {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row-reverse;
-  }
+}
   
-  #footer-lists {
+#footer-lists {
     display: flex;
     justify-content: space-around;
     width: 40%;
     flex-direction: row-reverse;
     align-items: flex-start;
-  }
+}
   
-  .footer-list {
+.footer-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -77,37 +77,37 @@ a {
     gap: 20px;
     direction: rtl;
     width: 50%;
-  }
+}
   
-  .footer-description {
+.footer-description {
     gap: 50px;
-  }
+}
   
-  .footer-list p {
+.footer-list p {
     width: 90%;
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 15px;
-  }
+}
   
-  .footer-list p i {
+.footer-list p i {
     border: none;
     color: crimson;
     font-size: 20px;
-  }
+}
   
-  .footer-list a {
+.footer-list a {
     text-decoration: none;
     color: #fffafa;
     background-color: transparent;
-  }
+}
   
-  .footer-list h3 {
+.footer-list h3 {
     font-size: 25px;
-  }
+}
   
-  .footer-list ul {
+.footer-list ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -115,24 +115,24 @@ a {
     gap: 15px;
     font-size: 18px;
     margin-right: 20px;
-  }
+}
   
-  .footer-list ul a {
+.footer-list ul a {
     transition: color 0.2s;
-  }
+}
   
-  .footer-list ul a:hover {
+.footer-list ul a:hover {
     color: var(--orange);
-  }
+}
   
-  #social-btns-list {
+#social-btns-list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-  }
+}
   
-  .social-btns {
+.social-btns {
     outline: none;
     border: none;
     border-radius: 10px;
@@ -144,13 +144,13 @@ a {
     padding-top: 2px;
     cursor: pointer;
     transition: box-shadow 0.1s;
-  }
+}
 
-  .social-btns:hover {
+.social-btns:hover {
     box-shadow: 0 0 0 0.2rem #dc8501a3;
-  }
+}
   
-  #footer-copyright {
+#footer-copyright {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -158,8 +158,8 @@ a {
     direction: rtl;
     font-size: 10px;
     padding: 0 35px;
-  }
+}
   
-  #footer-copyright span {
+#footer-copyright span {
     color: #dc8501;
-  }
+}
