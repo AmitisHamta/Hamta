@@ -140,8 +140,9 @@ a {
     align-items: flex-start;
     justify-content: space-around;
     flex-direction: row-reverse;
-    padding: 50px 150px;
+    margin: 50px 150px;
     direction: rtl;
+    /* border: 1px solid #106ea5; */
 }
 
 #contact-form {
@@ -178,14 +179,27 @@ a {
     width: 100%;
     height: 47px;
     outline: none;
-    border: 1px solid #dc8501;
+    border: 0.5px solid #dc8501;
     border-radius: 10px;
     padding: 10px;
     background-color: #fffafa;
 }
 
 .info::placeholder {
-    opacity: 0.75;
+    opacity: 0.5;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 5px;
+}
+
+label i {
+    color: tomato;
+    font-size: 10px;
 }
 
 .dropdown {
@@ -229,6 +243,7 @@ a {
     width: 100%;
     padding: 5px;
     margin-top: 83px;
+    border-radius: 10px;
 }
 
 .dropdown-menu li {
@@ -257,6 +272,16 @@ a {
     gap: 10px;
     padding-top: 10px;
     display: none;
+}
+
+.form-check-input:checked {
+    background-color: #106ea5;
+    border-color: #106ea5;
+}
+
+.form-check-input:focus {
+    border-color: #106ea5;
+    box-shadow: 0 0 0 0.25rem #106ea579;
 }
 
 .form-check-input, .form-check-label {
@@ -299,7 +324,6 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    /* gap: 10px; */
     direction: rtl;
 }
 
@@ -308,7 +332,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
 }
 
 .contact-section h1 {
@@ -363,4 +387,77 @@ a {
 
 .info p i:hover {
     box-shadow: 0 0 0 0.2rem #dc8501a3;
+}
+
+.info:nth-(2) {
+    padding-top: 5px;
+}
+
+#address, .phone-number {
+    padding-top: 15px;
+}
+
+#address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+
+.centerline {
+    height: 70%;
+    background-color: var(--orange);
+    position: absolute;
+    left: 50%;
+    border: 2px solid #dc8501;
+    border-radius: 20px;
+}
+
+.show-centerline {
+    animation: showCenterline 0.6s ease-in-out;
+}
+  
+@keyframes showCenterline {
+    from {
+        height: 0;
+    }
+    to {
+        height: 45%;
+    }
+}
+  
+.exit-centerline {
+    animation: exitCenterline 0.6s ease-in-out;
+}
+  
+@keyframes exitCenterline {
+    from {
+        height: 45%;
+    }
+  
+    to {
+        height: 0;
+    }
+}
+
+.padding-top {
+    padding-top: 10px;
+}
+
+.noti-msg {
+    font-size: 12px;
+    text-align: start;
+    width: 77%;
+    display: none;
+}
+
+.error {
+    display: inline;
+    color: tomato;
+}
+
+.success {
+    display: inline;
+    color: #106ea5;
 }

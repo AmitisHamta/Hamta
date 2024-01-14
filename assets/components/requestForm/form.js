@@ -57,7 +57,7 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
                     </div>
                 </div>
                 <button id="request-btn">ثبت درخواست</button>
-                <small class="msg"> * لطفا اطلاعات رو تکمیل کنید</small>
+                <small class="msg"></small>
             </form>
         </div>
 `
@@ -117,10 +117,14 @@ class Form extends HTMLElement {
     checkInfo () {
         const inputs = this.shadowRoot.querySelectorAll('.input');
         const menuBtn = this.shadowRoot.getElementById('drop-btn');
+        const phoneInput = this.shadowRoot.getElementById('phone');
+        const phoneRegex = /((0?9)|(\+?989))\d{2}\W?\d{3}\W?\d{4}/g;
 
         inputs.forEach(input => {
             if (!input.value) {
                 this.showErrorMsg("* لطفا اطلاعات رو تکمیل کنید")
+            }else if (!phoneRegex.test(phoneInput.value)) {
+                this.showErrorMsg('* شماره موبایل صحیح نمیباشد');
             }else {
                 if (menuBtn.textContent.includes('محصول')){
                     this.showErrorMsg('* لطفا محصول مورد نظر را انتخاب نمایید')

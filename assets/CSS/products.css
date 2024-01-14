@@ -51,7 +51,7 @@ html, body {
     background-color: var(--theme);
     color: var(--color);
     filter: blur(5px);
-    /* background-color: #106ea5; */
+    background-color: #106ea5;
 }
 
 a {
@@ -136,6 +136,7 @@ a {
     justify-content: center;
     padding: 50px 150px;
     color: #fffafa;
+    position: relative;
     background: rgb(16,110,165);
     background: linear-gradient(180deg, rgba(16,110,165,1) 0%, rgba(40,147,209,1) 50%, rgba(16,110,165,1) 100%);
 }

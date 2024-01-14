@@ -46,7 +46,9 @@ a {
   #footer-content hr {
     width: 100%;
     margin: auto;
-    color: var(--orange);
+    color: #dc8501;
+    background-color: #dc8501;
+    opacity: 0.75;
   }
   
   #footer-content > h1 {

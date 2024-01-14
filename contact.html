@@ -27,33 +27,45 @@
             <div id="contact">
                 <form id="contact-form">
                     <h1>با ما در ارتباط باشید</h1>
-                    <p>پیامی کوتاه ارسال کنید</p>
+                    <p>پیامی ارسال کنید تا کارشناسان ما در اسرع وقت با شما تماس بگیرند</p>
                     <div class="inputs-container">
                         <div class="inputs">
                             <input type="text" placeholder="آمیتیس" id="name" class="input">
-                            <label for="name">نام</label>
+                            <label for="name">نام
+                                <i class="fa-solid fa-asterisk"></i>
+                            </label>
                         </div>
                         <div class="inputs">
                             <input type="text" placeholder="همتا" id="lastname" class="input">
-                            <label for="lastname">نام خانوادگی</label>
+                            <label for="lastname">نام خانوادگی
+                                <i class="fa-solid fa-asterisk"></i>
+                            </label>
                         </div>
                     </div>
                     <div class="inputs-container">
                         <div class="inputs">
-                            <input type="text" placeholder="980912+" id="lastname" class="input">
-                            <label for="lastname">شماره تلفن</label>
+                            <input type="text" placeholder="980912+" id="phone" class="input">
+                            <label for="phone">شماره تلفن
+                                <i class="fa-solid fa-asterisk"></i>
+                            </label>
                         </div>
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" id="drop-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 انتخاب
                             </button>
-                            <label for="drop-btn">موضوع</label>
+                            <label for="drop-btn">موضوع
+                                <i class="fa-solid fa-asterisk"></i>
+                            </label>
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item">کش لس</a></li>
                               <li><a class="dropdown-item">کارتخوان</a></li>
                               <li><a class="dropdown-item">خودپرداز</a></li>
                               <li><a class="dropdown-item">ملزومات بانکی</a></li>
                               <li><a class="dropdown-item">صندوق فروشگاهی</a></li>
+                              <li><a class="dropdown-item">خدمات شتابی</a></li>
+                              <li><a class="dropdown-item">خدمات شاپرکی</a></li>
+                              <li><a class="dropdown-item">گارانتی</a></li>
+                              <li><a class="dropdown-item">پشتیبانی و تعمیرات</a></li>
                             </ul>
                         </div>
                     </div>
@@ -67,16 +79,19 @@
                         <div class="form-check form-check-reverse">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="pos-customer">
                             <label class="form-check-label" for="pos-customer" id="pos-customer-label">
-                                POS
                             </label>
                         </div>
                     </div>
                     <div class="inputs">
-                        <textarea name="request-msg" id="msg" cols="30" rows="5" placeholder="پیام متنی"></textarea>
-                        <label for="request-msg">پیام</label>
+                        <textarea name="request-msg" id="msg" cols="30" rows="5" placeholder="پیام خود را بنویسید"></textarea>
+                        <label for="request-msg">پیام
+                            <i class="fa-solid fa-asterisk"></i>
+                        </label>
                     </div>
                     <button id="submit-btn">ارسال پیام</button>
+                    <small class="noti-msg"></small>
                 </form>
+                <div class="centerline show-centerline"></div>
                 <div id="contact-info">
                     <div class="contact-section">
                         <h1>با ما در ارتباط باشید</h1>
@@ -90,8 +105,9 @@
                         <h1>آدرس</h1>
                         <div class="info">
                             <i class="bi bi-geo-alt-fill"></i>
-                            <p>
-                                خیابان میزاری شیرازی، کوچه شهدا، پلاک 23، طبقه پنجم، واحد 11
+                            <p id="address">
+                                خیابان میزاری شیرازی، کوچه شهدا، پلاک 23، طبقه پنجم، واحد 11 <br>
+                                <span>کد پستی: 1586757516</span>
                             </p>
                         </div>
                     </div>
@@ -100,28 +116,34 @@
                         <h1>شماره های تماس</h1>
                         <div class="info">
                             <i class="bi bi-telephone-fill"></i>
-                            <p>
+                            <p class="phone-number">
                                 9802158702+
                             </p>
-                            <p>
+                            <p class="phone-number">
                                 9802158702+
                             </p>
                         </div>
                     </div>
                     <hr>
                     <div class="contact-section">
-                        <h1>شبکه های احتماعی</h1>
-                        <div class="info">
+                        <h1>شبکه های اجتماعی</h1>
+                        <div class="info padding-top">
                             <p>
-                                <i class="bi bi-globe2"></i>
+                                <a href="index.html" target="_blank" title="Website">
+                                    <i class="bi bi-globe2"></i>
+                                </a>
                                 سایت
                             </p>
                             <p>
-                                <i class="bi bi-envelope"></i>
+                                <a href="mailto:info@hamtasb.com" target="_blank" title="Email">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
                                 ایمیل
                             </p>
                             <p>
-                                <i class="bi bi-instagram"></i>
+                                <a href="https://www.instagram.com/hamta.psp" target="_blank" title="Instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
                                 اینیستاگرام
                             </p>
                         </div>

@@ -240,22 +240,22 @@ span {
 
 .show-centerline {
     animation: showCenterline 0.6s ease-in-out;
-  }
+}
   
-  @keyframes showCenterline {
+@keyframes showCenterline {
       from {
           height: 0;
       }
       to {
           height: 45%;
       }
-  }
-  
-  .exit-centerline {
+}
+
+.exit-centerline {
       animation: exitCenterline 0.6s ease-in-out;
-  }
+}
   
-  @keyframes exitCenterline {
+@keyframes exitCenterline {
       from {
           height: 45%;
       }
@@ -263,7 +263,7 @@ span {
       to {
           height: 0;
       }
-  }
+}
 
 .about-description .centerline {
     border: 2px solid var(--orange);

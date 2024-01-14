@@ -26,7 +26,7 @@ template.innerHTML = `
                         </p>
                         <div id="social-btns-list">
                             <button class="social-btns">
-                                <a href="" target="_blank" title="Website">
+                                <a href="index.html" target="_blank" title="Website">
                                     <i class="bi bi-globe2"></i>
                                 </a>
                             </button>
@@ -128,7 +128,16 @@ class Footer extends HTMLElement {
     }
 
     connectedCallback () {
+        window.addEventListener('DOMContentLoaded', () => {
+            this.checkPage()
+        })
+    }
 
+    checkPage () {
+        if (location.href.includes('products')) {
+            const waveBg = this.shadowRoot.querySelector('.wave-bg');
+            waveBg.style.display = 'none';
+        }
     }
 }
 
