@@ -389,10 +389,6 @@ label i {
     box-shadow: 0 0 0 0.2rem #dc8501a3;
 }
 
-.info:nth-(2) {
-    padding-top: 5px;
-}
-
 #address, .phone-number {
     padding-top: 15px;
 }
