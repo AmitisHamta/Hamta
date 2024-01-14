@@ -200,7 +200,7 @@ a {
   top: 100%;
   display: none;
   opacity: 0;
-  height: 29vh;
+  height: 28vh;
   width: 10vw;
   display: flex;
   align-items: center;
@@ -212,7 +212,7 @@ a {
 
 #header.moved .products-dropdown {
   width: 10vw;
-  height: 29vh;
+  height: 27vh;
 }
 
 .show-products{
