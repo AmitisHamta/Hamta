@@ -489,4 +489,8 @@ a {
   #header.moved #header-logo {
     width: 22%;
   }
+
+  #menu-container {
+    display: none;
+  }
 }
