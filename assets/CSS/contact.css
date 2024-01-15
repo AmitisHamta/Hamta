@@ -113,7 +113,7 @@ a {
 }
 
 #title {
-    font-size: 50px;
+    font-size: 3rem;
     position: relative;
     padding-bottom: 5px;
     display: flex;
@@ -155,7 +155,7 @@ a {
 }
 
 #contact-form h1 {
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .inputs-container {
@@ -199,7 +199,7 @@ label {
 
 label i {
     color: tomato;
-    font-size: 10px;
+    font-size: 0.63rem;
 }
 
 .dropdown {
@@ -310,7 +310,7 @@ label i {
     background-color: #dc8501;
     color: #fffafa;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1rem;
     transition: all 0.2s;
 }
 
@@ -336,7 +336,7 @@ label i {
 }
 
 .contact-section h1 {
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 #contact-info hr {
@@ -354,7 +354,7 @@ label i {
 }
 
 .contact-section i {
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .bi-geo-alt-fill {
@@ -442,7 +442,7 @@ label i {
 }
 
 .noti-msg {
-    font-size: 12px;
+    font-size: 0.75rem;
     text-align: start;
     width: 77%;
     display: none;

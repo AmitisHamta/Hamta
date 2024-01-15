@@ -80,7 +80,7 @@ a {
     background-color: transparent;
     padding: 7px 10px;
     font-family: 'Vazirmatn', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -187,7 +187,7 @@ a {
 }
 
 #header.moved .nav-btn {
-    font-size: 17px;
+    font-size: 1rem;
 }
 
 #header.moved #header-logo {
@@ -250,7 +250,7 @@ a {
   align-items: flex-start;
   justify-content: center;
   direction: rtl;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 .products-list a {
@@ -339,5 +339,5 @@ a {
 #header.moved .panel-btn {
   width: 100px;
   height: 35px;
-  font-size: 11px;
+  font-size: 0.69rem;
 }

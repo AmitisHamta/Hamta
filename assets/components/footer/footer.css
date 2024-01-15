@@ -50,7 +50,7 @@ a {
 }
   
 #footer-content > h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
   
 #footer-info {
@@ -88,13 +88,13 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 15px;
+  font-size: 1rem;
 }
   
 .footer-list p i {
   border: none;
   color: crimson;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
   
 .footer-list a {
@@ -104,7 +104,7 @@ a {
 }
   
 .footer-list h3 {
-  font-size: 25px;
+  font-size: 1.5rem;
 }
   
 .footer-list ul {
@@ -113,7 +113,7 @@ a {
   align-items: flex-start;
   justify-content: center;
   gap: 15px;
-  font-size: 18px;
+  font-size: 1rem;
   margin-right: 20px;
 }
   
@@ -140,7 +140,7 @@ a {
   width: 40px;
   color: #fffafa;
   background-color: var(--orange);
-  font-size: 20px;
+  font-size: 1.5rem;
   padding-top: 2px;
   cursor: pointer;
   transition: box-shadow 0.1s;
@@ -156,7 +156,7 @@ a {
   justify-content: space-between;
   width: 100%;
   direction: rtl;
-  font-size: 10px;
+  font-size: 0.63rem;
   padding: 0 35px;
 }
   

@@ -87,7 +87,7 @@
     background-color: #dc8501;
     color: #fffafa;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1rem;
     transition: all 0.2s;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .msg {
-    font-size: 12px;
+    font-size: 0.75rem;
     text-align: start;
     width: 77%;
     display: none;
@@ -146,7 +146,7 @@
 .form-floating>.form-control:not(:placeholder-shown)~label, 
 .form-floating>.form-select~label {
     transform: scale(.85) translateY(-.3rem) translateX(2.1rem);
-    font-size: 13px;
+    font-size: 0.82rem;
 }
 
 .form-control:focus {

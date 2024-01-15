@@ -107,7 +107,7 @@ a {
 }
 
 #display-text, #body-text {
-  width: 40%;
+  width: 41%;
   height: 30%;
   position: relative;
   display: flex;
@@ -156,7 +156,7 @@ a {
 
 #main-text {
   direction: rtl;
-  font-size: 70px;
+  font-size: 4.5rem;
   opacity: 0;
   padding-right: 20px;
 }
@@ -168,7 +168,7 @@ a {
 
 #body-text p {
   direction: rtl;
-  font-size: 23px;
+  font-size: 1.5rem;
   opacity: 0;
   padding-right: 20px;
 }
@@ -193,7 +193,7 @@ a {
   border: 1px solid var(--blue);
   border-radius: 100%;
   font-family: 'Vazirmatn', sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 #about {
@@ -219,7 +219,7 @@ a {
 }
 
 .section-title {
-  font-size: 30px;
+  font-size: 2rem;
   color: #fffafa;
   display: flex;
   flex-direction: column;
@@ -230,17 +230,17 @@ a {
 }
 
 .section-title p {
-  font-size: 17px;
+  font-size: 1rem;
   text-align: center;
 }
 
 .section-title b {
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 #about-content .section-title p {
   width: 80%;
-  font-size: 13.7px;
+  font-size: 0.85rem;
   letter-spacing: 0.7px;
 }
 
@@ -423,7 +423,7 @@ a {
 }
 
 .about-title {
-  font-size: 30px;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -457,7 +457,7 @@ a {
 }
 
 .about-arrow-btn {
-  font-size: 20px;
+  font-size: 1.5rem;
   padding: 5px 7px 0px 7px;
   border-radius: 50% 0% 0% 50%;
   position: absolute;
@@ -561,7 +561,7 @@ a {
 }
 
 #service-content .section-title p {
-  font-size: 17px;
+  font-size: 1rem;
   text-align: center;
   width: 80%;
   letter-spacing: 0.7px;
@@ -587,7 +587,7 @@ a {
 }
 
 .service-title {
-  font-size: 40px;
+  font-size: 2.5rem;
   position: relative;
   padding: 0 20px;
   display: flex;
@@ -630,7 +630,7 @@ a {
 
 #companies-content .section-title h1 {
   color: #333;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 #companies-body {
@@ -687,53 +687,4 @@ a {
 .wave-bg img {
   width: 100%;
   height: auto;
-}
-
-#certifications {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  height: auto;
-  padding: 50px;
-  padding-top: 100px;
-}
-
-#certifications .section-title h1 {
-  color: #333;
-  font-size: 40px;
-}
-
-#certifications-body {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.certification {
-  width: 15%;
-  height: 100%;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  transition: transform 0.3s;
-}
-
-.certification img {
-  width: 100%;
-  height: auto;
-  border: 1px solid transparent;
-  border-radius: 10px;
-}
-
-.certification:hover {
-  transform: scale(1.1) !important;
 }
