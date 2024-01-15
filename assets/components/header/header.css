@@ -336,8 +336,157 @@ a {
   }
 }
 
-#header.moved .panel-btn {
+#header.moved > #navbar > #navbar-buttons > .panel-btn {
   width: 100px;
   height: 35px;
   font-size: 0.69rem;
+}
+
+#menu-btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #333;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.2s, font-size 0.3s;
+}
+
+#menu-btn:hover {
+  color: #dc8501;
+}
+
+#header.moved #menu-btn {
+  font-size: 1.5rem;
+}
+
+.menu-list {
+  position: absolute;
+  background-color: #fffafa;
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  top: 0;
+  left: -98vw;
+}
+
+.menu-list ul {
+  list-style-type: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  direction: rtl;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.menu-list a {
+  color: #333;
+}
+
+.menu-list li {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+.menu-list .underline {
+  border: 1px solid #dc8501;
+  bottom: -5px;
+}
+
+.menu-list #navbar-buttons a {
+  color: #fffafa;
+  padding: 5px;
+  transition: color 0.2s;
+}
+
+.menu-list #navbar-buttons {
+  flex-direction: column;
+}
+
+.menu-list .panel-btn:hover a{
+  color: #333 !important;
+}
+
+.menu-list li:hover {
+  background-color: #dc8501;
+}
+
+.show-menu {
+  left: 0;
+  animation: swipe-right 0.5s ease-in-out;
+}
+
+.hide-menu {
+  left: -98vw;
+  animation: swipe-left 0.5s ease-in-out;
+}
+
+@keyframes swipe-right {
+  from {
+    left: -98vw;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes swipe-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -98vw;
+  }
+}
+
+#exit-btn {
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  color: crimson;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #navbar {
+    padding: 10px 20px;
+  }
+
+  #nav-list {
+    display: none;
+  }
+
+  #navbar > #navbar-buttons {
+    display: none;
+  }
+
+  #header-logo {
+    width: 30%;
+  }
+
+  #header.moved #header-logo {
+    width: 22%;
+  }
 }

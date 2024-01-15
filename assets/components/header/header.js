@@ -4,6 +4,7 @@ const $ = document;
 const template = $.createElement('template');
 template.innerHTML = `
 <link rel="stylesheet" href="assets/components/header/header.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <header id="header" class="animate__animated animate__fadeInDown">
             <nav id="navbar">
@@ -77,6 +78,55 @@ template.innerHTML = `
                         </a>
                     </button>
                 </div>
+                <div id="menu-container">
+                    <button id="menu-btn">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="menu-list">
+                        <ul>
+                            <li>
+                                <a href="index.html">صفحه اصلی</a>
+                                <div class="underline"></div>
+                            </li>
+                            
+                            <li>
+                                <a href="about.html">درباره ما</a>
+                                <div class="underline"></div>
+                            </li>
+                            
+                            <li>
+                                <a href="service.html">خدمات</a>
+                                <div class="underline"></div>
+                            </li>
+
+                            <li>
+                                <a href="products.html">محصولات</a>
+                                <div class="underline"></div>
+                            </li>
+                            
+                            <li>
+                                <a href="contact.html">ارتباط با ما</a>
+                                <div class="underline"></div>
+                            </li>
+                        </ul>
+                        <div id="navbar-buttons">
+                            <button class="panel-btn bg-blue">
+                                <a href="https://plus.hamtabank.com" target="_blank">
+                                    پنل نمایندگان
+                                </a>
+                            </button>
+                            <button class="panel-btn">
+                                <a href="https://plus.hamtabank.com/agent-registration/new" target="_blank">
+                                    ثبت نام نماینده
+                                </a>
+                            </button>
+                        </div>
+                        <button id="exit-btn">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    
+                </div>
             </nav>
         </header>
 `
@@ -97,6 +147,8 @@ class Header extends HTMLElement {
         const productsDropdown = this.shadowRoot.querySelector('.products-dropdown');
         const dropdownBox = this.shadowRoot.querySelector('.dropdown-box');
         const productsList = this.shadowRoot.querySelector('.list-container');
+        const menuBtn = this.shadowRoot.getElementById('menu-btn');
+        const exitBtn = this.shadowRoot.getElementById('exit-btn');
 
         window.addEventListener('DOMContentLoaded', () => {
             this.resizeHeader(header);
@@ -124,6 +176,14 @@ class Header extends HTMLElement {
         
         productsBtn.addEventListener('mouseleave', () => {
             this.hideProductsMenu(productsDropdown);
+        })
+
+        menuBtn.addEventListener('click', () => {
+            this.showMenu();
+        })
+
+        exitBtn.addEventListener('click', () => {
+            this.exitMenu();
         })
     }
 
@@ -171,6 +231,36 @@ class Header extends HTMLElement {
     hideProductsMenu (productsDropdown) {
         productsDropdown.classList.remove('show-products');
         productsDropdown.classList.add('hide-products');
+    }
+
+    showMenu () {
+        const menuList = this.shadowRoot.querySelector('.menu-list');
+        menuList.classList.remove('hide-menu');
+        menuList.classList.add('show-menu');
+        this.showMenuLines();
+    }
+
+    exitMenu () {
+        const menuList = this.shadowRoot.querySelector('.menu-list');
+        menuList.classList.remove('show-menu');
+        menuList.classList.add('hide-menu');
+        this.hideMenuLines();
+    }
+
+    showMenuLines () {
+        const underlines = this.shadowRoot.querySelectorAll('.menu-list .underline');
+        underlines.forEach(line => {
+            line.classList.remove('exit-underline');
+            line.classList.add('show-underline');
+        })
+    }
+
+    hideMenuLines () {
+        const underlines = this.shadowRoot.querySelectorAll('.menu-list .underline');
+        underlines.forEach(line => {
+            line.classList.remove('show-underline');
+            line.classList.add('exit-underline');
+        })
     }
     
 }

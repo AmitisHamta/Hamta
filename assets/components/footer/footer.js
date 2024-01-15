@@ -16,7 +16,7 @@ template.innerHTML = `
                 <hr>
                 <div id="footer-info">
                     <div class="footer-list footer-description">
-                        <p>
+                        <p id="footer-description">
                             عموم افراد حاضر در این شرکت از میان فعالان حوزه پرداخت های الکترونیکی بویژه در زمینه POS و ATM 
                             و ... و تعدادی از مدیران،کارشناسان و صاحب نظران شاغل و بازنشسته در حوزه های مالی و بانکی می باشند.
                         </p>

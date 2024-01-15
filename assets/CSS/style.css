@@ -648,8 +648,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   gap: 40px;
+  padding: 0 250px;
 }
 
 .company {
@@ -687,4 +689,158 @@ a {
 .wave-bg img {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #main-content {
+      padding-right: 20px;
+      margin: 0;
+  }
+
+  #display-text {
+      width: 92%;
+      height: 17%;
+  }
+
+  #display-text h1 {
+    padding-right: 15px;
+  }
+
+  #body-text {
+    width: 94%;
+  }
+
+  #body-text p {
+    font-size: 0.9rem;
+    padding-right: 15px;
+  }
+
+  #main-text {
+      width: 100%;
+      font-size: 2rem;
+  }
+
+  #down-anime-btn {
+    font-size: 1rem;
+  }
+
+  #about-content {
+      padding: 20px;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+
+  .section-title b {
+    font-size: 0.8rem;
+  }
+
+  #about-content .section-title p {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  #about-body {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .about-info {
+      padding: 0;
+      width: 41%;
+  }
+
+  .about-title {
+    font-size: 1.2rem;
+  }
+
+  .info img {
+    width: 100%;
+  }
+
+  .about-info p, .service-info p {
+      width: 100%;
+  }
+
+  .about-btn {
+    padding: 0 10px;
+    height: 30px;
+  }
+
+  .about-arrow-btn {
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .about-btn:hover ~ .about-arrow-btn {
+    right: 80%;
+  }
+
+  @keyframes swipeLeft {
+    from {
+      right: 50%;
+    }
+    to {
+      right: 80%;
+    }
+  }
+
+  #banks-section {
+    height: 15vh;
+  }
+
+  .bank-slide > img {
+    width: 70%;
+  }
+
+  #service-content {
+    padding: 20px;
+    gap: 50px;
+  }
+
+  #service-content .section-title p {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  #service-body {
+    padding: 20px;
+    gap: 60px;
+  }
+
+  .service-info {
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .service-title {
+    font-size: 1.5rem;
+    padding: 0 15px;
+  }
+
+  .service-info p {
+    font-size: 0.85rem;
+  }
+
+  #companies-content .section-title h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .companies-row {
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
+  }
+
+  #company{
+    height: 100px !important;
+    width: 90px !important; 
+  }
+
+  #companies-content {
+      gap: 20px;
+  }
 }

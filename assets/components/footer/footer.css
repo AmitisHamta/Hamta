@@ -47,6 +47,8 @@ a {
   width: 100%;
   margin: auto;
   opacity: 0.75;
+  color: #fffafa;
+  background-color: #fffafa;
 }
   
 #footer-content > h1 {
@@ -162,4 +164,57 @@ a {
   
 #footer-copyright span {
   color: #dc8501;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #footer-content {
+    padding: 20px;
+  }
+
+  #footer-content > h1 {
+    font-size: 1.5rem;
+  }
+
+  #footer-info {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .footer-list {
+    width: 100%;
+  }
+
+  .footer-list p {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+
+  .footer-list h3 {
+    font-size: 1rem;
+    margin-right: 8px;
+  }
+
+  .footer-list ul {
+    font-size: 0.8rem;
+  }
+
+  #footer-description {
+    display: none;
+  }
+
+  #footer-lists {
+    gap: 40px;
+    width: 100%;
+  }
+
+  #social-btns-list {
+    width: 100%;
+  }
+
+  #footer-copyright {
+    padding: 0;
+    font-size: 0.5rem;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
