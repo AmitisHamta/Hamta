@@ -771,18 +771,19 @@ a {
   .about-arrow-btn {
     height: 30px;
     font-size: 1rem;
+    right: 100px;
   }
 
   .about-btn:hover ~ .about-arrow-btn {
-    right: 80%;
+    right: 135px;
   }
 
   @keyframes swipeLeft {
     from {
-      right: 50%;
+      right: 100px;
     }
     to {
-      right: 80%;
+      right: 135px;
     }
   }
 
@@ -921,18 +922,19 @@ a {
   .about-arrow-btn {
     height: 30px;
     font-size: 1rem;
+    right: 150px;
   }
 
   .about-btn:hover ~ .about-arrow-btn {
-    right: 70%;
+    right: 187px;
   }
 
   @keyframes swipeLeft {
     from {
-      right: 50%;
+      right: 150px;
     }
     to {
-      right: 70%;
+      right: 187px;
     }
   }
 
