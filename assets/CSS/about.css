@@ -321,4 +321,169 @@ span {
   .certification:hover {
     transform: scale(1.1) !important;
   }
+
+@media only screen and (max-width: 480px) {
+    #about {
+        padding: 40px 20px;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+
+    #about-body {
+        gap: 20px;
+    }
+
+    .about-info {
+        flex-direction: column !important;
+    }
+
+    .img-container {
+        width: 50% !important;
+    }
+
+    .info-container {
+        width: 80% !important;
+    }
+
+    .about-name {
+        font-size: 1.8rem;
+    }
+
+    .about-description p {
+        font-size: 0.8rem;
+    }
+
+    #experience {
+        padding-top: 50px;
+    }
+
+    #experience .about-description {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    #experience .about-description p {
+        width: 100% !important;
+    }
+
+    #experience .centerline {
+        display: none;
+    }
+
+    #certifications {
+        gap: 30px;
+        padding: 0;
+    }
+
+    #certifications-body {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #certifications .section-title h1 {
+        font-size: 2rem;
+    }
+
+    #certifications-body {
+        justify-content: center;
+    }
+
+    .certification {
+        width: 60%;
+    }
+
+    .width-70 {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #about {
+        padding: 40px 20px;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+
+    #about-body {
+        gap: 20px;
+    }
+
+    .about-info {
+        flex-direction: column !important;
+        gap: 0;
+    }
+
+    .img-container {
+        width: 50% !important;
+    }
+
+    .info-container {
+        width: 80% !important;
+    }
+
+    .about-name {
+        font-size: 1.8rem;
+    }
+
+    .about-description p {
+        font-size: 0.8rem;
+    }
+
+    #experience {
+        padding-top: 50px;
+    }
+
+    #experience .about-description {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    #experience .about-description p {
+        width: 100% !important;
+    }
+
+    #experience .centerline {
+        display: none;
+    }
+
+    #certifications {
+        gap: 30px;
+        padding: 0;
+    }
+
+    #certifications-body {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #certifications .section-title h1 {
+        font-size: 2rem;
+    }
+
+    #certifications-body {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .certification {
+        width: 30% !important;
+    }
+
+    .certification{
+        font-size: 0.5rem;
+    }
+
+    .width-70 {
+        width: 15% !important;
+    }
+}
   

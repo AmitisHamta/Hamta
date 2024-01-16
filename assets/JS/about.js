@@ -92,11 +92,23 @@ const moveToSection = () => {
     }
 }
 
+const responsive = () => {
+    if ($.documentElement.clientWidth > 480 && $.documentElement.clientWidth <= 767 ) {
+        const cert1 = $.getElementById('cert-1');
+        const cert4 = $.getElementById('cert-4');
+        const certification = $.querySelector('.certs');
+
+        certification.replaceChild(cert4, cert1);
+        certification.appendChild(cert1);
+    }
+}
+
 window.addEventListener('load', () => {
     preventRightCLick();
     setLines();
     moveToSection();
     removeFilter();
+    responsive();
 })
 
 window.addEventListener('scroll', () => {

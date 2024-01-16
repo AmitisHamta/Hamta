@@ -397,6 +397,7 @@ a {
 
 .menu-list a {
   color: #333;
+  width: 100%;
 }
 
 .menu-list li {
