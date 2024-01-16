@@ -242,3 +242,31 @@
 .display-flex {
     display: flex;
 }
+
+@media only screen and (max-width: 480px) {
+    #request-form {
+        width: 90%;
+    }
+    
+    #request-inputs {
+        width: 95%;
+    }
+
+    .form-floating > label {
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #request-form {
+        width: 80%;
+    }
+    
+    #request-inputs {
+        width: 90%;
+    }
+
+    .form-floating > label {
+        padding: 0.6rem 1rem;
+    }
+}
