@@ -311,21 +311,29 @@ a {
         font-size: 0.8rem;
     }
 
+    .arrow-btn {
+        right: 90px;
+    }
+
     .request-btn:hover ~ .arrow-btn {
-        right: 48%;
+        right: 132px;
     }
 
     @keyframes swipeLeft {
         from {
-          right: 10%;
+          right: 90px;
         }
         to {
-          right: 48%;
+          right: 132px;
         }
     }
 
     #service-list {
         gap: 20px;
+    }
+
+    .service-details {
+        width: 80%;
     }
 }
 
@@ -360,16 +368,20 @@ a {
         font-size: 0.8rem;
     }
 
+    .arrow-btn {
+        right: 90px;
+    }
+
     .request-btn:hover ~ .arrow-btn {
-        right: 27.2%;
+        right: 132px;
     }
 
     @keyframes swipeLeft {
         from {
-          right: 10%;
+          right: 90px;
         }
         to {
-          right: 27.2%;
+          right: 132px;
         }
     }
 
