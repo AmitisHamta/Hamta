@@ -371,7 +371,7 @@ a {
 .menu-list {
   position: absolute;
   background-color: #fffafa;
-  width: 90vw;
+  width: 70vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -379,7 +379,7 @@ a {
   justify-content: space-around;
   padding: 30px;
   top: 0;
-  left: -98vw;
+  left: -70vw;
 }
 
 .menu-list ul {
@@ -445,13 +445,13 @@ a {
 }
 
 .hide-menu {
-  left: -98vw;
+  left: -70vw;
   animation: swipe-left 0.5s linear;
 }
 
 @keyframes swipe-right {
   from {
-    left: -98vw;
+    left: -70vw;
   }
   to {
     left: 0;
@@ -463,7 +463,7 @@ a {
     left: 0;
   }
   to {
-    left: -98vw;
+    left: -70vw;
   }
 }
 
@@ -493,11 +493,11 @@ a {
   }
 
   #header-logo {
-    width: 30%;
+    width: 115px;
   }
 
   #header.moved #header-logo {
-    width: 22%;
+    width: 80px;
   }
 
   #menu-container {
@@ -519,11 +519,11 @@ a {
   }
 
   #header-logo {
-    width: 20%;
+    width: 115px;
   }
 
   #header.moved #header-logo {
-    width: 15%;
+    width: 80px;
   }
 
   #menu-container {
@@ -532,5 +532,35 @@ a {
 
   .menu-list {
     width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #navbar {
+    padding: 20px 40px;
+  }
+
+  #nav-list {
+    display: none;
+  }
+
+  #navbar > #navbar-buttons {
+    display: none;
+  }
+
+  #header-logo {
+    width: 115px;
+  }
+
+  #header.moved #header-logo {
+    width: 80px;
+  }
+
+  #menu-container {
+    display: inline;
+  }
+
+  .menu-list {
+    width: 40vw;
   }
 }
