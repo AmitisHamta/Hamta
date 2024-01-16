@@ -398,6 +398,7 @@ a {
 .menu-list a {
   color: #333;
   width: 100%;
+  transition: color 0.2s;
 }
 
 .menu-list li {
@@ -432,6 +433,10 @@ a {
 
 .menu-list li:hover {
   background-color: #dc8501;
+}
+
+.menu-list li:hover a{
+  color: #fffafa !important;
 }
 
 .show-menu {

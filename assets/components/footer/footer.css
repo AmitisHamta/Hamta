@@ -250,7 +250,8 @@ a {
   .footer-list ul {
     font-size: 0.8rem;
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
+    flex-wrap: wrap;
   }
 
   #footer-description {
