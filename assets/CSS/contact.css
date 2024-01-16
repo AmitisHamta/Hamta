@@ -86,7 +86,7 @@ a {
         width: 0;
     }
     to {
-        width: 100%;
+        width: 90%;
     }
 }
   
@@ -96,7 +96,7 @@ a {
   
 @keyframes exitUnderline {
     from {
-        width: 100%;
+        width: 90%;
     }
   
     to {
@@ -142,7 +142,14 @@ a {
     flex-direction: row-reverse;
     margin: 50px 150px;
     direction: rtl;
-    /* border: 1px solid #106ea5; */
+    position: relative;
+}
+
+#contact > .underline {
+    display: none;
+    border: 2px solid #dc8501;
+    width: 90%;
+    top: 48%;
 }
 
 #contact-form {
@@ -456,4 +463,54 @@ label i {
 .success {
     display: inline;
     color: #106ea5;
+}
+
+@media only screen and (max-width: 480px) {
+    #contact {
+        flex-direction: column;
+        margin: 50px;
+        align-items: center;
+        gap: 65px;
+    }
+
+    #contact-info, #contact-form {
+        width: 100%;
+    }
+
+    .centerline {
+        display: none;
+    }
+
+    #contact .underline {
+        display: inline;
+    }
+
+    .contact-section i {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #contact {
+        flex-direction: column;
+        margin: 50px;
+        align-items: center;
+        gap: 65px;
+    }
+
+    #contact-info, #contact-form {
+        width: 100%;
+    }
+
+    .centerline {
+        display: none;
+    }
+
+    #contact .underline {
+        display: inline;
+    }
+
+    .contact-section i {
+        font-size: 2rem;
+    }
 }
