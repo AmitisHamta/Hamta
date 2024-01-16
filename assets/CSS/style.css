@@ -926,7 +926,7 @@ a {
   .about-arrow-btn {
     height: 30px;
     font-size: 1rem;
-    right: 150px;
+    right: 100px;
   }
 
   .about-btn:hover ~ .about-arrow-btn {
