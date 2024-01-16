@@ -80,7 +80,7 @@ template.innerHTML = `
                 </div>
                 <div id="menu-container">
                     <button id="menu-btn">
-                        <i class="bi bi-list"></i>
+                    <i class="bi bi-list-nested"></i>
                     </button>
                     <div class="menu-list">
                         <ul>
