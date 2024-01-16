@@ -218,3 +218,63 @@ a {
     gap: 10px;
   }
 }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #footer-content {
+    padding: 20px 50px;
+  }
+
+  #footer-content > h1 {
+    font-size: 1.5rem;
+  }
+
+  #footer-info {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .footer-list {
+    width: 100%;
+  }
+
+  .footer-list p {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+
+  .footer-list h3 {
+    font-size: 1rem;
+    margin-right: 8px;
+  }
+
+  .footer-list ul {
+    font-size: 0.8rem;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  #footer-description {
+    display: none;
+  }
+
+  .footer-description {
+    gap: 20px;
+  }
+
+  #footer-lists {
+    gap: 30px;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  #social-btns-list {
+    width: 100%;
+  }
+
+  #footer-copyright {
+    padding: 0;
+    font-size: 0.5rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

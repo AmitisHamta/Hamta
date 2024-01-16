@@ -435,12 +435,12 @@ a {
 
 .show-menu {
   left: 0;
-  animation: swipe-right 0.5s ease-in-out;
+  animation: swipe-right 0.5s linear;
 }
 
 .hide-menu {
   left: -98vw;
-  animation: swipe-left 0.5s ease-in-out;
+  animation: swipe-left 0.5s linear;
 }
 
 @keyframes swipe-right {
@@ -496,5 +496,35 @@ a {
 
   #menu-container {
     display: inline;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #navbar {
+    padding: 20px 40px;
+  }
+
+  #nav-list {
+    display: none;
+  }
+
+  #navbar > #navbar-buttons {
+    display: none;
+  }
+
+  #header-logo {
+    width: 20%;
+  }
+
+  #header.moved #header-logo {
+    width: 15%;
+  }
+
+  #menu-container {
+    display: inline;
+  }
+
+  .menu-list {
+    width: 50vw;
   }
 }
