@@ -775,7 +775,7 @@ a {
   }
 
   .about-btn:hover ~ .about-arrow-btn {
-    right: 135px;
+    right: 129px;
   }
 
   @keyframes swipeLeft {
@@ -783,12 +783,16 @@ a {
       right: 100px;
     }
     to {
-      right: 135px;
+      right: 129px;
     }
   }
 
   #banks-section {
     height: 15vh;
+  }
+
+  .bank-slide > img {
+    width: 50%;
   }
 
   #service-content {
@@ -926,15 +930,15 @@ a {
   }
 
   .about-btn:hover ~ .about-arrow-btn {
-    right: 187px;
+    right: 134px;
   }
 
   @keyframes swipeLeft {
     from {
-      right: 150px;
+      right: 100px;
     }
     to {
-      right: 187px;
+      right: 134px;
     }
   }
 
