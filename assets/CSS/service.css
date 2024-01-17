@@ -393,3 +393,60 @@ a {
         gap: 20px;
     }
 }
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    #page-description {
+        font-size: 0.8rem;
+        width: 90%;
+    }
+
+    #services {
+        padding: 20px;
+    }
+
+    #service-list {
+        padding: 0;
+    }
+
+    .service {
+        flex-direction: column !important;
+        gap: 10px;
+    }
+
+    .img-container {
+        width: 50% !important;
+    }
+
+    .service-title {
+        font-size: 1.8rem;
+    }
+
+    .service-description {
+        font-size: 0.8rem;
+    }
+
+    .arrow-btn {
+        right: 90px;
+    }
+
+    .request-btn:hover ~ .arrow-btn {
+        right: 132px;
+    }
+
+    @keyframes swipeLeft {
+        from {
+          right: 90px;
+        }
+        to {
+          right: 132px;
+        }
+    }
+
+    .service-details {
+        width: 80%;
+    }
+
+    #service-list {
+        gap: 20px;
+    }
+}

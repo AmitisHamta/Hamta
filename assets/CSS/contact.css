@@ -514,3 +514,28 @@ label i {
         font-size: 2rem;
     }
 }
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    #contact {
+        flex-direction: column;
+        margin: 50px;
+        align-items: center;
+        gap: 65px;
+    }
+
+    #contact-info, #contact-form {
+        width: 100%;
+    }
+
+    .centerline {
+        display: none;
+    }
+
+    #contact .underline {
+        display: inline;
+    }
+
+    .contact-section i {
+        font-size: 2rem;
+    }
+}

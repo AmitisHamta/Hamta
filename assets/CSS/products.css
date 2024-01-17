@@ -365,3 +365,55 @@ a {
         margin-bottom: 50px;
     }
 }
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    #products {
+        padding: 20px;
+    }
+
+    #products-list {
+        gap: 30px;
+    }
+
+    .product {
+        flex-direction: column !important;
+        gap: 10px;
+    }
+
+    .img-container {
+        width: 40% !important;
+    }
+
+    .product-details {
+        width: 85% !important;
+    }
+
+    .product-title {
+        font-size: 1.8rem;
+    }
+
+    .product-description {
+        font-size: 0.8rem;
+    }
+
+    .arrow-btn {
+        right: 90px;
+    }
+
+    .request-btn:hover ~ .arrow-btn {
+        right: 132px;
+    }
+
+    @keyframes swipeLeft {
+        from {
+          right: 90px;
+        }
+        to {
+          right: 132px;
+        }
+    }
+
+    #others {
+        margin-bottom: 50px;
+    }
+}

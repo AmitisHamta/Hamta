@@ -272,6 +272,10 @@ span {
     animation-duration: 1s;
 }
 
+#experience .img-container {
+    display: none;
+}
+
   #certifications {
     width: 100%;
     display: flex;
@@ -449,6 +453,105 @@ span {
 
     #experience .centerline {
         display: none;
+    }
+
+    #certifications {
+        gap: 30px;
+        padding: 0;
+    }
+
+    #certifications-body {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #certifications .section-title h1 {
+        font-size: 2rem;
+    }
+
+    #certifications-body {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .certification {
+        width: 30% !important;
+    }
+
+    .certification{
+        font-size: 0.5rem;
+    }
+
+    .width-70 {
+        width: 15% !important;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    #about {
+        padding: 40px 20px;
+    }
+
+    #title {
+        font-size: 3rem;
+    }
+
+    #about-body {
+        gap: 20px;
+    }
+
+    .about-info {
+        flex-direction: column !important;
+        gap: 0;
+    }
+
+    .img-container {
+        width: 40% !important;
+    }
+
+    .info-container {
+        width: 80% !important;
+    }
+
+    .about-name {
+        font-size: 1.8rem;
+    }
+
+    .about-description p {
+        font-size: 0.8rem;
+    }
+
+    #experience {
+        padding-top: 50px;
+    }
+
+    #experience .about-description {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    #experience .about-description p {
+        width: 100% !important;
+    }
+
+    #experience .centerline {
+        display: none;
+    }
+
+    #experience .info-container {
+        align-items: flex-start !important;
+    }
+
+    #experience .info-container .about-title {
+        align-items: flex-start !important;
+    }
+
+    #experience .img-container {
+        display: flex;
     }
 
     #certifications {

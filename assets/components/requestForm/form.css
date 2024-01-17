@@ -270,3 +270,13 @@
         padding: 0.6rem 1rem;
     }
 }
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    #request-form {
+        width: 60%;
+    }
+    
+    #request-inputs {
+        width: 90%;
+    }
+}
