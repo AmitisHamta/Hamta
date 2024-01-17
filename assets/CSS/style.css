@@ -833,6 +833,7 @@ a {
     flex-wrap: wrap;
     gap: 5px;
     padding: 5px;
+    width: 100%;
   }
 
   #company{
@@ -988,6 +989,7 @@ a {
     flex-wrap: wrap;
     gap: 26px;
     padding: 5px;
+    width: 100%;
   }
 
   #company{
@@ -1145,6 +1147,7 @@ a {
     flex-wrap: wrap;
     gap: 26px;
     padding: 5px;
+    width: 100%;
   }
 
   #company{
