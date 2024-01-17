@@ -564,3 +564,19 @@ a {
     width: 40vw;
   }
 }
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+  #navbar {
+    padding: 20px 40px;
+  }
+
+  .products-dropdown {
+    width: 13vw;
+    height: 36vh;
+  }
+
+  #header.moved .products-dropdown {
+    width: 13vw;
+    height: 36vh;
+  }
+}

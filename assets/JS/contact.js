@@ -9,7 +9,6 @@ window.customElements.define('site-footer', Footer);
 window.customElements.define('site-loader', Loader);
 
 const $ = document;
-const certifications = $.querySelectorAll('.certification');
 const container = $.getElementById('container');
 const selectBtn = $.querySelector('#drop-btn');
 const menu = $.querySelector('.dropdown-menu');

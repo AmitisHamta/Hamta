@@ -1175,3 +1175,165 @@ a {
     padding: 50px;
   }
 }
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+  #main-content {
+      padding-right: 150px;
+      margin: 0;
+  }
+
+  #display-text {
+      width: 40%;
+      height: 22%;
+  }
+
+  #display-text h1 {
+    padding-right: 15px;
+  }
+
+  #body-text {
+    width: 40%;
+  }
+
+  #body-text p {
+    font-size: 1rem;
+    padding-right: 15px;
+  }
+
+  #main-text {
+      width: 100%;
+      font-size: 3rem;
+  }
+
+  #down-anime-btn {
+    font-size: 1rem;
+  }
+
+  #about-content {
+      padding: 50px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title b {
+    font-size: 0.8rem;
+  }
+
+  #about-content .section-title p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  #about-body {
+    padding: 0;
+  }
+
+  .about-info {
+      padding: 0;
+      width: 41%;
+  }
+
+  .about-title {
+    font-size: 1.2rem;
+  }
+
+  .info img {
+    width: 100%;
+  }
+
+  .about-info p, .service-info p {
+      width: 100%;
+  }
+
+  .about-btn {
+    padding: 0 10px;
+    height: 30px;
+  }
+
+  .about-arrow-btn {
+    height: 30px;
+    font-size: 1rem;
+    right: 50%;
+  }
+
+  .about-btn:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
+  }
+
+  .about-btn:hover ~ .about-arrow-btn {
+    right: 50%;
+  }
+
+  @keyframes swipeLeft {
+    from {
+      right: 50%;
+    }
+    to {
+      right: 50%;
+    }
+  }
+
+  #banks-section {
+    height: 15vh;
+  }
+
+  .banks-swiper {
+    width: 100%;
+    padding: 30px;
+  }
+
+  #service-content {
+    padding: 50px;
+    gap: 50px;
+  }
+
+  #service-content .section-title p {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  #service-body {
+    gap: 60px;
+  }
+
+  .service-info {
+    width: 100%;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .service-title {
+    font-size: 2rem;
+    padding: 0 15px;
+  }
+
+  .service-info p {
+    font-size: 0.85rem;
+    width: 50%;
+  }
+
+  #companies-content .section-title h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .companies-row {
+    flex-wrap: wrap;
+    gap: 26px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  #company{
+    height: 100px !important;
+    width: 90px !important; 
+  }
+
+  #companies-content {
+    gap: 20px;
+    padding: 50px;
+  }
+}
