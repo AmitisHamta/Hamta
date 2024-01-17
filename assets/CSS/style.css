@@ -449,7 +449,7 @@ a {
   justify-content: center;
   gap: 5px;
   z-index: 2;
-  transition: all 0.2s;
+  transition: all 0.2s, transition 0.2s;
 }
 
 .about-btn a {
@@ -770,19 +770,24 @@ a {
   .about-arrow-btn {
     height: 30px;
     font-size: 1rem;
-    right: 100px;
+    right: 50%;
+  }
+
+  .about-btn:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
   }
 
   .about-btn:hover ~ .about-arrow-btn {
-    right: 129px;
+    right: 50%;
   }
 
   @keyframes swipeLeft {
     from {
-      right: 100px;
+      right: 50%;
     }
     to {
-      right: 129px;
+      right: 50%;
     }
   }
 
@@ -926,19 +931,24 @@ a {
   .about-arrow-btn {
     height: 30px;
     font-size: 1rem;
-    right: 100px;
+    right: 50%;
+  }
+
+  .about-btn:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
   }
 
   .about-btn:hover ~ .about-arrow-btn {
-    right: 134px;
+    right: 50%;
   }
 
   @keyframes swipeLeft {
     from {
-      right: 100px;
+      right: 50%;
     }
     to {
-      right: 134px;
+      right: 50%;
     }
   }
 
@@ -1083,19 +1093,24 @@ a {
   .about-arrow-btn {
     height: 30px;
     font-size: 1rem;
-    right: 125px;
+    right: 50%;
+  }
+
+  .about-btn:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
   }
 
   .about-btn:hover ~ .about-arrow-btn {
-    right: 193px;
+    right: 50%;
   }
 
   @keyframes swipeLeft {
     from {
-      right: 125px;
+      right: 50%;
     }
     to {
-      right: 193px;
+      right: 50%;
     }
   }
 
