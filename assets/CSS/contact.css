@@ -485,7 +485,7 @@ label i {
         display: inline;
     }
 
-    .contact-section i {
+    .info > i {
         font-size: 2rem;
     }
 }
@@ -510,8 +510,8 @@ label i {
         display: inline;
     }
 
-    .contact-section i {
-        font-size: 2rem;
+    .info > i {
+       font-size: 2rem;
     }
 }
 
@@ -535,7 +535,21 @@ label i {
         display: inline;
     }
 
-    .contact-section i {
+    .info > i {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+    #contact {
+        margin: 50px;
+    }
+
+    .centerline {
+        height: 100%;
+    }
+
+    .info > i {
         font-size: 2rem;
     }
 }

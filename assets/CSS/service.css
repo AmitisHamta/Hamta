@@ -450,3 +450,42 @@ a {
         gap: 20px;
     }
 }
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+    #page-description {
+        width: 90%;
+    }
+
+    #services {
+        padding: 20px 100px;
+    }
+
+    #service-list {
+        padding: 0;
+    }
+
+    .img-container {
+        width: 50% !important;
+    }
+
+    .arrow-btn {
+        right: 90px;
+    }
+
+    .request-btn:hover ~ .arrow-btn {
+        right: 132px;
+    }
+
+    @keyframes swipeLeft {
+        from {
+          right: 90px;
+        }
+        to {
+          right: 132px;
+        }
+    }
+
+    #service-list {
+        gap: 50px;
+    }
+}

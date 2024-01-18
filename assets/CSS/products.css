@@ -417,3 +417,34 @@ a {
         margin-bottom: 50px;
     }
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    #products {
+        padding: 20px 100px;
+    }
+
+    #products-list {
+        gap: 50px;
+    }
+
+    .img-container {
+        width: 40% !important;
+    }
+
+    .arrow-btn {
+        right: 90px;
+    }
+
+    .request-btn:hover ~ .arrow-btn {
+        right: 132px;
+    }
+
+    @keyframes swipeLeft {
+        from {
+          right: 90px;
+        }
+        to {
+          right: 132px;
+        }
+    }
+}

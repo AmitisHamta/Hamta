@@ -589,4 +589,10 @@ span {
         width: 15% !important;
     }
 }
-  
+ 
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+    #about {
+        padding: 20px 100px;
+    }
+}
