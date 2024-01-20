@@ -62,6 +62,7 @@ const generateNews = (newsData, newsFragment) => {
 
         const link = $.createElement('a');
         link.textContent = 'لینک خبر';
+        link.ariaLabel = 'link to news';
         link.href = news.link;
 
         linkButton.append(link);
