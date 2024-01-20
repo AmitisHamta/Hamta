@@ -579,4 +579,30 @@ a {
     width: 13vw;
     height: 36vh;
   }
+
+  #nav-list {
+    padding-right: 20px;
+  }
+
+  .nav-btn {
+    font-size: 1rem;
+  }
+
+  .panel-btn {
+    width: 100px;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1600px) { 
+  .products-dropdown {
+    width: 11vw;
+    height: 26vh;
+  }
+
+  #header.moved .products-dropdown {
+    width: 11vw;
+    height: 26vh;
+  }
 }

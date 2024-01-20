@@ -1,0 +1,245 @@
+html, body {
+    width: 100%;
+    height: auto;
+    font-family: 'Vazirmatn', sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue) var(--theme);
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iransans;
+}
+
+:root {
+    --theme: #fffafa;
+    --color: #333;
+    --orange: #dc8501;
+    --blue: #106ea5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--blue);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--theme);
+}
+
+@font-face {
+  font-family: iransans;
+  src: url(../fonts/woff/IRANSansX-Regular.woff);
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme);
+    color: var(--color);
+    overflow: hidden;
+    filter: blur(5px);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+.wave-bg {
+    width: 100%;
+    height: auto;
+}
+
+.wave-bg img {
+    width: 100%;
+    height: auto;
+}
+
+.underline {
+    width: 100%;
+    height: 1px;
+    background-color: var(--orange);
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+}
+
+.show-underline {
+    animation: showUnderline 0.6s ease-in-out;
+}
+  
+@keyframes showUnderline {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+  
+.exit-underline {
+    animation: exitUnderline 0.6s ease-in-out;
+}
+  
+@keyframes exitUnderline {
+    from {
+        width: 90%;
+    }
+  
+    to {
+        width: 0;
+    }
+}
+
+#page-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18vh;
+}
+
+#title {
+    font-size: 3rem;
+    position: relative;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title .underline {
+    border: 2px solid var(--orange);
+}
+
+#news-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 150px;
+    margin-top: 50px;
+}
+
+#news-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    direction: rtl;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    width: 70%;
+}
+
+.news {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.img-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.news-details {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+}
+
+.news-details p {
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.news-btn {
+    width: 100px;
+    height: 30px;
+    background-color: #dc8501;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.2s;
+}
+
+.news-btn a {
+    color: #fffafa;
+}
+
+#news-list > .underline{
+    height: 4px;
+    position: static;
+}
+
+.arrow-btn {
+    outline: none;
+    border: 1px solid #dc8501;
+    background-color: #dc8501;
+    color: #fffafa;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    z-index: 1;
+    font-size: 1.5rem;
+    border-radius: 50% 0% 0% 50%;
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+    z-index: 1;
+    transition: all 0.2s;
+}
+
+.news-btn:hover {
+    border-radius: 0px 20px 20px 0px;
+}
+
+.news-btn:hover ~ .arrow-btn {
+    animation: swipeLeft 0.2s linear;
+    right: 102px;
+}
+
+@keyframes swipeLeft {
+    from {
+      right: 50px;
+    }
+    to {
+      right: 102px;
+    }
+}

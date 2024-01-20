@@ -65,6 +65,10 @@ template.innerHTML = `
                         <a href="contact.html">ارتباط با ما</a>
                         <div class="underline display-none"></div>
                     </button>
+                    <button class="nav-btn">
+                        <a href="news.html">اخبار</a>
+                        <div class="underline display-none"></div>
+                    </button>
                 </div>
                 <div id="navbar-buttons">
                     <button class="panel-btn bg-blue">
@@ -106,6 +110,11 @@ template.innerHTML = `
                             
                             <li>
                                 <a href="contact.html">ارتباط با ما</a>
+                                <div class="underline"></div>
+                            </li>
+
+                            <li>
+                                <a href="news.html">اخبار</a>
                                 <div class="underline"></div>
                             </li>
                         </ul>

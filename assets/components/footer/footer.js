@@ -112,7 +112,7 @@ template.innerHTML = `
                         تمامی حقوق برای <span>شرکت آمیتیس همتا</span> محفوظ میباشد
                     </p>
                     <p>
-                        <span>Amitis Hamta</span> | Electronic and smart payment, since 2000
+                        <span>Amitis Hamta</span> | Electronic and smart payment, since 2006
                     </p>
                 </div>
             </div>
