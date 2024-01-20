@@ -1004,6 +1004,31 @@ a {
   #companies-content {
       gap: 20px;
   }
+
+  #news-container {
+    padding: 100px 20px;
+  }
+
+  #news-body {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .news {
+    width: 90%;
+  }
+
+  .about-arrow-btn {
+    height: 30px;
+    font-size: 1rem;
+    right: 50%;
+    display: none;
+  }
+
+  #news-btn:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -1165,6 +1190,31 @@ a {
   #companies-content {
     gap: 20px;
     padding: 50px 40px;
+  }
+
+  #news-container {
+    padding: 50px 20px;
+  }
+
+  #news-body {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .news {
+    width: 60%;
+  }
+
+  .about-arrow-btn {
+    height: 30px;
+    font-size: 1rem;
+    right: 50%;
+    display: none;
+  }
+
+  #news-btn:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
   }
 }
 
@@ -1329,6 +1379,23 @@ a {
     gap: 20px;
     padding: 50px;
   }
+
+  #news-container {
+    padding: 50px 20px;
+  }
+
+  .news {
+    width: 40%;
+  }
+
+  .about-arrow-btn {
+    display: none;
+  }
+
+  #news-btn:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1279px) {
@@ -1490,6 +1557,23 @@ a {
   #companies-content {
     gap: 20px;
     padding: 50px;
+  }
+
+  #news-container {
+    padding: 50px 20px;
+  }
+
+  .news {
+    width: 20%;
+  }
+
+  .about-arrow-btn {
+    display: none;
+  }
+
+  #news-btn:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
   }
 }
 
