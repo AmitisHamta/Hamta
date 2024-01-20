@@ -9,7 +9,7 @@ template.innerHTML = `
 <header id="header" class="animate__animated animate__fadeInDown">
             <nav id="navbar">
                 <a id="header-logo" href="index.html">
-                    <img src="./assets/Images/HamtaLogo.png" alt="">
+                    <img src="./assets/Images/HamtaLogo.png" alt="شرکت آمیتیس همتا">
                     <!-- <h1 id="header-logo-name">
                         آمیتیس همتا
                     </h1> -->

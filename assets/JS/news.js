@@ -44,6 +44,7 @@ const generateNews = (newsData, newsFragment) => {
 
         const img = $.createElement('img');
         img.setAttribute('src', news.img);
+        img.alt = 'خبر اقتصادی و بانکی'
 
         imgContainer.append(img);
 
