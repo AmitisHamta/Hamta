@@ -15,11 +15,11 @@ const newsList = $.getElementById('news-list');
 const newsFragment = $.createDocumentFragment();
 
 const news = [
-    {id: 0, title: "1عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/_755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
-    {id: 1, title: "2عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/_755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
-    {id: 2, title: "3عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/_755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
-    {id: 3, title: "4عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/_755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
-    {id: 4, title: "5عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/_755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
+    {id: 0, title: "1عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
+    {id: 1, title: "2عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
+    {id: 2, title: "3عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
+    {id: 3, title: "4عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
+    {id: 4, title: "5عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
 ]
 
 const removeFilter = () => {
