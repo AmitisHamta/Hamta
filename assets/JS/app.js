@@ -13,6 +13,7 @@ const container = $.getElementById('container');
 const mainText = $.getElementById('main-text');
 const mainDescript = $.getElementById('main-descript');
 const textBoxes = $.querySelectorAll('.text-box');
+const newsList = $.querySelectorAll('.news a');
 
 const removeFilter = () => {
     container.style.filter = 'none';
@@ -87,6 +88,15 @@ const setLines = () => {
     }
 }
 
+const hideNewsContent = news => {
+    news.classList.add('hide-news');
+}
+
+const showNewsContent = news => {
+    news.classList.remove('hide-news');
+}
+
+
 window.addEventListener('load', () => {
     removeFilter();
     setBoxesAnimation();
@@ -96,4 +106,14 @@ window.addEventListener('load', () => {
 
 window.addEventListener('scroll', () => {
     setLines();
+})
+
+newsList.forEach(news => {
+    news.addEventListener('mouseleave', () => {
+        hideNewsContent(news)
+    })
+
+    news.addEventListener('mouseenter', () => {
+        showNewsContent(news)
+    })
 })

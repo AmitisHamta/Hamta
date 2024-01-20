@@ -149,6 +149,10 @@ a {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    /* background-color: #d3d3d3;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 20px; */
 }
 
 .img-container {

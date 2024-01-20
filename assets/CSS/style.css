@@ -760,6 +760,7 @@ a {
   top: 50%;
   opacity: 0;
   z-index: 1;
+  font-size: 0.8rem;
 }
 
 .news a:hover {
@@ -769,7 +770,7 @@ a {
 .news a:hover ~ p {
   opacity: 1;
   top: 100%;
-  animation: swipeDown 0.5s ease-in-out;
+  animation: swipeDown 0.5s linear;
 }
 
 @keyframes swipeDown {
@@ -823,6 +824,24 @@ a {
   }
   to {
     right: 54%;
+  }
+}
+
+.hide-news ~ p {
+  top: 50%;
+  opacity: 0;
+  animation: swipeUp 0.5s linear;
+}
+
+@keyframes swipeUp {
+  from {
+    top: 100%;
+    opacity: 1;
+  }
+
+  to {
+    top: 50%;
+    opacity: 0;
   }
 }
 
