@@ -25,27 +25,27 @@ template.innerHTML = `
                             آدرس: خیابان میزاری شیرازی، کوچه شهدا، پلاک 23، طبقه پنجم، واحد 11
                         </p>
                         <div id="social-btns-list">
-                            <button class="social-btns" aria-label="social-btn">
+                            <button class="social-btns" aria-label="site-btn">
                                 <a href="index.html" target="_blank" title="Website">
                                     <i class="bi bi-globe2"></i>
                                 </a>
                             </button>
-                            <button class="social-btns" aria-label="social-btn">
+                            <button class="social-btns" aria-label="email-btn">
                                 <a href="mailto:info@hamtasb.com" target="_blank" title="Email">
                                     <i class="bi bi-envelope"></i>
                                 </a>
                             </button>
-                            <button class="social-btns" aria-label="social-btn">
+                            <button class="social-btns" aria-label="telephone-btn">
                                 <a href="tel:+9802158702" target="_blank" title="Phone">
                                     <i class="bi bi-telephone-fill"></i>
                                 </a>
                             </button>
-                            <button class="social-btns" aria-label="social-btn">
+                            <button class="social-btns" aria-label="instagram-btn">
                                 <a href="https://www.instagram.com/hamta.psp" target="_blank" title="Instagram">
                                     <i class="bi bi-instagram"></i>
                                 </a>
                             </button>
-                            <button class="social-btns" aria-label="social-btn">
+                            <button class="social-btns" aria-label="location-btn">
                                 <a href="https://maps.app.goo.gl/SnUcEP8mfzfehgKDA" target="_blank" title="Location">
                                     <i class="bi bi-geo-alt-fill"></i>
                                 </a>

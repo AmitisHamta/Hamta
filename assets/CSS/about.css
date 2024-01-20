@@ -37,11 +37,13 @@ html, body {
 @font-face {
   font-family: iransans;
   src: url(../fonts/woff/IRANSansX-Regular.woff);
+  font-display: swap;
 }
 
 @font-face {
     font-family: iransans-black;
     src: url(../fonts/woff/IRANSansX-Black.woff);
+    font-display: swap;
 }
 
 a {

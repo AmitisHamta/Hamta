@@ -38,6 +38,7 @@ html, body {
 @font-face {
   font-family: iransans;
   src: url(../fonts/woff/IRANSansX-Regular.woff);
+  font-display: swap;
 }
 
 #container {
