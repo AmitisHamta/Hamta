@@ -135,10 +135,12 @@ a {
 
 #page-description {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 68%;
     border-radius: 20px 50px;
     padding: 20px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
 }
 
 #page-description span {

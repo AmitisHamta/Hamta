@@ -108,8 +108,9 @@ template.innerHTML = `
                 <hr>
                 <div id="footer-copyright">
                     <p>
+                        2024
                         <i class="bi bi-c-circle"></i>
-                        تمامی حقوق برای <span>شرکت آمیتیس همتا</span> محفوظ میباشد
+                        کلیه حقوق این سایت مطعلق به <span> شرکت آمیتیس همتا </span> میباشد
                     </p>
                     <p>
                         <span>Amitis Hamta</span> | Electronic and smart payment, since 2006

@@ -14,6 +14,28 @@ const mainText = $.getElementById('main-text');
 const mainDescript = $.getElementById('main-descript');
 const textBoxes = $.querySelectorAll('.text-box');
 const newsList = $.querySelectorAll('.news a');
+const companies = $.querySelectorAll('.company');
+
+const companyLogos = [
+    {id: 'c0', logo: 'assets/Images/pardakh novin.png', orangeLogo: 'assets/Images/pardakh novin O.png'},
+    {id: 'c1', logo: 'assets/Images/fan ava.png', orangeLogo: 'assets/Images/fan ava O.png'},
+    {id: 'c2', logo: 'assets/Images/iran kish.png', orangeLogo: 'assets/Images/iran kish O.png'},
+    {id: 'c3', logo: 'assets/Images/sepehr.png', orangeLogo: 'assets/Images/sepehr O.png'},
+    {id: 'c4', logo: 'assets/Images/sayan.png', orangeLogo: 'assets/Images/sayan O.png'},
+    {id: 'c5', logo: 'assets/Images/pasargard.png', orangeLogo: 'assets/Images/pasargard O.png'},
+    {id: 'c6', logo: 'assets/Images/shatel.png', orangeLogo: 'assets/Images/shatel O.png'},
+    {id: 'c7', logo: 'assets/Images/TIT.png', orangeLogo: 'assets/Images/TIT O.png'},
+    {id: 'c8', logo: 'assets/Images/sabin.png', orangeLogo: 'assets/Images/sabin    O.png'},
+    {id: 'c9', logo: 'assets/Images/navako.png', orangeLogo: 'assets/Images/navako  O.png'},
+    {id: 'c10', logo: 'assets/Images/negah.png', orangeLogo: 'assets/Images/negah O.png'},
+    {id: 'c11', logo: 'assets/Images/kpec.png', orangeLogo: 'assets/Images/kpec O.png'},
+    {id: 'c12', logo: 'assets/Images/armaghan.png', orangeLogo: 'assets/Images/armaghan O.png'},
+    {id: 'c13', logo: 'assets/Images/torna.png', orangeLogo: 'assets/Images/torna O.png'},
+    {id: 'c14', logo: 'assets/Images/telecom.png', orangeLogo: 'assets/Images/telecom O.png'},
+    {id: 'c15', logo: 'assets/Images/hamoon.png', orangeLogo: 'assets/Images/hamoon    O.png'},
+    {id: 'c16', logo: 'assets/Images/ava parsi.png', orangeLogo: 'assets/Images/ava parsi O.png'},
+    {id: 'c17', logo: 'assets/Images/andishe negar.png', orangeLogo: 'assets/Images/andishe negar O.png'},
+]
 
 const removeFilter = () => {
     container.style.filter = 'none';
@@ -96,6 +118,32 @@ const showNewsContent = news => {
     news.classList.remove('hide-news');
 }
 
+const showCompanyLogo = company => {
+    const index = company.id;
+
+    const logoImg = $.querySelector(`#${index} img`);
+
+    companyLogos.some(logo => {
+        console.log(index, logo.id);
+        if (index == logo.id) {
+            logoImg.setAttribute('src', logo.logo);
+            return true;
+        }
+    })
+}
+
+const showOrangeCompanyLogo = company => {
+    const index = company.id;
+
+    const logoImg = $.querySelector(`#${index} img`);
+
+    companyLogos.some(logo => {
+        if (index == logo.id) {
+            logoImg.setAttribute('src', logo.orangeLogo);
+            return true;
+        }
+    })
+}
 
 window.addEventListener('load', () => {
     removeFilter();
@@ -115,5 +163,15 @@ newsList.forEach(news => {
 
     news.addEventListener('mouseenter', () => {
         showNewsContent(news)
+    })
+})
+
+companies.forEach(company => {
+    company.addEventListener('mouseenter', event => {
+        showCompanyLogo(event.target)
+    })
+
+    company.addEventListener('mouseleave', event => {
+        showOrangeCompanyLogo(event.target)
     })
 })

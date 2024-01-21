@@ -70,6 +70,11 @@ a {
   flex-direction: row-reverse;
   align-items: flex-start;
 }
+
+.footer-description, #footer-lists > p {
+  line-height: 27px;
+  letter-spacing: 0.5px;
+}
   
 .footer-list {
   display: flex;
@@ -106,7 +111,7 @@ a {
 }
   
 .footer-list h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
   
 .footer-list ul {

@@ -6,9 +6,9 @@ const setSwiper = () => {
         centeredSlide: true,
         spaceBetween: 100,
         slidesPerView: 1,
-        speed: 1000,
-        freeMode: true,
-        freeModeMomentum: false,
+        speed: 2000,
+        // freeMode: true,
+        // freeModeMomentum: false,
         autoplay: {
             delay: 0,
             stopOnLastSlide: false,

@@ -233,6 +233,8 @@ a {
 .section-title p {
   font-size: 1rem;
   text-align: center;
+  line-height: 27px;
+  letter-spacing: 0.5px;
 }
 
 .section-title b {
@@ -605,6 +607,7 @@ a {
 .service-info p {
   width: 50%;
   text-align: justify;
+  line-height: 27px;
 }
 
 .row-reverse {
@@ -648,10 +651,10 @@ a {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 55%;
-  gap: 40px;
+  gap: 90px;
 }
 
 .company {
@@ -671,8 +674,8 @@ a {
 }
 
 .company img {
-  width: 100%;
-  height: auto;
+  width: 3cm;
+  height: 3cm;
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -992,14 +995,9 @@ a {
 
   .companies-row {
     flex-wrap: wrap;
-    gap: 5px;
-    padding: 5px;
+    gap: 85px;
+    padding: 5px 65px;
     width: 100%;
-  }
-
-  #company{
-    height: 100px !important;
-    width: 90px !important; 
   }
 
   #companies-content {
@@ -1178,14 +1176,9 @@ a {
 
   .companies-row {
     flex-wrap: wrap;
-    gap: 26px;
+    gap: 70px;
     padding: 5px;
     width: 100%;
-  }
-
-  #company{
-    height: 100px !important;
-    width: 90px !important; 
   }
 
   #companies-content {
@@ -1366,14 +1359,9 @@ a {
 
   .companies-row {
     flex-wrap: wrap;
-    gap: 26px;
+    gap: 80px;
     padding: 5px;
     width: 100%;
-  }
-
-  #company{
-    height: 100px !important;
-    width: 90px !important; 
   }
 
   #companies-content {
@@ -1545,14 +1533,9 @@ a {
 
   .companies-row {
     flex-wrap: wrap;
-    gap: 26px;
+    gap: 90px;
     padding: 5px;
     width: 100%;
-  }
-
-  #company{
-    height: 100px !important;
-    width: 90px !important; 
   }
 
   #companies-content {
