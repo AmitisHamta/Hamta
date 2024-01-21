@@ -103,7 +103,7 @@ a {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  margin-right: 250px;
+  padding-right: 250px;
   gap: 20px;
 }
 
@@ -483,7 +483,7 @@ a {
   gap: 10px;
 }
 
-.info img {
+.info img, .info video {
   width: 90%;
   height: auto;
 }
@@ -910,7 +910,7 @@ a {
     font-size: 1.2rem;
   }
 
-  .info img {
+  .info img, .img video {
     width: 100%;
   }
 
@@ -1096,7 +1096,7 @@ a {
     font-size: 1.2rem;
   }
 
-  .info img {
+  .info img, .img video {
     width: 100%;
   }
 
@@ -1283,7 +1283,7 @@ a {
     font-size: 1.2rem;
   }
 
-  .info img {
+  .info img, .info video {
     width: 100%;
   }
 
@@ -1462,7 +1462,7 @@ a {
     font-size: 1.2rem;
   }
 
-  .info img {
+  .info img, .info video {
     width: 100%;
   }
 
