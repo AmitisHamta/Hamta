@@ -109,7 +109,7 @@ a {
 
 #display-text, #body-text {
   width: 41%;
-  height: 30%;
+  height: 25%;
   position: relative;
   display: flex;
   align-items: center;
@@ -163,7 +163,7 @@ a {
 }
 
 #body-text {
-  height: 10%;
+  height: 7%;
   position: relative;
 }
 
