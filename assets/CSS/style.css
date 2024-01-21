@@ -483,7 +483,7 @@ a {
   gap: 10px;
 }
 
-.info img, .info video {
+.info video {
   width: 90%;
   height: auto;
 }
@@ -910,7 +910,7 @@ a {
     font-size: 1.2rem;
   }
 
-  .info img, .img video {
+  .img video {
     width: 100%;
   }
 
@@ -1096,7 +1096,7 @@ a {
     font-size: 1.2rem;
   }
 
-  .info img, .img video {
+  .img video {
     width: 100%;
   }
 
@@ -1283,7 +1283,7 @@ a {
     font-size: 1.2rem;
   }
 
-  .info img, .info video {
+  .info video {
     width: 100%;
   }
 
@@ -1462,7 +1462,7 @@ a {
     font-size: 1.2rem;
   }
 
-  .info img, .info video {
+  .info video {
     width: 100%;
   }
 
