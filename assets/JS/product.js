@@ -63,14 +63,19 @@ const products = [
 const checkCategory = () => {
     if (location.hash.includes('cashless')) {
         pageTitle.textContent = 'کش لس ها';
+        $.body.title = 'کش لس ها | آمیتیس همتا'
     }else if (location.hash.includes('pos')) {
         pageTitle.textContent = 'کارتخوان ها';
+        $.body.title = 'کاتخوان ها | آمیتیس همتا';
     }else if (location.hash.includes('atm')) {
         pageTitle.textContent = 'خودپرداز ها';
+        $.body.title = 'خودپرداز ها | آمیتیس همتا';
     }else if (location.hash.includes('cashbox')) {
         pageTitle.textContent = 'صندوق های فروشگاهی';
+        $.body.title = 'صندوق هاس فروشگاهی | آمیتیس همتا';
     }else if (location.hash.includes('others')) {
         pageTitle.textContent = 'ملزومات بانکی';
+        $.body.title = 'ملزومات بانکی | آمیتیس همتا';
     }
     const underline = $.createElement('div');
     underline.classList.add('underline', 'show-underline');
