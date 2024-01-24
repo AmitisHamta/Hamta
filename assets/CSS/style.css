@@ -728,13 +728,12 @@ a {
 }
 
 .news {
-  width: 20%;
-  height: 200px;
+  width: 40%;
+  height: 130px;
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   gap: 20px;
   direction: rtl;
   opacity: 1;
@@ -744,7 +743,7 @@ a {
 }
 
 .news a {
-  width: 100%;
+  width: 30%;
   height: 100%;
   border-radius: 10px;
   opacity: 1;
@@ -759,34 +758,32 @@ a {
   border-radius: 10px;
 }
 
-.news p {
-  position: absolute;
-  top: 50%;
-  opacity: 0;
+.news-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 10px;
+  height: 100%;
+  width: 70%;
+}
+
+.news-details h3 {
+  font-size: 1rem;
+}
+
+.news-details p {
   z-index: 1;
   font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .news a:hover {
   transform: scale(1.1);
-}
-
-.news a:hover ~ p {
-  opacity: 1;
-  top: 100%;
-  animation: swipeDown 0.5s linear;
-}
-
-@keyframes swipeDown {
-  from {
-    top: 50%;
-    opacity: 0;
-  }
-
-  to {
-    top: 100%;
-    opacity: 1;
-  }
 }
 
 #news-btn {
@@ -828,24 +825,6 @@ a {
   }
   to {
     right: 54%;
-  }
-}
-
-.hide-news ~ p {
-  top: 50%;
-  opacity: 0;
-  animation: swipeUp 0.5s linear;
-}
-
-@keyframes swipeUp {
-  from {
-    top: 100%;
-    opacity: 1;
-  }
-
-  to {
-    top: 50%;
-    opacity: 0;
   }
 }
 
@@ -1196,7 +1175,7 @@ a {
   }
 
   .news {
-    width: 60%;
+    width: 90%;
   }
 
   .about-arrow-btn {
@@ -1374,7 +1353,7 @@ a {
   }
 
   .news {
-    width: 40%;
+    width: 46%;
   }
 
   .about-arrow-btn {
@@ -1548,7 +1527,7 @@ a {
   }
 
   .news {
-    width: 20%;
+    width: 40%;
   }
 
   .about-arrow-btn {
@@ -1576,5 +1555,9 @@ a {
 
   .companies-row {
     width: 65%;
+  }
+
+  .news {
+    width: 48%;
   }
 }
