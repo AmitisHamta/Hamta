@@ -52,7 +52,6 @@ window.addEventListener('load', () => {
 
 window.addEventListener('scroll', () => {
     setLines();
-    console.log($.documentElement.scrollTop);
 })
 
 requestBtns.forEach(btn => {
