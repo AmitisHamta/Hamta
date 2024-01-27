@@ -54,7 +54,7 @@ const generateNews = (newsData, newsFragment) => {
 
         const img = $.createElement('img');
         img.setAttribute('src', news.Image);
-        img.alt = 'خبر اقتصادی و بانکی'
+        img.alt = 'اخبر اقتصادی و بانکی'
 
         imgContainer.append(img);
 
@@ -75,7 +75,7 @@ const generateNews = (newsData, newsFragment) => {
         linkButton.classList.add('news-btn');
 
         const link = $.createElement('a');
-        link.textContent = 'لینک خبر';
+        link.textContent = 'ادامه مطلب';
         link.ariaLabel = 'link to news';
         link.href = news.link;
 

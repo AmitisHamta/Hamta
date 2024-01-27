@@ -14,6 +14,7 @@ const mainText = $.getElementById('main-text');
 const mainDescript = $.getElementById('main-descript');
 const textBoxes = $.querySelectorAll('.text-box');
 const companies = $.querySelectorAll('.company');
+const newsList = $.getElementById('news-body');
 
 const companyLogos = [
     {id: 'c0', logo: 'assets/Images/pardakh novin.png', orangeLogo: 'assets/Images/pardakh novin O.png'},
@@ -35,6 +36,10 @@ const companyLogos = [
     {id: 'c16', logo: 'assets/Images/ava parsi.png', orangeLogo: 'assets/Images/ava parsi O.png'},
     {id: 'c17', logo: 'assets/Images/andishe negar.png', orangeLogo: 'assets/Images/andishe negar O.png'},
 ]
+
+const newsFragment = $.createDocumentFragment();
+
+let news = [];
 
 const removeFilter = () => {
     container.style.filter = 'none';
@@ -136,7 +141,57 @@ const showOrangeCompanyLogo = company => {
     })
 }
 
+async function getNewsData () {
+    const data = await supabase
+    .from('news')
+    .select('*')
+    .then(res => {
+        news = res.data;
+        removeFilter();
+        renderNews();
+    })
+}
+
+const renderNews = () => {
+    newsList.innerHTML = '';
+
+    generateNews(news, newsFragment);
+
+    newsList.append(newsFragment);
+}
+
+const generateNews = (newsData, fragment) => {
+    newsData.forEach(news => {
+        const newsContainer = $.createElement('div');
+        newsContainer.classList.add('news');
+
+        const link = $.createElement('a');
+        link.href = news.link;
+        link.ariaLabel = 'اخبار بانکی و اقتصادی';
+
+        const img = $.createElement('img');
+        img.setAttribute('src', newsData.Image);
+        img.alt = 'اخبار بانکی و اقتصادی';
+
+        link.append(img);
+
+        const newsDetails = $.createElement('div');
+        newsDetails.classList.add('news-details');
+
+        const title = $.createElement('h3');
+        title.innerHTML = news.title;
+
+        const description = $.createElement('p');
+        description.innerHTML = news.content;
+
+        newsDetails.append(title, description);
+        newsContainer.append(link, newsDetails)
+
+    })
+}
+
 window.addEventListener('load', () => {
+    getNewsData();
     removeFilter();
     setBoxesAnimation();
     showMainTexts();
