@@ -786,6 +786,14 @@ a {
   transform: scale(1.1);
 }
 
+#news-btns {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 #news-btn {
   width: 150px;
   height: 40px;
@@ -795,7 +803,6 @@ a {
   background-color: #dc8501;
   font-size: 1.2rem;
   z-index: 2;
-  margin-top: 20px;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -806,7 +813,7 @@ a {
 
 #news-content .about-arrow-btn{
   bottom: 0;
-  right: 50%;
+  right: 100px;
   height: 40px;
 }
 
@@ -816,15 +823,15 @@ a {
 
 #news-btn:hover ~ .about-arrow-btn {
   animation: swipeLeft2 0.2s linear;
-  right: 54%;
+  right: 151px;
 }
 
 @keyframes swipeLeft2 {
   from {
-    right: 50%;
+    right: 100px;
   }
   to {
-    right: 54%;
+    right: 151px;
   }
 }
 
@@ -1155,7 +1162,6 @@ a {
 
   .companies-row {
     flex-wrap: wrap;
-    gap: 70px;
     padding: 5px;
     width: 100%;
   }
@@ -1163,6 +1169,10 @@ a {
   #companies-content {
     gap: 20px;
     padding: 50px 40px;
+  }
+
+  .company {
+    width: 20%;
   }
 
   #news-container {
@@ -1348,6 +1358,10 @@ a {
     padding: 50px;
   }
 
+  .company {
+    width: 15%;
+  }
+
   #news-container {
     padding: 50px 20px;
   }
@@ -1520,6 +1534,10 @@ a {
   #companies-content {
     gap: 20px;
     padding: 50px;
+  }
+
+  .company {
+    width: 8%;
   }
 
   #news-container {
