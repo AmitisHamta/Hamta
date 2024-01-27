@@ -18,7 +18,7 @@ class Loader extends HTMLElement {
     }
 
     connectedCallback () {
-        let loader = this.shadowRoot.querySelector('.loader-container')
+        let loader = this.shadowRoot.querySelector('.loader-container');
 
         window.addEventListener('load', () => {
             loader.classList.add('hidden');
