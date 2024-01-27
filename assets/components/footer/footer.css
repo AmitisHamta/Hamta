@@ -6,7 +6,7 @@
 
 a {
   text-decoration: none;
-  color: #fffafa;
+  color: #f5f5f5;
 }
 
 .wave-bg {
@@ -40,15 +40,15 @@ a {
   gap: 20px;
   padding: 50px 200px;
   background-color: var(--blue);
-  color: #fffafa;
+  color: #f5f5f5;
 }
   
 #footer-content hr {
   width: 100%;
   margin: auto;
   opacity: 0.75;
-  color: #fffafa;
-  background-color: #fffafa;
+  color: #f5f5f5;
+  background-color: #f5f5f5;
 }
   
 #footer-content > h1 {
@@ -106,7 +106,7 @@ a {
   
 .footer-list a {
   text-decoration: none;
-  color: #fffafa;
+  color: #f5f5f5;
   background-color: transparent;
 }
   
@@ -145,7 +145,7 @@ a {
   border-radius: 10px;
   height: 40px;
   width: 40px;
-  color: #fffafa;
+  color: #f5f5f5;
   background-color: var(--orange);
   font-size: 1.5rem;
   padding-top: 2px;
