@@ -1,5 +1,7 @@
 "use strict"
 
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
+
 import {Header} from "../components/header/header.js";
 import { Footer } from "../components/footer/footer.js";
 import { Loader } from "../components/loader/loader.js";
@@ -36,6 +38,10 @@ const companyLogos = [
     {id: 'c16', logo: 'assets/Images/ava parsi.png', orangeLogo: 'assets/Images/ava parsi O.png'},
     {id: 'c17', logo: 'assets/Images/andishe negar.png', orangeLogo: 'assets/Images/andishe negar O.png'},
 ]
+
+const supabase = createClient
+('https://wbkeahghzxpcrxdbmdge.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6India2VhaGdoenhwY3J4ZGJtZGdlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDU5OTU3MDQsImV4cCI6MjAyMTU3MTcwNH0.g0VDd1nt_JwDOKjItT6pWdtLjLqm9zs5k1toXLCHo5I');
+
 
 const newsFragment = $.createDocumentFragment();
 
@@ -161,16 +167,21 @@ const renderNews = () => {
 }
 
 const generateNews = (newsData, fragment) => {
-    newsData.forEach(news => {
+    newsData.forEach((news, index) => {
         const newsContainer = $.createElement('div');
         newsContainer.classList.add('news');
+        if (index === 0 || index === 2) {
+            newsContainer.dataset.aos = 'fade-right';
+        }else if (index === 1 || index === 3) {
+            newsContainer.dataset.aos = 'fade-left';
+        }
 
         const link = $.createElement('a');
         link.href = news.link;
         link.ariaLabel = 'اخبار بانکی و اقتصادی';
 
         const img = $.createElement('img');
-        img.setAttribute('src', newsData.Image);
+        img.setAttribute('src', news.Image);
         img.alt = 'اخبار بانکی و اقتصادی';
 
         link.append(img);
@@ -185,7 +196,9 @@ const generateNews = (newsData, fragment) => {
         description.innerHTML = news.content;
 
         newsDetails.append(title, description);
-        newsContainer.append(link, newsDetails)
+        newsContainer.append(link, newsDetails);
+
+        fragment.append(newsContainer);
 
     })
 }

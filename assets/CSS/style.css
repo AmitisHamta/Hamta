@@ -16,7 +16,7 @@ html, body {
 }
 
 :root {
-    --theme: #fffafa;
+    --theme: #f5f5f5;
     --color: #333;
     --orange: #dc8501;
     --blue: #106ea5;
@@ -221,7 +221,7 @@ a {
 
 .section-title {
   font-size: 2rem;
-  color: #fffafa;
+  color: #f5f5f5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -412,7 +412,7 @@ a {
 
 .about-info {
   direction: rtl;
-  color: #fffafa;
+  color: #f5f5f5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -443,7 +443,7 @@ a {
   border: 1px solid #dc8501;
   border-radius: 20px;
   background-color: #dc8501;
-  color: #fffafa;
+  color: #f5f5f5;
   padding: 0 13px;
   height: 35px;
   cursor: pointer;
@@ -456,7 +456,7 @@ a {
 }
 
 .about-btn a {
-  color: #fffafa
+  color: #f5f5f5
 }
 
 .about-arrow-btn {
@@ -585,7 +585,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fffafa;
+  color: #f5f5f5;
   direction: rtl;
 }
 
@@ -808,7 +808,7 @@ a {
 }
 
 #news-btn a {
-  color: #fffafa;
+  color: #f5f5f5;
 }
 
 #news-content .about-arrow-btn{
