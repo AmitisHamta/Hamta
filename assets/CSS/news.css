@@ -245,6 +245,10 @@ a {
     }
 }
 
+.date {
+    color: #979797;
+}
+
 @media screen and (max-width: 480px) {
     #news-container {
         padding: 20px;
@@ -317,6 +321,10 @@ a {
     #news-list {
         width: 100%;
     }
+
+    .news-details h1 {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1279px) {
@@ -328,5 +336,9 @@ a {
 @media screen and (min-width: 1280px) and (max-width: 1600px) {
     #news-list {
         width: 80%;
+    }
+
+    .news-details h1 {
+        font-size: 1.5rem;
     }
 }

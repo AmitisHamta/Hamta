@@ -1,5 +1,7 @@
 "use strict"
 
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
+
 import {Header} from "../components/header/header.js";
 import { Footer } from "../components/footer/footer.js";
 import { Loader } from "../components/loader/loader.js";
@@ -14,16 +16,24 @@ const newsList = $.getElementById('news-list');
 
 const newsFragment = $.createDocumentFragment();
 
-const news = [
-    {id: 0, title: "1عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
-    {id: 1, title: "2عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
-    {id: 2, title: "3عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
-    {id: 3, title: "4عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
-    {id: 4, title: "5عنوان خبر", content: "متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبرمتن خبر متن خبر متن خبر متن خبر متن خبر متن خبر", link: "https://way2pay.ir/", img: "assets/Images/755e0813-4e5e-443f-8bfe-093e6bb4552f.jpg"},
-]
+const supabase = createClient
+('https://wbkeahghzxpcrxdbmdge.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6India2VhaGdoenhwY3J4ZGJtZGdlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDU5OTU3MDQsImV4cCI6MjAyMTU3MTcwNH0.g0VDd1nt_JwDOKjItT6pWdtLjLqm9zs5k1toXLCHo5I');
+
+let news = [];
 
 const removeFilter = () => {
     container.style.filter = 'none';
+}
+
+async function getNewsData () {
+    const data = await supabase
+    .from('news')
+    .select('*')
+    .then(res => {
+        news = res.data;
+        removeFilter();
+        renderNews();
+    })
 }
 
 const renderNews = () => {
@@ -43,7 +53,7 @@ const generateNews = (newsData, newsFragment) => {
         imgContainer.classList.add('img-container');
 
         const img = $.createElement('img');
-        img.setAttribute('src', news.img);
+        img.setAttribute('src', news.Image);
         img.alt = 'خبر اقتصادی و بانکی'
 
         imgContainer.append(img);
@@ -53,6 +63,10 @@ const generateNews = (newsData, newsFragment) => {
 
         const title = $.createElement('h1');
         title.textContent = news.title;
+
+        const date = $.createElement('p');
+        date.classList.add('date');
+        date.innerHTML = news.date;
 
         const content = $.createElement('p');
         content.textContent = news.content;
@@ -75,7 +89,7 @@ const generateNews = (newsData, newsFragment) => {
 
         arrowBtn.append(arrowIcon);
 
-        newsDetails.append(title, content, linkButton, arrowBtn);
+        newsDetails.append(title, date, content, linkButton, arrowBtn);
         newsContainer.append(imgContainer, newsDetails);
 
         const underline = $.createElement('div');
@@ -86,6 +100,5 @@ const generateNews = (newsData, newsFragment) => {
 }
 
 window.addEventListener('load', () => {
-    removeFilter();
-    renderNews();
+    getNewsData();
 })
