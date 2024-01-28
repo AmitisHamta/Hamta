@@ -1,5 +1,7 @@
 "use strict"
 
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
 import {Header} from "../components/header/header.js";
 import { Footer } from "../components/footer/footer.js";
 import { Loader } from "../components/loader/loader.js";
@@ -19,7 +21,11 @@ const msg = $.querySelector('.noti-msg');
 const textArea = $.getElementById('msg');
 const phoneInput = $.getElementById('phone');
 
-const phoneRegex = /((0?9)|(\+?989))\d{2}\W?\d{3}\W?\d{4}/g;
+const phoneRegex = /^(?:(?:\+|00)98|0)?9\d{9}$/;
+
+const supabase = createClient
+('https://wbkeahghzxpcrxdbmdge.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6India2VhaGdoenhwY3J4ZGJtZGdlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDU5OTU3MDQsImV4cCI6MjAyMTU3MTcwNH0.g0VDd1nt_JwDOKjItT6pWdtLjLqm9zs5k1toXLCHo5I');
+
 
 const removeFilter = () => {
     container.style.filter = 'none';
@@ -55,32 +61,60 @@ const checkService = () => {
 }
 
 const checkInfo = () => {
+
+    let isEmpty = false;
+
     inputs.forEach(input => {
         if (!input.value) {
-            showErrorMsg('* لطفا اطلاعات خود را وارد کنید');
-        }else if (!phoneRegex.test(phoneInput.value)) {
+            if (!input.value) {
+                showErrorMsg('* لطفا اطلاعات خود را وارد کنید');
+                isEmpty = true;
+                return false;
+            }
+        }
+    })
+    
+    if (!isEmpty) {
+        if (!phoneRegex.test(phoneInput.value)) {
             showErrorMsg('* شماره موبایل صحیح نمیباشد');
         }else {
             if (selectBtn.textContent.includes('انتخاب')){
                 showErrorMsg('* لطفا موضوع مورد نظر را انتخاب نمایید')
             }else if (!textArea.value) {
                 showErrorMsg('* پیام خود را تایپ کنید')
-            }else {
-                if (selectBtn.textContent.includes('شتابی') || selectBtn.textContent.includes('شاپرکی')) {
-                    const agencyCheckbox = $.getElementById('agency');
-                    const posCustomerCheckbox = $.getElementById('pos-customer');
+            }else if (selectBtn.textContent.includes('شتابی') || selectBtn.textContent.includes('شاپرکی')) {
+                const agencyCheckbox = $.getElementById('agency');
+                const posCustomerCheckbox = $.getElementById('pos-customer');
 
-                    if (agencyCheckbox.checked || posCustomerCheckbox.checked) {
-                        showSuccessMsg("* پیام شما با موفقیت ارسال شد")
-                    }else {
-                        showErrorMsg('* لطفا خدمت درخواستی خود را انتخاب نمایید')
-                    }
+                if (agencyCheckbox.checked || posCustomerCheckbox.checked) {
+                    submitData();
                 }else {
-                    showSuccessMsg("* پیام شما با موفقیت ارسال شد")
+                    showErrorMsg('* لطفا خدمت درخواستی خود را انتخاب نمایید')
                 }
+            }else {
+                submitData();
             }
         }
-    })
+    }
+}
+
+async function submitData () {
+    const { data, error } = await supabase
+        .from('contacts-info')
+        .insert({
+            name: inputs[0].value,
+            lastname: inputs[1].value,
+            number: inputs[2].value,
+            topic: selectBtn.textContent,
+            message: textArea.value
+        })
+
+        if (error) {
+            showErrorMsg('* لطفا دوباره تلاش کنید');
+        }else {
+            showSuccessMsg("* پیام شما با موفقیت ارسال شد")
+            resetInputs();
+        }
 }
 
 const showErrorMsg = message => {
@@ -101,6 +135,16 @@ const showSuccessMsg = message => {
     setTimeout(() => {
         msg.classList.remove('success');
     }, 5000);
+}
+
+const resetInputs = () => {
+    inputs.forEach(input => {
+        input.value = '';
+    })
+
+    textArea.value = '';
+    selectBtn.textContent = 'موضوع';
+    checkService();
 }
 
 window.addEventListener('load', () => {

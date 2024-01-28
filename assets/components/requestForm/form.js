@@ -166,7 +166,7 @@ class Form extends HTMLElement {
 
     checkInfo () {
         const phoneInput = this.shadowRoot.getElementById('phone');
-        const phoneRegex = /((0?9)|(\+?989))\d{2}\W?\d{3}\W?\d{4}/g;
+        const phoneRegex = /^(?:(?:\+|00)98|0)?9\d{9}$/;
         let isEmpty = false;
 
         this.inputs.forEach(input => {
