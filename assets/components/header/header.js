@@ -34,7 +34,7 @@ template.innerHTML = `
                             <div class="list-container">
                                 <ul class="products-list">
                                     <li>
-                                        <a href="product.html#cashless">کش لس</a>
+                                        <a>کش لس</a>
                                         <div class="underline"></div>
                                     </li>
                                     
