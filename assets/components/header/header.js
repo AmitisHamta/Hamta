@@ -34,28 +34,28 @@ template.innerHTML = `
                             <div class="list-container">
                                 <ul class="products-list">
                                     <li>
-                                        <a>کش لس</a>
+                                        <a href="cashless.html">کش لس</a>
                                         <div class="underline"></div>
                                     </li>
                                     
                                     <li>
-                                        <a href="product.html#pos">کارتخوان</a>
+                                        <a href="pos.html">کارتخوان</a>
                                         <div class="underline"></div>
                                     </li>
                                     
                                     <li>
-                                        <a href="product.html#atm">خودپرداز</a>
-                                        <div class="underline"></div>
+                                        <a href="atm.html">خودپرداز</a>
+                                        
                                     </li>
 
-                                    <li>
+                                    <!-- <li>
                                         <a href="product.html#others">ملزومات بانکی</a>
                                         <div class="underline"></div>
                                     </li>
                                     
                                     <li>
                                         <a href="product.html#cashbox">صندوق فروشگاهی</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                             <div class="dropdown-box"></div>
@@ -278,17 +278,6 @@ class Header extends HTMLElement {
             line.classList.add('exit-underline');
         })
     }
-
-    goToProductPage (index) {
-        if (index === 0) {
-            location.href = 'https://amitishamta.github.io/hamta/product.html#cashless';
-        }else if (index === 1) {
-            location.assign('https://amitishamta.github.io/hamta/product.html#pos');
-        }else if (index === 2) {
-            location.href = 'https://amitishamta.github.io/hamta/product.html#atm';
-        }
-    }
-    
 }
 
 export {Header};

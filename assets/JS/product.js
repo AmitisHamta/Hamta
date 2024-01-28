@@ -1,98 +1,8 @@
 "use strict"
 
-import {Header} from "../components/header/header.js";
-import { Footer } from "../components/footer/footer.js";
-import { Loader } from "../components/loader/loader.js";
-
-window.customElements.define('site-header', Header);
-window.customElements.define('site-footer', Footer);
-window.customElements.define('site-loader', Loader);
-
 const $ = document;
-const container = $.getElementById('container');
-const productList = $.getElementById('products-list');
-const pageTitle = $.querySelector('#page-title h1')
 
-const productsFragment = $.createDocumentFragment();
-
-const products = [
-    {
-        id: 0, 
-        title: "K9", 
-        description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
-        image: 'assets/Images/pos.png'
-    },
-    {
-        id: 1, 
-        title: "K9", 
-        description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
-        image: 'assets/Images/pos.png'
-    },
-    {
-        id: 2, 
-        title: "K9", 
-        description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
-        image: 'assets/Images/pos.png'
-    },
-    {
-        id: 3, 
-        title: "K9", 
-        description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
-        image: 'assets/Images/pos.png'
-    },
-    {
-        id: 4, 
-        title: "K9", 
-        description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
-        image: 'assets/Images/pos.png'
-    },
-    {
-        id: 5, 
-        title: "K9", 
-        description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
-        image: 'assets/Images/pos.png'
-    },
-    {
-        id: 6, 
-        title: "K9", 
-        description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
-        image: 'assets/Images/pos.png'
-    },
-]
-
-const checkCategory = () => {
-    if (location.hash.includes('cashless')) {
-        pageTitle.textContent = 'کش لس ها';
-        $.body.title = 'کش لس ها | آمیتیس همتا'
-    }else if (location.hash.includes('pos')) {
-        pageTitle.textContent = 'کارتخوان ها';
-        $.body.title = 'کاتخوان ها | آمیتیس همتا';
-    }else if (location.hash.includes('atm')) {
-        pageTitle.textContent = 'خودپرداز ها';
-        $.body.title = 'خودپرداز ها | آمیتیس همتا';
-    }else if (location.hash.includes('cashbox')) {
-        pageTitle.textContent = 'صندوق های فروشگاهی';
-        $.body.title = 'صندوق هاس فروشگاهی | آمیتیس همتا';
-    }else if (location.hash.includes('others')) {
-        pageTitle.textContent = 'ملزومات بانکی';
-        $.body.title = 'ملزومات بانکی | آمیتیس همتا';
-    }
-    const underline = $.createElement('div');
-    underline.classList.add('underline', 'show-underline');
-    pageTitle.append(underline)
-
-    renderProducts();
-}
-
-const renderProducts = () => {
-    productList.innerHTML = '';
-
-    generateProductCards();
-
-    productList.append(productsFragment);
-}
-
-const generateProductCards = () => {
+const generateProductCards = (products, productsFragment) => {
     products.forEach(product => {
         const productContainer = $.createElement('div');
         productContainer.classList.add('product');
@@ -117,26 +27,29 @@ const generateProductCards = () => {
         description.classList.add('product-description');
         description.textContent = product.description;
 
+        const productBtns = $.createElement('div');
+        productBtns.classList.add('product-btns');
+
         const detailsBtn = $.createElement('button');
         detailsBtn.classList.add('details-btn');
 
         const btnLink = $.createElement('a');
         btnLink.textContent = 'جزئیات';
 
+        const arrowBtn = $.createElement('button');
+        arrowBtn.classList.add('arrow-btn');
+
+        const arrow = $.createElement('i');
+        arrow.classList.add('bi', 'bi-arrow-left-short');
+
         detailsBtn.append(btnLink);
+        arrowBtn.appendChild(arrow);
+        productBtns.append(detailsBtn, arrowBtn);
 
-        productDetails.append(title, description, detailsBtn);
+        productDetails.append(title, description, productBtns);
         productContainer.append(imgContainer, productDetails);
-
         productsFragment.append(productContainer);
     })
 }
 
-const removeFilter = () => {
-    container.style.filter = 'none';
-}
-
-window.addEventListener('load', () => {
-    removeFilter();
-    checkCategory();
-})
+export default generateProductCards;

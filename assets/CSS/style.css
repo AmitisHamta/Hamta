@@ -1,7 +1,6 @@
 html, body {
     width: 100%;
     height: auto;
-    font-family: 'Vazirmatn', sans-serif;
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: var(--blue) var(--white);
