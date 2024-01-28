@@ -283,7 +283,7 @@ class Header extends HTMLElement {
         if (index === 0) {
             location.href = 'https://amitishamta.github.io/hamta/product.html#cashless';
         }else if (index === 1) {
-            location.href = 'https://amitishamta.github.io/hamta/product.html#pos';
+            location.assign('https://amitishamta.github.io/hamta/product.html#pos');
         }else if (index === 2) {
             location.href = 'https://amitishamta.github.io/hamta/product.html#atm';
         }
