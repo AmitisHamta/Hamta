@@ -5,6 +5,13 @@
     font-family: iransans;
 }
 
+:root {
+    --white: #f5f5f5;
+    --black: #333;
+    --orange: #dc8501;
+    --blue: #106ea5;
+}
+
 @font-face {
     font-family: iransans;
     src: url(../fonts/woff/IRANSansX-Regular.woff);
@@ -22,7 +29,7 @@
     justify-content: center;
     direction: rtl;
     transition: height 0.2s;
-    background-color: #f5f5f5;
+    background-color: var(--white);
 }
 
 #request-form {
@@ -32,10 +39,10 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    border: 1px solid #dc8501;
+    border: 1px solid var(--orange);
     border-radius: 20px;
     padding: 20px;
-    box-shadow: 0 0px 5px 0 #dc8501;
+    box-shadow: 0 0px 5px 0 var(--orange);
     margin: 10x;
     z-index: 2;
     transition: all 0.2s;
@@ -73,7 +80,7 @@
 .input {
     outline: none;
     border: none;
-    border: 1px solid #dc8501;
+    border: 1px solid var(--orange);
     border-radius: 10px;
     padding: 10px;
 }
@@ -82,10 +89,10 @@
     width: 85%;
     height: 40px;
     outline: none;
-    border: 1px solid #dc8501;
+    border: 1px solid var(--orange);
     border-radius: 10px;
-    background-color: #dc8501;
-    color: #f5f5f5;
+    background-color: var(--orange);
+    color: var(--white);
     cursor: pointer;
     font-size: 1.2rem;
     transition: all 0.2s;
@@ -109,7 +116,7 @@
 
 .success {
     display: inline;
-    color: #106ea5;
+    color: var(--blue);
 }
 
 .form-floating {
@@ -150,7 +157,7 @@
 }
 
 .form-control:focus {
-    border-color: #106ea5;
+    border-color:var(--blue);
 }
 
 .form-floating>.form-control-plaintext~label::after, 
@@ -164,12 +171,12 @@
 }
 
 .form-check-input:checked {
-    background-color: #dc8501;
-    border-color: #dc8501;
+    background-color: var(--orange);
+    border-color: var(--orange);
 }
 
 .form-check-input:focus {
-    border-color: #dc8501;
+    border-color: var(--orange);
     box-shadow: 0 0 0 0.2rem #dc8501a3;
 }
 
@@ -181,26 +188,26 @@
     justify-content: flex-start;
     gap: 7px;
     direction: rtl;
-    background-color: #f5f5f5;
-    border: 1px solid #dc8501;
+    background-color: var(--white);
+    border: 1px solid var(--orange);
     border-radius: 10px;
-    color: #333;
+    color: var(--black);
 }
 
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    background-color: #dc8501;
-    border-color: #dc8501;
-    color: #f5f5f5;
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
 }
 
 .btn:hover {
-    background-color: #dc8501;
-    border-color: #dc8501;
-    color: #f5f5f5;
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
 }
 
 .dropdown-menu {
-    border: 1px solid #dc8501;
+    border: 1px solid var(--orange);
     text-align: right;
     width: 100%;
     padding: 5px;
@@ -215,13 +222,13 @@
 .dropdown-item {
     border-radius: 4px;
     padding: 4px 7px;
-    color: #333;
+    color: var(--black);
     transition: color 0.2s, background-color 0.2s;
 }
 
 .dropdown-item:hover {
-    background-color: #dc8501;
-    color: #f5f5f5;
+    background-color: var(--orange);
+    color: var(--white);
 }
 
 .checkBoxes {

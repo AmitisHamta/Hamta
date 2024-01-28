@@ -4,7 +4,7 @@ html, body {
     font-family: 'Vazirmatn', sans-serif;
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    scrollbar-color: var(--blue) var(--theme);
+    scrollbar-color: var(--blue) var(--white);
     overflow-x: hidden;
 }
 
@@ -16,8 +16,8 @@ html, body {
 }
 
 :root {
-    --theme: #f5f5f5;
-    --color: #333;
+    --white: #f5f5f5;
+    --black: #333;
     --orange: #dc8501;
     --blue: #106ea5;
 }
@@ -33,7 +33,7 @@ html, body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--theme);
+    background-color: var(--white);
 }
 
 @font-face {
@@ -45,15 +45,15 @@ html, body {
 #container {
     width: 100%;
     height: 100%;
-    background-color: var(--theme);
-    color: var(--color);
+    background-color: var(--white);
+    color: var(--black);
     overflow: hidden;
     filter: blur(5px);
 }
 
 a {
     text-decoration: none;
-    color: var(--color);
+    color: var(--black);
 }
 
 .underline {
@@ -127,7 +127,7 @@ a {
 .text-box {
   width: 0;
   height: 100%;
-  background-color: #dc8501;
+  background-color: var(--orange);
   z-index: 10;
   position: absolute;
   right: 0;
@@ -201,7 +201,7 @@ a {
 #about {
   width: 100%;
   height: auto;
-  background-color: #106ea5;
+  background-color: var(--blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,7 +222,7 @@ a {
 
 .section-title {
   font-size: 2rem;
-  color: #f5f5f5;
+  color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -413,7 +413,7 @@ a {
 
 .about-info {
   direction: rtl;
-  color: #f5f5f5;
+  color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -441,10 +441,10 @@ a {
 
 .about-btn, .about-arrow-btn {
   outline: none;
-  border: 1px solid #dc8501;
+  border: 1px solid var(--orange);
   border-radius: 20px;
-  background-color: #dc8501;
-  color: #f5f5f5;
+  background-color: var(--orange);
+  color: var(--white);
   padding: 0 13px;
   height: 35px;
   cursor: pointer;
@@ -457,7 +457,7 @@ a {
 }
 
 .about-btn a {
-  color: #f5f5f5
+  color: var(--white)
 }
 
 .about-arrow-btn {
@@ -586,7 +586,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #f5f5f5;
+  color: var(--white);
   direction: rtl;
 }
 
@@ -634,7 +634,7 @@ a {
 }
 
 #companies-content .section-title h1 {
-  color: #333;
+  color: var(--black);
   font-size: 2.5rem;
 }
 
@@ -715,7 +715,7 @@ a {
 }
 
 #news-content .section-title h1 {
-  color: #333;
+  color: var(--black);
   font-size: 2.5rem;
 }
 
@@ -801,7 +801,7 @@ a {
   outline: none;
   border: none;
   border-radius: 20px;
-  background-color: #dc8501;
+  background-color: var(--orange);
   font-size: 1.2rem;
   z-index: 2;
   cursor: pointer;
@@ -809,7 +809,7 @@ a {
 }
 
 #news-btn a {
-  color: #f5f5f5;
+  color: var(--white);
 }
 
 #news-content .about-arrow-btn{

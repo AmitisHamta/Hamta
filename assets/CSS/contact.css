@@ -1,10 +1,10 @@
 html, body {
     width: 100%;
     height: auto;
-    background-color: var(--theme);
+    background-color: var(--white);
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    scrollbar-color: var(--blue) var(--theme);
+    scrollbar-color: var(--blue) var(--white);
 }
 
 * {
@@ -15,8 +15,8 @@ html, body {
 }
 
 :root {
-    --theme: #f5f5f5;
-    --color: #333;
+    --white: #f5f5f5;
+    --black: #333;
     --orange: #dc8501;
     --blue: #106ea5;
 }
@@ -31,7 +31,7 @@ html, body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--theme);
+    background-color: var(--white);
 }
 
 @font-face {
@@ -48,14 +48,14 @@ html, body {
 
 a {
     text-decoration: none;
-    color: #f5f5f5;
+    color: var(--white);
 }
 
 #container {
     width: 100%;
     height: 100%;
-    background-color: var(--theme);
-    color: var(--color);
+    background-color: var(--white);
+    color: var(--black);
     overflow: hidden;
     filter: blur(5px);
 }
@@ -149,7 +149,7 @@ a {
 
 #contact > .underline {
     display: none;
-    border: 2px solid #dc8501;
+    border: 2px solid var(--orange);
     width: 90%;
     top: 48%;
 }
@@ -188,10 +188,10 @@ a {
     width: 100%;
     height: 47px;
     outline: none;
-    border: 0.5px solid #dc8501;
+    border: 0.5px solid var(--orange);
     border-radius: 10px;
     padding: 10px;
-    background-color: #f5f5f5;
+    background-color: var(--white);
 }
 
 .info::placeholder {
@@ -228,26 +228,26 @@ label i {
     justify-content: flex-start;
     gap: 7px;
     direction: rtl;
-    background-color: #f5f5f5;
-    border: 1px solid #dc8501;
+    background-color: var(--white);
+    border: 1px solid var(--orange);
     border-radius: 10px;
-    color: #333;
+    color: var(--black);
 }
 
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    background-color: #dc8501;
-    border-color: #dc8501;
-    color: #f5f5f5;
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
 }
 
 .btn:hover {
-    background-color: #dc8501;
-    border-color: #dc8501;
-    color: #f5f5f5;
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
 }
 
 .dropdown-menu {
-    border: 1px solid #dc8501;
+    border: 1px solid var(--orange);
     text-align: right;
     width: 100%;
     padding: 5px;
@@ -263,13 +263,13 @@ label i {
 .dropdown-item {
     border-radius: 4px;
     padding: 4px 7px;
-    color: #333;
+    color: var(--black);
     transition: color 0.2s, background-color 0.2s;
 }
 
 .dropdown-item:hover {
-    background-color: #dc8501;
-    color: #f5f5f5;
+    background-color: var(--orange);
+    color: var(--white);
 }
 
 .checkBoxes {
@@ -284,12 +284,12 @@ label i {
 }
 
 .form-check-input:checked {
-    background-color: #106ea5;
-    border-color: #106ea5;
+    background-color: var(--blue);
+    border-color: var(--blue);
 }
 
 .form-check-input:focus {
-    border-color: #106ea5;
+    border-color: var(--blue);
     box-shadow: 0 0 0 0.25rem #106ea579;
 }
 
@@ -304,20 +304,20 @@ label i {
 #msg {
     width: 100%;
     outline: none;
-    border: 1px solid #dc8501;
+    border: 1px solid var(--orange);
     border-radius: 10px;
     padding: 10px;
-    background-color: #f5f5f5;
+    background-color: var(--white);
 }
 
 #submit-btn {
     width: 30%;
     height: 40px;
     outline: none;
-    border: 1px solid #dc8501;
+    border: 1px solid var(--orange);
     border-radius: 10px;
-    background-color: #dc8501;
-    color: #f5f5f5;
+    background-color: var(--orange);
+    color: var(--white);
     cursor: pointer;
     font-size: 1rem;
     transition: all 0.2s;
@@ -356,8 +356,8 @@ label i {
 #contact-info hr {
     width: 100%;
     opacity: 0.75;
-    background-color: #dc8501;
-    color: #dc8501;
+    background-color: var(--orange);
+    color: var(--orange);
 }
 
 .info {
@@ -393,9 +393,9 @@ label i {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #f5f5f5;
+    color: var(--white);
     cursor: pointer;
-    background-color: #dc8501;
+    background-color: var(--orange);
     transition: box-shadow 0.2s;
 }
 
@@ -420,7 +420,7 @@ label i {
     background-color: var(--orange);
     position: absolute;
     left: 50%;
-    border: 2px solid #dc8501;
+    border: 2px solid var(--orange);
     border-radius: 20px;
 }
 
@@ -469,7 +469,7 @@ label i {
 
 .success {
     display: inline;
-    color: #106ea5;
+    color: var(--blue);
 }
 
 @media only screen and (max-width: 480px) {
