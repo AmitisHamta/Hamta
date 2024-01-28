@@ -154,6 +154,7 @@ class Header extends HTMLElement {
         const underlines = this.shadowRoot.querySelectorAll('.underline');
         const productsBtn = this.shadowRoot.getElementById('products-btn');
         const productsDropdown = this.shadowRoot.querySelector('.products-dropdown');
+        const productItems = this.shadowRoot.querySelectorAll('.products-list li')
         const dropdownBox = this.shadowRoot.querySelector('.dropdown-box');
         const productsList = this.shadowRoot.querySelector('.list-container');
         const menuBtn = this.shadowRoot.getElementById('menu-btn');
@@ -193,6 +194,12 @@ class Header extends HTMLElement {
 
         exitBtn.addEventListener('click', () => {
             this.exitMenu();
+        })
+
+        productItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                this.goToProductPage(index)
+            })
         })
     }
 
@@ -270,6 +277,16 @@ class Header extends HTMLElement {
             line.classList.remove('show-underline');
             line.classList.add('exit-underline');
         })
+    }
+
+    goToProductPage (index) {
+        if (index === 0) {
+            location.href = 'https://amitishamta.github.io/hamta/product.html#cashless';
+        }else if (index === 1) {
+            location.href = 'https://amitishamta.github.io/hamta/product.html#pos';
+        }else if (index === 2) {
+            location.href = 'https://amitishamta.github.io/hamta/product.html#atm';
+        }
     }
     
 }
