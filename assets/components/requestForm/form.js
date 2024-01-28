@@ -1,5 +1,7 @@
 "use strict"
 
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
 const $ = document;
 const template = $.createElement('template');
 template.innerHTML = `
@@ -30,7 +32,7 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
                             <label for="phone">شماره تلفن</label>
                         </div>
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" id="drop-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" id="drop-btn" type="button" data-bs-toggle="dropdown" data-type="products" aria-expanded="false">
                                 محصول
                             </button>
                             <ul class="dropdown-menu">
@@ -71,11 +73,17 @@ class Form extends HTMLElement {
     }
 
     connectedCallback () {
-        const productBtn = this.shadowRoot.querySelector('#drop-btn');
+        this.inputs = this.shadowRoot.querySelectorAll('.input');
+        this.menuBtn = this.shadowRoot.querySelector('#drop-btn');
         const items = this.shadowRoot.querySelectorAll('.dropdown-item');
-        const submitBtn = this.shadowRoot.getElementById('request-btn');
+        const form = this.shadowRoot.getElementById('request-form');
+        this.agencyCheckbox = this.shadowRoot.getElementById('agency');
+        this.posCustomerCheckbox = this.shadowRoot.getElementById('pos-customer');
 
-        productBtn.addEventListener('click', () => {
+        this.supabase = createClient
+        ('https://wbkeahghzxpcrxdbmdge.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6India2VhaGdoenhwY3J4ZGJtZGdlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDU5OTU3MDQsImV4cCI6MjAyMTU3MTcwNH0.g0VDd1nt_JwDOKjItT6pWdtLjLqm9zs5k1toXLCHo5I');
+
+        this.menuBtn.addEventListener('click', () => {
             this.showMenu();
         })
 
@@ -85,7 +93,7 @@ class Form extends HTMLElement {
             })
         })
 
-        submitBtn.addEventListener('click', event => {
+        form.addEventListener('submit', event => {
             event.preventDefault();
             this.checkInfo();
         })
@@ -108,46 +116,92 @@ class Form extends HTMLElement {
     }
 
     chooseItem (item) {
-        const productBtn = this.shadowRoot.querySelector('#drop-btn');
-        
-        productBtn.textContent = item.textContent;
+        this.menuBtn.textContent = item.textContent;
         this.hideMenu();
     }
 
+    checkPage () {
+        if (location.href.includes('service')) {
+            const formTitle = this.shadowRoot.querySelector('#request-title');
+            const list = this.shadowRoot.querySelector('.dropdown-menu');
+
+            this.menuBtn.textContent = 'خدمت';
+            this.menuBtn.dataset.type = 'service';
+            
+            formTitle.textContent = 'درخواست خدمات';
+            list.innerHTML = '';
+            list.insertAdjacentHTML(`beforeend`, `
+                <li><a class="dropdown-item">خدمات شتابی</a></li>
+                <li><a class="dropdown-item">خدمات شاپرکی</a></li>
+                <li><a class="dropdown-item">پشتیبانی</a></li>
+                <li><a class="dropdown-item">تعمیرات</a></li>
+                <li><a class="dropdown-item">گارانتی</a></li>
+            `);
+
+            const items = this.shadowRoot.querySelectorAll('.dropdown-item');
+
+            items.forEach(item => {
+                item.addEventListener('click', () => {
+                    this.chooseItem(item);
+                    this.checkService()
+                })
+            })
+        }
+    }
+
+    checkService () {
+        const checkBoxes = this.shadowRoot.querySelector('.checkBoxes');
+        const posCustomerLabel = this.shadowRoot.getElementById('pos-customer-label');
+
+        if (this.menuBtn.textContent.includes('شتابی')) {
+            checkBoxes.classList.add('display-flex');
+            posCustomerLabel.textContent = 'درخواست به عنوان متقاضی'
+        }else if (this.menuBtn.textContent.includes('شاپرکی')) {
+            checkBoxes.classList.add('display-flex');
+            posCustomerLabel.textContent = 'فعالسازی POS'
+        }else {
+            checkBoxes.classList.remove('display-flex');
+        }
+    }
+
     checkInfo () {
-        const inputs = this.shadowRoot.querySelectorAll('.input');
-        const menuBtn = this.shadowRoot.getElementById('drop-btn');
         const phoneInput = this.shadowRoot.getElementById('phone');
         const phoneRegex = /((0?9)|(\+?989))\d{2}\W?\d{3}\W?\d{4}/g;
+        let isEmpty = false;
 
-        inputs.forEach(input => {
+        this.inputs.forEach(input => {
             if (!input.value) {
-                this.showErrorMsg("* لطفا اطلاعات رو تکمیل کنید")
-            }else if (!phoneRegex.test(phoneInput.value)) {
-                this.showErrorMsg('* شماره موبایل صحیح نمیباشد');
-            }else {
-                if (menuBtn.textContent.includes('محصول')){
-                    this.showErrorMsg('* لطفا محصول مورد نظر را انتخاب نمایید')
-                }else {
-                    this.showSuccessMsg("* به زودی با شما تماس خواهیم گرفت")
-                }
-
-                if (menuBtn.textContent.includes('خدمت')){
-                    this.showErrorMsg('* لطفا خدمات مورد نظر را انتخاب نمایید')
-                }else {
-                    if (menuBtn.textContent.includes('شتابی') || menuBtn.textContent.includes('شاپرکی')) {
-                        const agencyCheckbox = this.shadowRoot.getElementById('agency');
-                        const posCustomerCheckbox = this.shadowRoot.getElementById('pos-customer');
-
-                        if (agencyCheckbox.checked || posCustomerCheckbox.checked) {
-                            this.showSuccessMsg("* به زودی با شما تماس خواهیم گرفت")
-                        }else {
-                            this.showErrorMsg('* لطفا خدمت درخواستی خود را انتخاب نمایید')
-                        }
-                    }
-                }
+                this.showErrorMsg("* لطفا اطلاعات رو تکمیل کنید");
+                isEmpty = true;
+                return false
             }
         })
+
+        if (!isEmpty) {
+            if (!phoneRegex.test(phoneInput.value)) {
+                this.showErrorMsg('* شماره موبایل صحیح نمیباشد');
+            }else if (this.menuBtn.dataset.type === 'products'){
+                if (this.menuBtn.textContent.includes('محصول')){
+                    this.showErrorMsg('* لطفا محصول مورد نظر را انتخاب نمایید');
+                }else {
+                    this.showSuccessMsg("* به زودی با شما تماس خواهیم گرفت");
+                    this.submitProductRequest();
+                }
+            }else { 
+                if (this.menuBtn.textContent.includes('خدمت')){
+                    this.showErrorMsg('* لطفا خدمات مورد نظر را انتخاب نمایید')
+                }else if (this.menuBtn.textContent.includes('شتابی') || this.menuBtn.textContent.includes('شاپرکی')) {
+                    
+                    if (this.agencyCheckbox.checked || this.posCustomerCheckbox.checked) {
+                        this.submitServiceRequest();
+                    }else {
+                        this.showErrorMsg('* لطفا خدمت درخواستی خود را انتخاب نمایید')
+                    }
+                }else {
+                    this.submitServiceRequest();
+                }
+            }
+        }
     }
 
     showErrorMsg (message) {
@@ -172,49 +226,50 @@ class Form extends HTMLElement {
         }, 5000);
     }
 
-    checkPage () {
-        if (location.href.includes('service')) {
-            const productBtn = this.shadowRoot.querySelector('#drop-btn');
-            const formTitle = this.shadowRoot.querySelector('#request-title');
-            const list = this.shadowRoot.querySelector('.dropdown-menu');
-
-            productBtn.textContent = 'خدمت';
-            formTitle.textContent = 'درخواست خدمات';
-            list.innerHTML = '';
-            list.insertAdjacentHTML(`beforeend`, `
-                <li><a class="dropdown-item">خدمات شتابی</a></li>
-                <li><a class="dropdown-item">خدمات شاپرکی</a></li>
-                <li><a class="dropdown-item">پشتیبانی</a></li>
-                <li><a class="dropdown-item">تعمیرات</a></li>
-                <li><a class="dropdown-item">گارانتی</a></li>
-            `);
-
-            const items = this.shadowRoot.querySelectorAll('.dropdown-item');
-
-            items.forEach(item => {
-                item.addEventListener('click', () => {
-                    this.chooseItem(item);
-                    this.checkService()
-                })
-            })
-        }
+    resetInputs () {
+        this.inputs.forEach(input => {
+            input.textContent = '';
+        })
     }
 
-    checkService () {
-        const productBtn = this.shadowRoot.querySelector('#drop-btn');
-        const checkBoxes = this.shadowRoot.querySelector('.checkBoxes');
-        const posCustomerLabel = this.shadowRoot.getElementById('pos-customer-label');
+    checkServiceType () {
+        let serviceType = null;
 
-        if (productBtn.textContent.includes('شتابی')) {
-            checkBoxes.classList.add('display-flex');
-            posCustomerLabel.textContent = 'درخواست به عنوان متقاضی'
-        }else if (productBtn.textContent.includes('شاپرکی')) {
-            checkBoxes.classList.add('display-flex');
-            posCustomerLabel.textContent = 'فعالسازی POS'
+        if (this.agencyCheckbox || this.posCustomerCheckbox) {
+            if (this.agencyCheckbox.checked) {
+                const typeLabel = this.shadowRoot.getElementById('agency-label');
+                serviceType = typeLabel.textContent;
+            }else if (this.posCustomerCheckbox.checked) {
+                const typeLabel = this.shadowRoot.getElementById('pos-customer-label');
+                serviceType = typeLabel.textContent;
+            }
+        }
+
+        return serviceType;
+    }
+
+    async submitServiceRequest () {
+        const serviceType = this.checkServiceType();
+
+        const { data, error } = await this.supabase
+        .from('service-request')
+        .insert({
+            name: this.inputs[0].value,
+            lastname: this.inputs[1].value,
+            number: this.inputs[2].value,
+            service: this.menuBtn.textContent,
+            type: serviceType
+        })
+
+        if (error) {
+            this.showErrorMsg('* لطفا دوباره تلاش کنید');
         }else {
-            checkBoxes.classList.remove('display-flex');
+            this.showSuccessMsg('* اطلاعات شما با موفقیت ثبت شد');
+            this.resetInputs();
         }
     }
+
+    submitProductRequest () {}
 }
 
 export {Form};

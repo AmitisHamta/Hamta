@@ -1,6 +1,6 @@
 "use strict"
 
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
 import {Header} from "../components/header/header.js";
 import { Footer } from "../components/footer/footer.js";
