@@ -275,11 +275,6 @@ a {
         width: 85%;
     }
 
-    .feature-list {
-        justify-content: space-between;
-        gap: 5px;
-    }
-
     #title {
         font-size: 2rem;
     }
@@ -303,9 +298,7 @@ a {
     }
 
     .feature-list {
-        justify-content: space-between;
         padding: 0 10px;
-        gap: 5px;
     }
 }
 
@@ -327,9 +320,7 @@ a {
     }
 
     .feature-list {
-        justify-content: space-between;
         padding: 0 10px;
-        gap: 5px;
     }
 }
 
@@ -351,10 +342,11 @@ a {
     }
 
     .feature-list {
-        justify-content: space-between;
         padding: 0 10px;
-        gap: 5px;
+        gap: 40px;
+        row-gap: 5px;
     }
+
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1600px) {
@@ -372,6 +364,5 @@ a {
 
     .feature-list {
         padding: 0 10px;
-        gap: 5px;
     }
 }
