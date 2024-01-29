@@ -20,25 +20,29 @@ const products = [
         id: 0, 
         title: "TCS 021", 
         description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
-        image: 'assets/Images/pos.png'
+        image: 'assets/Images/pos.png',
+        features: [1, 2, 3, 4]
     },
     {
         id: 1, 
         title: "TCS 030", 
         description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
-        image: 'assets/Images/pos.png'
+        image: 'assets/Images/pos.png',
+        features: [1, 2, 3, 4]
     },
     {
         id: 2, 
         title: "Amitis H1", 
         description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
-        image: 'assets/Images/pos.png'
+        image: 'assets/Images/pos.png',
+        features: [1, 2, 3, 4]
     },
     {
         id: 3, 
         title: "Centerm K9", 
         description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
-        image: 'assets/Images/pos.png'
+        image: 'assets/Images/pos.png',
+        features: [1, 2, 3, 4]
     },
 ]
 

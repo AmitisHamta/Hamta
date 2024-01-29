@@ -1,4 +1,5 @@
 "use strict"
+
 const $ = document;
 
 const template = $.createElement('template');
@@ -18,13 +19,13 @@ class Loader extends HTMLElement {
     }
 
     connectedCallback () {
-        let loader = this.shadowRoot.querySelector('.loader-container');
+        let loaderContainer = this.shadowRoot.querySelector('.loader-container');
 
         window.addEventListener('load', () => {
-            loader.classList.add('hidden');
+            loaderContainer.classList.add('hidden');
 
-            loader.addEventListener('animationend', () => {
-                loader.classList.add('remove')
+            loaderContainer.addEventListener('animationend', () => {
+                loaderContainer.classList.add('remove')
             })
         })
     }

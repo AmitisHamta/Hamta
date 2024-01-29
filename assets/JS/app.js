@@ -126,7 +126,6 @@ const showCompanyLogo = company => {
     const logoImg = $.querySelector(`#${index} img`);
 
     companyLogos.some(logo => {
-        console.log(index, logo.id);
         if (index == logo.id) {
             logoImg.setAttribute('src', logo.logo);
             return true;

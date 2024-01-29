@@ -23,9 +23,28 @@ const generateProductCards = (products, productsFragment) => {
         title.classList.add('product-title');
         title.textContent = product.title;
 
-        const description = $.createElement('p');
-        description.classList.add('product-description');
-        description.textContent = product.description;
+        // const description = $.createElement('p');
+        // description.classList.add('product-description');
+        // description.textContent = product.description;
+
+        const featureList = $.createElement('div');
+        featureList.classList.add('feature-list');
+
+        product.features.forEach(feature => {
+            const features = $.createElement('div');
+            features.classList.add('feature')
+
+            const checkIcon = $.createElement('i');
+            checkIcon.classList.add('bi', 'bi-check-circle-fill', 'check-icon');
+
+            const description = $.createElement('p');
+            description.classList.add('product-description');
+            description.textContent = "باتری حافظه پردازش";
+
+            features.append(checkIcon, description);
+            featureList.append(features);
+        })
+        
 
         const productBtns = $.createElement('div');
         productBtns.classList.add('product-btns');
@@ -46,7 +65,7 @@ const generateProductCards = (products, productsFragment) => {
         arrowBtn.appendChild(arrow);
         productBtns.append(detailsBtn, arrowBtn);
 
-        productDetails.append(title, description, productBtns);
+        productDetails.append(title, featureList, productBtns);
         productContainer.append(imgContainer, productDetails);
         productsFragment.append(productContainer);
     })

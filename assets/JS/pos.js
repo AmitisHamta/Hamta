@@ -48,7 +48,7 @@ const products = [
     },
     {
         id: 5, 
-        title: "Dispread", 
+        title: "Dspread", 
         description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
         image: 'assets/Images/pos.png'
     },

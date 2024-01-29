@@ -163,17 +163,35 @@ a {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .product-title {
     font-size: 1.7rem;
 }
 
+.feature-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 5px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.check-icon {
+    color: var(--orange);
+}
+
 .product-description {
     text-align: justify;
-    line-height: 23px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .product-btns{
