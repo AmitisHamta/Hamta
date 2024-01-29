@@ -174,7 +174,8 @@ a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 20px;
     row-gap: 5px;
 }
 
@@ -183,6 +184,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 5px;
+    direction: rtl;
 }
 
 .check-icon {
