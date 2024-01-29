@@ -23,14 +23,13 @@ const generateProductCards = (products, productsFragment) => {
         title.classList.add('product-title');
         title.textContent = product.title;
 
-        // const description = $.createElement('p');
-        // description.classList.add('product-description');
-        // description.textContent = product.description;
-
         const featureList = $.createElement('div');
         featureList.classList.add('feature-list');
 
+        console.log(product);
+        console.log(product.features);
         product.features.forEach(feature => {
+            console.log(product.features);
             const features = $.createElement('div');
             features.classList.add('feature')
 
@@ -39,7 +38,7 @@ const generateProductCards = (products, productsFragment) => {
 
             const description = $.createElement('p');
             description.classList.add('product-description');
-            description.textContent = "باتری حافظه پردازش";
+            description.textContent = feature;
 
             features.append(checkIcon, description);
             featureList.append(features);
