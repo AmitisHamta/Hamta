@@ -614,4 +614,8 @@ a {
   #nav-list {
     padding: 0;
   }
+
+  #navbar {
+    padding: 0 75px;
+  }
 }

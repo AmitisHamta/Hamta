@@ -62,7 +62,7 @@ a {
     margin-top: 18vh;
 }
 
-#page-title h1 {
+#title {
     font-size: 3rem;
     position: relative;
     padding-bottom: 5px;
@@ -80,7 +80,7 @@ a {
     border-radius: 20px;
 }
 
-#page-title h1 .underline {
+#title .underline {
     border: 2px solid var(--orange);
 }
 
@@ -254,4 +254,122 @@ a {
     to {
       right: 101px;
     }
-  }
+}
+
+@media screen and (max-width: 480px) {
+    #products-container {
+        padding: 50px 20px;
+    }
+
+    #products-list {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .img {
+        width: 85%;
+    }
+
+    .feature-list {
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    #products-container {
+        padding: 50px 20px;
+    }
+
+    #products-list {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 70%;
+    }
+
+    .img {
+        width: 85%;
+    }
+
+    .feature-list {
+        justify-content: space-between;
+        padding: 0 10px;
+        gap: 5px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #products-container {
+        padding: 50px 20px;
+    }
+
+    #products-list {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 50%;
+    }
+
+    .img {
+        width: 85%;
+    }
+
+    .feature-list {
+        justify-content: space-between;
+        padding: 0 10px;
+        gap: 5px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    #products-container {
+        padding: 50px 100px;
+    }
+
+    #products-list {
+        justify-content: center;
+    }
+
+    .product {
+        width: 40%;
+    }
+
+    .img {
+        width: 85%;
+    }
+
+    .feature-list {
+        justify-content: space-between;
+        padding: 0 10px;
+        gap: 5px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+    #products-container {
+        padding: 50px 100px;
+    }
+
+    .product {
+        width: 31%;
+    }
+
+    .img {
+        width: 85%;
+    }
+
+    .feature-list {
+        padding: 0 10px;
+        gap: 5px;
+    }
+}
