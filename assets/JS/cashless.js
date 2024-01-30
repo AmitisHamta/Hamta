@@ -19,7 +19,7 @@ const products = [
     {
         id: 0, 
         title: "TSC 021",
-        image: 'assets/Images/aisino.png',
+        image: 'assets/Images/12.png',
         features: ["ابعاد 49 × 34 × 24", 'نمایشگر 8 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله']
     },
     {
@@ -31,7 +31,7 @@ const products = [
     {
         id: 2, 
         title: "Amitis H1", 
-        image: 'assets/Images/Untitled-1.png',
+        image: 'assets/Images/002.png',
         features: ["ابعاد 35 × 26 × 6", 'نمایشگر 10.1 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله']
     },
     {
