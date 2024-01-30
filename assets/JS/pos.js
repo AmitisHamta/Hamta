@@ -16,22 +16,22 @@ const productList = $.getElementById('products-list');
 const productsFragment = $.createDocumentFragment();
 
 const products = [
-    {
-        id: 0, 
-        title: "ANFU 70",
-        image: 'assets/Images/pos.png',
-        features: [ "شبکه دو سیمکارت 4G", 'دارای وای فای', "پشتیبانی کارتهای مغناطیسی", 'گارانتی یک ساله']
-    },
+    // {
+    //     id: 0, 
+    //     title: "ANFU 75",
+    //     image: 'assets/Images/pos.png',
+    //     features: [ "شبکه دو سیمکارت 4G", 'دارای وای فای', "پشتیبانی کارتهای مغناطیسی", 'گارانتی 18 ماهه']
+    // },
     {
         id: 1, 
-        title: "ANFU 75",
-        image: 'assets/Images/pos.png',
-        features: [ "شبکه دو سیمکارت 4G", 'دارای وای فای', "پشتیبانی کارتهای مغناطیسی", 'گارانتی یک ساله']
+        title: "ANFU 70",
+        image: 'assets/Images/anfu70.png',
+        features: [ "شبکه دو سیمکارت 4G", 'دارای وای فای', "پشتیبانی کارتهای مغناطیسی", 'گارانتی 18 ماهه']
     },
     {
         id: 2, 
         title: "Aisino V72",
-        image: 'assets/Images/pos.png',
+        image: 'assets/Images/aisinoV72.png',
         features: ["سیستم لینوکس", 'نمایشگر 2.8 اینچی', 'ظرفیت بالای باطری', 'گارانتی طلایی یک ساله']
     },
     {
@@ -55,8 +55,8 @@ const products = [
     {
         id: 6, 
         title: "Morefun H9",
-        image: 'assets/Images/pos.png',
-        features: ["سیستم لینوکس", "شبکه دو سیمکارت 4G", 'دارای وای فای', 'گارانتی یک ساله']
+        image: 'assets/Images/morefunH9.png',
+        features: ["سیستم لینوکس", "شبکه دو سیمکارت 4G", 'دارای وای فای', 'گارانتی 18 ماهه']
     },
     {
         id: 7, 
