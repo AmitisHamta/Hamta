@@ -25,7 +25,7 @@ const products = [
     {
         id: 1, 
         title: "TSC 030", 
-        image: 'assets/Images/21.png',
+        image: 'assets/Images/002.png',
         features: ["ابعاد 71 × 49 × 20", 'نمایشگر تاچ 17 اینچی ', 'همراه با بستر ارتباطی', 'گارانتی یک ساله']
     },
     {
@@ -39,6 +39,12 @@ const products = [
         title: "Centerm K9", 
         image: 'assets/Images/Untitled-1xx.png',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'همراه با سیمکارت ', 'گارانتی یک ساله']
+    },
+    {
+        id: 4, 
+        title: "Centerm C960F", 
+        image: 'assets/Images/C960.png',
+        features: ["سیستم اندرویدی", 'نمایشگر تاچ 10.1 اینچی', 'همراه با بستر ارتباطی ', "پشتیبانی کارتهای مغناطیسی"]
     },
 ]
 

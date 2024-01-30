@@ -36,26 +36,32 @@ const products = [
     },
     {
         id: 3, 
-        title: "Centerm B70",
-        image: 'assets/Images/pos.png',
-        features: ["سیستم لینوکس", 'ظرفیت بالای باطری', 'پرینتر سریع', 'گارانتی یک ساله']
+        title: "Aisino A75",
+        image: 'assets/Images/aisinoA75.png',
+        features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'دارای دوربین', 'گارانتی یک ساله']
     },
     {
         id: 4, 
+        title: "Centerm B70",
+        image: 'assets/Images/centermB70.png',
+        features: ["سیستم لینوکس", 'ظرفیت بالای باطری', 'پرینتر سریع', 'گارانتی یک ساله']
+    },
+    {
+        id: 5, 
         title: "Centerm K9",
         image: 'assets/Images/pos.png',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'دارای دوربین', 'گارانتی یک ساله']
     },
     {
-        id: 5, 
+        id: 6, 
         title: "Morefun H9",
         image: 'assets/Images/pos.png',
         features: ["سیستم لینوکس", "شبکه دو سیمکارت 4G", 'دارای وای فای', 'گارانتی یک ساله']
     },
     {
-        id: 6, 
+        id: 7, 
         title: "Dspread Trio",
-        image: 'assets/Images/pos.png',
+        image: 'assets/Images/dspread.png',
         features: ['ظرفیت بالای باطری', 'دارای وای فای', "پشتیبانی کارتهای مغناطیسی", 'گارانتی یک ساله']
     },
 ]
