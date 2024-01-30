@@ -120,6 +120,18 @@ a {
     direction: rtl;
 }
 
+#banner-container {
+    width: 50%;
+    border-radius: 20px;
+}
+
+#banner-container img {
+    width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
 #page-title h1 {
     font-size: 3rem;
     position: relative;
