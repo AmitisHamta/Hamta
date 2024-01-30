@@ -19,25 +19,25 @@ const products = [
     {
         id: 0, 
         title: "TSC 021",
-        image: 'assets/Images/pos.png',
+        image: 'assets/Images/aisino.png',
         features: ["ابعاد 49 × 34 × 24", 'نمایشگر 8 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله']
     },
     {
         id: 1, 
         title: "TSC 030", 
-        image: 'assets/Images/pos.png',
+        image: 'assets/Images/21.png',
         features: ["ابعاد 71 × 49 × 20", 'نمایشگر تاچ 17 اینچی ', 'همراه با بستر ارتباطی', 'گارانتی یک ساله']
     },
     {
         id: 2, 
         title: "Amitis H1", 
-        image: 'assets/Images/pos.png',
+        image: 'assets/Images/21.png',
         features: ["ابعاد 35 × 26 × 6", 'نمایشگر 10.1 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله']
     },
     {
         id: 3, 
         title: "Centerm K9", 
-        image: 'assets/Images/pos.png',
+        image: 'assets/Images/k9.png',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'همراه با سیمکارت ', 'گارانتی یک ساله']
     },
 ]

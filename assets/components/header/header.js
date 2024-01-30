@@ -5,8 +5,7 @@ const template = $.createElement('template');
 template.innerHTML = `
 <link rel="stylesheet" href="assets/components/header/header.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<header id="header" class="animate__animated animate__fadeInDown">
+<header id="header">
             <nav id="navbar">
                 <a id="header-logo" href="index.html">
                     <img src="./assets/Images/HamtaLogo.png" alt="شرکت آمیتیس همتا">
