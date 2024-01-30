@@ -19,7 +19,7 @@ const products = [
     {
         id: 0, 
         title: "TSC 021",
-        image: 'assets/Images/12.png',
+        image: 'assets/Images/dsxv.png',
         features: ["ابعاد 49 × 34 × 24", 'نمایشگر 8 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله']
     },
     {
