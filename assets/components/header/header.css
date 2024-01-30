@@ -199,7 +199,7 @@ a {
   width: 7%;
 }
 
-.products-dropdown {
+.products-dropdown, .service-dropdown {
   position: absolute;
   cursor: auto;
   top: 100%;
@@ -215,7 +215,7 @@ a {
   display: none;
 }
 
-#header.moved .products-dropdown {
+#header.moved .products-dropdown, #header.moved .service-dropdown {
   width: 143px;
   height: 165px;
 }
@@ -231,7 +231,7 @@ a {
   animation: fadeOut 0.2s;
 }
 
-.list-container {
+.list-container, .service-list-container {
   width: 100%;
   height: 100%;
   background-color: var(--white);
@@ -245,7 +245,7 @@ a {
   display: none;
 }
 
-.products-list {
+.products-list, .service-list {
   list-style-type: none;
   width: 100%;
   color: var(--black);
@@ -256,15 +256,22 @@ a {
   justify-content: center;
   direction: rtl;
   font-size: 1.2rem;
+  transition: font-size 0.3s;
 }
 
-.products-list a {
+#header.moved .products-list, #header.moved .service-list {
+  font-size: 1.1rem;
+} 
+
+.products-list a, .service-list a {
   color: var(--black);
   letter-spacing: 0.5s;
   transition: color 0.2s;
+  width: 100%;
+  height: 100%;
 }
 
-.products-list li {
+.products-list li, .service-list li {
   margin: 5px;
   padding: 5px;
   width: 100%;
@@ -276,20 +283,20 @@ a {
   transition: background-color 0.2s;
 }
 
-.products-list li:hover a{
+.products-list li:hover a, .service-list li:hover a{
   color: var(--white);
 }
 
-.products-list li:hover {
+.products-list li:hover, .service-list li:hover {
   background-color: var(--orange);
 }
 
-.products-list li .underline {
+.products-list li .underline, .service-list li .underline {
   bottom: -5px;
   border: 1px solid var(--orange);
 }
 
-.dropdown-box {
+.dropdown-box, .service-dropdown-box {
   width: 100%;
   height: 0;
   background-color: var(--white);

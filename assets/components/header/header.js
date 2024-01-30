@@ -22,9 +22,30 @@ template.innerHTML = `
                         <a href="about.html">درباره ما</a>
                         <div class="underline display-none"></div>
                     </button>
-                    <button class="nav-btn">
+                    <button class="nav-btn" id="service-btn">
                         <a href="service.html">خدمات</a>
                         <div class="underline display-none"></div>
+                        <div class="service-dropdown">
+                            <div class="service-list-container">
+                                <ul class="service-list">
+                                    <li>
+                                        <a href="service.html">خدمت اول</a>
+                                        <div class="underline"></div>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="service.html">خدت دوم</a>
+                                        <div class="underline"></div>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="service.html">خدمت سوم</a>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-dropdown-box"></div>
+                        </div>
                     </button>
                     <button class="nav-btn" id="products-btn">
                         <a href="products.html">محصولات</a>
@@ -153,9 +174,12 @@ class Header extends HTMLElement {
         const underlines = this.shadowRoot.querySelectorAll('.underline');
         const productsBtn = this.shadowRoot.getElementById('products-btn');
         const productsDropdown = this.shadowRoot.querySelector('.products-dropdown');
-        const productItems = this.shadowRoot.querySelectorAll('.products-list li')
         const dropdownBox = this.shadowRoot.querySelector('.dropdown-box');
         const productsList = this.shadowRoot.querySelector('.list-container');
+        const serviceBtn = this.shadowRoot.getElementById('service-btn');
+        const serviceDropdown = this.shadowRoot.querySelector('.service-dropdown');
+        const serviceDropdownBox = this.shadowRoot.querySelector('.service-dropdown-box');
+        const serviceList = this.shadowRoot.querySelector('.service-list-container');
         const menuBtn = this.shadowRoot.getElementById('menu-btn');
         const exitBtn = this.shadowRoot.getElementById('exit-btn');
 
@@ -187,18 +211,20 @@ class Header extends HTMLElement {
             this.hideProductsMenu(productsDropdown);
         })
 
+        serviceBtn.addEventListener('mouseenter', () => {
+            this.showProductsMenu(serviceList, serviceDropdownBox, serviceDropdown);
+        })
+        
+        serviceBtn.addEventListener('mouseleave', () => {
+            this.hideProductsMenu(serviceDropdown);
+        })
+
         menuBtn.addEventListener('click', () => {
             this.showMenu();
         })
 
         exitBtn.addEventListener('click', () => {
             this.exitMenu();
-        })
-
-        productItems.forEach((item, index) => {
-            item.addEventListener('click', () => {
-                this.goToProductPage(index)
-            })
         })
     }
 
