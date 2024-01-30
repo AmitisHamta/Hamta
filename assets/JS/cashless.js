@@ -43,7 +43,7 @@ const products = [
     {
         id: 4, 
         title: "Centerm C960F", 
-        image: 'assets/Images/C960.png',
+        image: 'assets/Images/c960.png',
         features: ["سیستم اندرویدی", 'نمایشگر تاچ 10.1 اینچی', 'همراه با بستر ارتباطی ', "پشتیبانی کارتهای مغناطیسی"]
     },
 ]
