@@ -102,7 +102,7 @@ a {
     gap: 100px;
     color: var(--white);
     margin-top: -10px;
-    padding: 50px 150px;
+    padding: 0px 150px;
     background: rgb(16,110,165);
     background: linear-gradient(180deg, rgba(16,110,165,1) 0%, rgba(40,147,209,1) 50%, rgba(16,110,165,1) 100%);
 }
