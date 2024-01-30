@@ -49,7 +49,7 @@ const products = [
     {
         id: 5, 
         title: "Centerm K9",
-        image: 'assets/Images/pos.png',
+        image: 'assets/Images/posk9.png',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'دارای دوربین', 'گارانتی یک ساله']
     },
     {
