@@ -31,13 +31,13 @@ const products = [
     {
         id: 2, 
         title: "Amitis H1", 
-        image: 'assets/Images/21.png',
+        image: 'assets/Images/Untitled-1.png',
         features: ["ابعاد 35 × 26 × 6", 'نمایشگر 10.1 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله']
     },
     {
         id: 3, 
         title: "Centerm K9", 
-        image: 'assets/Images/k9.png',
+        image: 'assets/Images/Untitled-1xx.png',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'همراه با سیمکارت ', 'گارانتی یک ساله']
     },
 ]
