@@ -6,9 +6,8 @@ const template = $.createElement('template');
 template.innerHTML = `
 <link rel="stylesheet" href="assets/components/loader/loader.css">
 <div class="loader-container">
-    <div class="loader">
-    <img src="assets/Videos/لود سایت.gif" alt="">
-
+    <div class="loader" width="300px" height="300px">
+        <img src="assets/Images/Pre-comp 1_5.gif" alt="">
     </div>
 </div>
 `
