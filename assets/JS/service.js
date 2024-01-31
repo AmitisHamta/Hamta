@@ -20,8 +20,10 @@ const removeFilter = () => {
 
 const setLines = () => {
     const underlines = $.querySelectorAll('.service-title .underline');
+    const titles = $.querySelectorAll('.service-title')
     
-    if ($.documentElement.scrollTop >= 320) {
+    if ($.documentElement.scrollTop >= titles[2].offsetTop) {
+        console.log(titles[2].offsetTop);
         underlines[1].classList.remove('exit-underline');
         underlines[1].classList.add('show-underline');
     }else {
@@ -39,8 +41,9 @@ const setLines = () => {
 }
 
 const goToRequestForm = () => {
+    const form = $.getElementById('form-wave');
     $.documentElement.scrollTo({
-        top: 2200,
+        top: form.offsetTop,
         behavior: 'smooth'
     })
 }

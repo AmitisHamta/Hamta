@@ -175,6 +175,8 @@ a {
     justify-content: center;
     padding: 0px 150px;
     color: var(--white);
+    z-index: 2;
+    position: relative;
     background: rgb(16,110,165);
     background: linear-gradient(180deg, rgba(16,110,165,1) 0%, rgba(40,147,209,1) 50%, rgba(16,110,165,1) 100%);
 }
