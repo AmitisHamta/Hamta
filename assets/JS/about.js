@@ -16,10 +16,24 @@ const removeFilter = () => {
     container.style.filter = 'none';
 }
 
-const preventRightCLick = () => {
+const preventRightClick = () => {
     certifications.forEach(certificate => {
         certificate.addEventListener('contextmenu', event => {
             event.preventDefault();
+        })
+    })
+
+    const images = $.querySelectorAll('img');
+    const videos = $.querySelectorAll('video')
+    images.forEach(img => {
+        img.addEventListener('contextmenu', event => {
+            event.preventDefault()
+        })
+    })
+
+    videos.forEach(video => {
+        video.addEventListener('contextmenu', event => {
+            event.preventDefault()
         })
     })
 }
@@ -104,11 +118,11 @@ const responsive = () => {
 }
 
 window.addEventListener('load', () => {
-    preventRightCLick();
-    setLines();
     moveToSection();
-    removeFilter();
     responsive();
+    preventRightClick()
+    removeFilter();
+    setLines();
 })
 
 window.addEventListener('scroll', () => {
