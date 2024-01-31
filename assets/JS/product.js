@@ -66,6 +66,10 @@ const generateProductCards = (products, productsFragment) => {
         productDetails.append(title, featureList, productBtns);
         productContainer.append(imgContainer, productDetails);
         productsFragment.append(productContainer);
+
+        img.addEventListener('contextmenu', event => {
+            event.preventDefault();
+        })
     })
 }
 

@@ -93,6 +93,22 @@ const moveToSection = () => {
     }
 }
 
+const preventRightClick = () => {
+    const images = $.querySelectorAll('img');
+    const videos = $.querySelectorAll('video')
+    images.forEach(img => {
+        img.addEventListener('contextmenu', event => {
+            event.preventDefault()
+        })
+    })
+
+    videos.forEach(video => {
+        video.addEventListener('contextmenu', event => {
+            event.preventDefault()
+        })
+    })
+}
+
 const goToRequestForm = () => {
     $.documentElement.scrollTo({
         top: 3800,
@@ -103,7 +119,8 @@ const goToRequestForm = () => {
 window.addEventListener('load', () => {
     setLines();
     moveToSection();
-    removeFilter()
+    removeFilter();
+    preventRightClick()
 })
 
 window.addEventListener('scroll', () => {

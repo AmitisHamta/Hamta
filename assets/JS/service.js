@@ -48,9 +48,26 @@ const goToRequestForm = () => {
     })
 }
 
+const preventRightClick = () => {
+    const images = $.querySelectorAll('img');
+    const videos = $.querySelectorAll('video')
+    images.forEach(img => {
+        img.addEventListener('contextmenu', event => {
+            event.preventDefault()
+        })
+    })
+
+    videos.forEach(video => {
+        video.addEventListener('contextmenu', event => {
+            event.preventDefault()
+        })
+    })
+}
+
 window.addEventListener('load', () => {
     removeFilter();
     setLines();
+    preventRightClick();
 })
 
 window.addEventListener('scroll', () => {
