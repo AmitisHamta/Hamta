@@ -117,10 +117,10 @@ const goToRequestForm = () => {
 }
 
 window.addEventListener('load', () => {
-    setLines();
     moveToSection();
-    removeFilter();
     preventRightClick()
+    removeFilter();
+    setLines();
 })
 
 window.addEventListener('scroll', () => {

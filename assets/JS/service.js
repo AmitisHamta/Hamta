@@ -65,9 +65,9 @@ const preventRightClick = () => {
 }
 
 window.addEventListener('load', () => {
+    preventRightClick();
     removeFilter();
     setLines();
-    preventRightClick();
 })
 
 window.addEventListener('scroll', () => {
