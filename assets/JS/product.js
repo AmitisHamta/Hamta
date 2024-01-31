@@ -26,8 +26,6 @@ const generateProductCards = (products, productsFragment) => {
         const featureList = $.createElement('div');
         featureList.classList.add('feature-list');
 
-        console.log(product);
-        console.log(product.features);
         product.features.forEach(feature => {
             console.log(product.features);
             const features = $.createElement('div');
@@ -44,7 +42,6 @@ const generateProductCards = (products, productsFragment) => {
             featureList.append(features);
         })
         
-
         const productBtns = $.createElement('div');
         productBtns.classList.add('product-btns');
 
@@ -53,6 +50,7 @@ const generateProductCards = (products, productsFragment) => {
 
         const btnLink = $.createElement('a');
         btnLink.textContent = 'جزئیات';
+        btnLink.href = `details.html#${product.category}`;
 
         const arrowBtn = $.createElement('button');
         arrowBtn.classList.add('arrow-btn');
