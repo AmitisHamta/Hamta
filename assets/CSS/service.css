@@ -306,7 +306,26 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
+
+    #page-title h1 {
+        font-size: 3rem;
+    }
+
+    #banner {
+        display: none;
+    }
+
+    #page-title {
+        width: 100%;
+        align-items: center;
+        gap: 0px;
+        position: relative;
+        right: 0;
+    }    
+
     #page-description {
+        line-height: 27px;
+        letter-spacing: 0.5px;
         font-size: 0.8rem;
         width: 90%;
     }
@@ -363,7 +382,26 @@ a {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    #page-title h1 {
+        font-size: 3rem;
+    }
+
+    #banner {
+        display: none;
+    }
+
+    #page-title {
+        width: 100%;
+        align-items: center;
+        gap: 0px;
+        position: relative;
+        right: 0;
+    }    
+
     #page-description {
+        line-height: 27px;
+        letter-spacing: 0.5px;
         font-size: 0.8rem;
         width: 90%;
     }
@@ -420,9 +458,26 @@ a {
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
+
+    #page-title h1 {
+        font-size: 3rem;
+    }
+
+    #banner img {
+        width: 100%;
+    }
+
+    #page-title {
+        gap: 0px;
+        right: 10%;
+    }    
+    
     #page-description {
         font-size: 0.8rem;
-        width: 90%;
+        width: 70%;
+        line-height: 27px;
+        letter-spacing: 0.5px;
+        padding: 0;
     }
 
     #services {
@@ -477,8 +532,25 @@ a {
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1279px) {
+    #page-title h1 {
+        font-size: 4rem;
+    }
+
+    #banner img {
+        width: 80%;
+    }
+
+    #page-title {
+        gap: 0px;
+        right: 10%;
+    }    
+    
     #page-description {
-        width: 90%;
+        font-size: 0.8rem;
+        width: 70%;
+        line-height: 27px;
+        letter-spacing: 0.5px;
+        padding: 0;
     }
 
     #services {
@@ -512,5 +584,31 @@ a {
 
     #service-list {
         gap: 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+    #page-title h1 {
+        font-size: 4rem;
+    }
+
+    #banner img {
+        width: 70%;
+    }
+
+    #page-title {
+        right: 10%;
+    }    
+    
+    #page-description {
+        font-size: 0.8rem;
+        width: 70%;
+        line-height: 27px;
+        letter-spacing: 0.5px;
+        padding: 0;
+    }
+
+    #service-list {
+        padding: 40px 0;
     }
 }

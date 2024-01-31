@@ -68,14 +68,13 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 1;
     background-color: var(--white);
 }
 
 #banner {
     width: 100%;
     height: 110%;
+    margin-top: 23vh;
 }
 
 #banner-container img {
@@ -89,7 +88,7 @@ a {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 17vh;
+    top: 16vh;
 }
 
 #page-title h1 {
@@ -262,7 +261,7 @@ a {
     padding: 5px 7px 0px 7px;
     border-radius: 50% 0% 0% 50%;
     position: absolute;
-    right: 10%;
+    right: 90px;
     bottom: 0px;
     z-index: 1;
     transition: all 0.2s;
@@ -274,19 +273,31 @@ a {
 
 .request-btn:hover ~ .arrow-btn {
     animation: swipeLeft 0.2s linear;
-    right: 13.8%;
+    right: 132px;
 }
 
 @keyframes swipeLeft {
     from {
-      right: 10%;
+      right: 90px;
     }
     to {
-      right: 13.8%;
+      right: 132px;
     }
 }
 
 @media only screen and (max-width: 480px) {
+    #banner-container {
+        height: 90vh;
+    }
+
+    #banner {
+        height: 40%;
+    }
+
+    #page-title h1 {
+        font-size: 3rem;
+    }
+
     #products {
         padding: 20px;
     }
@@ -339,6 +350,18 @@ a {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #banner-container {
+        height: 100vh;
+    }
+
+    #banner {
+        height: 40%;
+    }
+
+    #page-title h1 {
+        font-size: 3rem;
+    }
+
     #products {
         padding: 20px;
     }
@@ -391,6 +414,18 @@ a {
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
+    #banner-container {
+        height: 100vh;
+    }
+
+    #banner {
+        height: 60%;
+    }
+
+    #page-title h1 {
+        font-size: 3rem;
+    }
+
     #products {
         padding: 20px;
     }
@@ -443,8 +478,59 @@ a {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    #banner-container {
+        height: 100vh;
+    }
+
+    #banner {
+        height: 90%;
+    }
+
+    #page-title h1 {
+        font-size: 4rem;
+    }
+
     #products {
         padding: 20px 100px;
+    }
+
+    #products-list {
+        gap: 50px;
+    }
+
+    .img-container {
+        width: 40% !important;
+    }
+
+    .arrow-btn {
+        right: 90px;
+    }
+
+    .request-btn:hover ~ .arrow-btn {
+        right: 132px;
+    }
+
+    @keyframes swipeLeft {
+        from {
+          right: 90px;
+        }
+        to {
+          right: 132px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+    #banner-container {
+        height: 100vh;
+    }
+
+    #banner {
+        height: 90%;
+    }
+
+    #page-title h1 {
+        font-size: 4rem;
     }
 
     #products-list {
