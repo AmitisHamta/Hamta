@@ -45,21 +45,21 @@ const setLines = () => {
         underlines[2].classList.add('exit-underline');
     }
 
-    if ($.documentElement.scrollTop >= 1500) {
-        underlines[3].classList.remove('exit-underline');
-        underlines[3].classList.add('show-underline');
-    }else {
-        underlines[3].classList.remove('show-underline');
-        underlines[3].classList.add('exit-underline');
-    }
+    // if ($.documentElement.scrollTop >= 1500) {
+    //     underlines[3].classList.remove('exit-underline');
+    //     underlines[3].classList.add('show-underline');
+    // }else {
+    //     underlines[3].classList.remove('show-underline');
+    //     underlines[3].classList.add('exit-underline');
+    // }
 
-    if ($.documentElement.scrollTop >= 2250) {
-        underlines[4].classList.remove('exit-underline');
-        underlines[4].classList.add('show-underline');
-    }else {
-        underlines[4].classList.remove('show-underline');
-        underlines[4].classList.add('exit-underline');
-    }
+    // if ($.documentElement.scrollTop >= 2250) {
+    //     underlines[4].classList.remove('exit-underline');
+    //     underlines[4].classList.add('show-underline');
+    // }else {
+    //     underlines[4].classList.remove('show-underline');
+    //     underlines[4].classList.add('exit-underline');
+    // }
 }
 
 const moveToSection = () => {

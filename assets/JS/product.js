@@ -12,6 +12,7 @@ const generateProductCards = (products, productsFragment) => {
 
         const img = $.createElement('img');
         img.classList.add('img');
+        img.alt = `${product.title}`
         img.setAttribute('src', product.image);
 
         imgContainer.append(img);
