@@ -10,29 +10,19 @@ window.customElements.define('site-loader', Loader);
 
 const $ = document;
 const container = $.getElementById('container');
-const mainText = $.getElementById('main-text');
-const mainDescript = $.getElementById('main-descript');
-const textBoxes = $.querySelectorAll('.text-box');
+const mainTexts = $.querySelectorAll('.maintext-container')
 
 const removeFilter = () => {
     container.style.filter = 'none';
 }
 
-const setBoxesAnimation = () => {
-    textBoxes.forEach(box => {
-        box.classList.add('swipe-in-out-right')
-    })
-}
-
 const showMainTexts = () => {
-    setTimeout(() => {
-        mainText.style.opacity = 1;
-        mainDescript.style.opacity = 1;
-    }, 1250);
+    mainTexts.forEach(text => {
+        text.classList.add('opacity-1', 'slide-in-blurred-right');
+    })
 }
 
 window.addEventListener('load', () => {
     removeFilter();
-    // setBoxesAnimation();
-    // showMainTexts();
+    showMainTexts();
 })

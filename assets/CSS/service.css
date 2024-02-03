@@ -210,7 +210,7 @@ a {
     position: relative;
 }
 
-.img-container video {
+.img-container video, .img-container img {
     width: 100%;
     height: 100%;
 }
