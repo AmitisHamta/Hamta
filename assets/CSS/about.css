@@ -417,6 +417,10 @@ span {
         display: none;
     }
 
+    #experience .img-container {
+        display: flex;
+    }
+
     #certifications {
         gap: 30px;
         padding: 0;
@@ -517,6 +521,10 @@ span {
 
     #experience .centerline {
         display: none;
+    }
+
+    #experience .img-container {
+        display: flex;
     }
 
     #certifications {
