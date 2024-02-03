@@ -470,9 +470,6 @@ a {
     text-align: left;
 }
 
-#techno4 p {
-}
-
 #techno4 img {
     border-radius: 20px;
 }
@@ -487,6 +484,44 @@ a {
     }
 
     #main-descript {
+        font-size: 0.9rem;
+    }
+
+    .features-container {
+        width: 100%;
+    }
+
+    .features-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .features-section .bg-container {
+        display: none;
+    }
+
+    #info-list {
+        padding: 20px;
+    }
+
+    .info {
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+    .info-img-container {
+        width: 80%;
+    }
+
+    .info-details {
+        width: 80%;
+    }
+
+    .info-details h1 {
+        font-size: 1.5rem;
+    }
+
+    .info-details p {
         font-size: 0.9rem;
     }
 }
