@@ -284,12 +284,13 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     color: var(--white);
 }
 
 .features-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    /* text-align: center; */
 }
 
 .features {
@@ -348,7 +349,7 @@ a {
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .info-img-container {
@@ -362,7 +363,7 @@ a {
 }
 
 .info-details {
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -428,11 +429,11 @@ a {
 }
 
 .techno-details h3 {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
 }
 
 .techno-details p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 #techno1, #techno4 {
@@ -447,7 +448,6 @@ a {
     background-color: var(--blue); 
     width: 450px;
     flex-direction: row-reverse;
-    justify-content: space-around;
     color: var(--white);
 }
 
@@ -455,7 +455,6 @@ a {
     background-color: var(--orange); 
     width: 450px;
     flex-direction: row-reverse;
-    justify-content: space-around;
     color: var(--white);
 }
 
@@ -466,9 +465,28 @@ a {
 #techno4 .techno-details {
     position: absolute;
     color: var(--white);
-    left: 10%;
+    left: 5%;
+    align-items: flex-end;
+    text-align: left;
+}
+
+#techno4 p {
 }
 
 #techno4 img {
     border-radius: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    #main-content {
+        padding-right: 20px;
+    }
+
+    #main-text {
+        font-size: 2rem;
+    }
+
+    #main-descript {
+        font-size: 0.9rem;
+    }
 }
