@@ -160,6 +160,12 @@ a {
     height: 100%;
 }
 
+#main-section .bg-container {
+    width: 70%;
+    position: absolute;
+    left: 0;
+}
+
 #main-content {
     width: 100%;
     height: 100%;
@@ -406,6 +412,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    width: 100%;
 }
 
 .techno {
@@ -523,5 +530,276 @@ a {
 
     .info-details p {
         font-size: 0.9rem;
+    }
+
+    .techno-row {
+        flex-direction: column;
+    }
+
+    .techno {
+        height: 150px;
+    }
+
+    #techno1 {
+        width: 80%;
+        gap: 0;
+    }
+
+    #techno1 img {
+        width: 50%;
+    }
+
+    .techno-details h3 {
+        font-size: 1rem;
+    }
+
+    .techno-details p {
+        font-size: 0.8rem;
+    }
+
+    #techno2, #techno3, #techno4 {
+        width: 80%;
+    }
+
+    #techno2 img {
+        width: 30%;
+        height: 80%;
+    }
+
+    #techno3 {
+        gap: 10px;
+    }
+
+    #techno3 .techno-details {
+        width: 50%;
+    }
+
+    #techno3 img {
+        width: 50%;
+    }
+
+    #techno4 {
+        padding: 0;
+    }
+
+    #techno4 img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    #main-content {
+        padding-right: 20px;
+    }
+
+    #main-text {
+        font-size: 2rem;
+    }
+
+    #main-descript {
+        font-size: 0.9rem;
+    }
+
+    .features-container {
+        width: 100%;
+    }
+
+    .features-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .features-section .bg-container {
+        display: none;
+    }
+
+    #info-list {
+        padding: 20px;
+    }
+
+    .info {
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+    .info-img-container {
+        width: 80%;
+    }
+
+    .info-details {
+        width: 80%;
+    }
+
+    .info-details h1 {
+        font-size: 1.5rem;
+    }
+
+    .info-details p {
+        font-size: 0.9rem;
+    }
+
+    .techno-row {
+        flex-direction: column;
+    }
+
+    .techno {
+        height: 150px;
+        justify-content: space-around;
+    }
+
+    #techno1 {
+        width: 80%;
+    }
+
+    #techno1 img {
+        width: 50%;
+    }
+
+    .techno-details h3 {
+        font-size: 1rem;
+    }
+
+    .techno-details p {
+        font-size: 0.8rem;
+    }
+
+    #techno2, #techno3, #techno4 {
+        width: 80%;
+    }
+
+    #techno2 img {
+        width: 20%;
+        height: 80%;
+    }
+
+    #techno3 .techno-details {
+        width: 50%;
+    }
+
+    #techno3 img {
+        width: 30%;
+    }
+
+    #techno4 {
+        padding: 0;
+    }
+
+    #techno4 img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #main-content {
+        padding-right: 20px;
+    }
+
+    #main-text {
+        font-size: 3rem;
+    }
+
+    #main-descript {
+        font-size: 1rem;
+    }
+
+    .features-container {
+        width: 100%;
+    }
+
+    .features-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .features-section .bg-container {
+        display: none;
+    }
+
+    #info-list {
+        padding: 20px;
+    }
+
+    .info-details h1 {
+        font-size: 2rem;
+    }
+
+    .info-details p {
+        font-size: 0.9rem;
+    }
+
+    #techno-list {
+        padding: 20px;
+    }
+
+    .techno-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .techno-details p {
+        font-size: 0.8rem;
+    }
+
+    #techno1, #techno4 {
+        width: 500px;
+    }
+
+    #techno2, #techno3 {
+        width: 350px;
+    }
+
+    #techno2 img {
+        height: 80%;
+    }
+
+    #techno4 {
+        padding: 0;
+    }
+
+    #techno4 img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+    #main-content {
+        padding-right: 20px;
+    }
+
+    #main-text {
+        font-size: 3rem;
+    }
+
+    #main-descript {
+        font-size: 1rem;
+    }
+
+    .features-container {
+        width: 40%;
+    }
+
+    .features-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #info-list {
+        padding: 20px;
+    }
+
+    .info-details h1 {
+        font-size: 2rem;
+    }
+
+    .info-details p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1600px) {
+    #main-content {
+        padding-right: 100px;
     }
 }
