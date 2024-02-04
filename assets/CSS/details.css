@@ -161,7 +161,7 @@ a {
 }
 
 #main-section .bg-container {
-    width: 70%;
+    width: 100%;
     position: absolute;
     left: 0;
 }
@@ -176,6 +176,7 @@ a {
     padding-right: 250px;
     gap: 20px;
     direction: rtl;
+    color: var(--white);
     position: absolute;
 }
 
@@ -190,9 +191,12 @@ a {
 #main-text {
     font-size: 4.5rem;
     margin-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+#main-text span{
+    background-color: var(--orange);
+    padding: 10px 15px 0 15px;
+    border-radius: 10px;
 }
 
 #main-content .rightline {
@@ -273,13 +277,15 @@ a {
     background-color: var(--orange);
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     direction: rtl;
-    margin-top: -8px;
+    position: relative;
+    z-index: 3;
 }
 
 .features-section .bg-container{
-    width: 30%;
+    position: absolute; 
+    width: 100%; 
     height: 100%;
 }
 
@@ -292,11 +298,13 @@ a {
     justify-content: center;
     gap: 40px;
     color: var(--white);
+    margin-left: 15%;
 }
 
 .features-title {
     font-size: 2.5rem;
-    /* text-align: center; */
+    color: var(--white);
+    z-index: 3;
 }
 
 .features {
@@ -396,6 +404,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 80px 0 0 0;
 }
 
 #techno-list {
@@ -496,6 +505,7 @@ a {
 
     .features-container {
         width: 100%;
+        margin: 0;
     }
 
     .features-title {
@@ -503,7 +513,7 @@ a {
         text-align: center;
     }
 
-    .features-section .bg-container {
+    .bg-container {
         display: none;
     }
 
@@ -530,6 +540,10 @@ a {
 
     .info-details p {
         font-size: 0.9rem;
+    }
+
+    #techno-section {
+        padding: 20px 0 0 0;
     }
 
     .techno-row {
@@ -603,6 +617,7 @@ a {
 
     .features-container {
         width: 100%;
+        margin: 0;
     }
 
     .features-title {
@@ -610,7 +625,7 @@ a {
         text-align: center;
     }
 
-    .features-section .bg-container {
+    .bg-container {
         display: none;
     }
 
@@ -637,6 +652,10 @@ a {
 
     .info-details p {
         font-size: 0.9rem;
+    }
+
+    #techno-section {
+        padding: 20px 0 0 0;
     }
 
     .techno-row {
@@ -706,6 +725,7 @@ a {
 
     .features-container {
         width: 100%;
+        margin: 0;
     }
 
     .features-title {
@@ -713,7 +733,7 @@ a {
         text-align: center;
     }
 
-    .features-section .bg-container {
+    .bg-container {
         display: none;
     }
 
@@ -727,6 +747,10 @@ a {
 
     .info-details p {
         font-size: 0.9rem;
+    }
+
+    #techno-section {
+        padding: 20px 0 0 0;
     }
 
     #techno-list {
@@ -777,12 +801,12 @@ a {
     }
 
     .features-container {
-        width: 40%;
+        width: 100%;
+        margin: 0;
     }
 
     .features-title {
         font-size: 2rem;
-        text-align: center;
     }
 
     #info-list {
@@ -801,5 +825,10 @@ a {
 @media only screen and (min-width: 1280px) and (max-width: 1600px) {
     #main-content {
         padding-right: 100px;
+    }
+
+    .features-container {
+        width: 100%;
+        margin: 0;
     }
 }

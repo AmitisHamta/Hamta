@@ -185,6 +185,7 @@ class Header extends HTMLElement {
 
         window.addEventListener('DOMContentLoaded', () => {
             this.resizeHeader(header);
+            this.checkPage();
         })
 
         window.addEventListener('scroll', () => {
@@ -302,6 +303,16 @@ class Header extends HTMLElement {
             line.classList.remove('show-underline');
             line.classList.add('exit-underline');
         })
+    }
+
+    checkPage () {
+        if (location.href.includes('details')) {
+            const navBtns = this.shadowRoot.querySelectorAll('.nav-btn > a');
+
+            navBtns.forEach(btn => {
+                btn.classList.add('color-white')
+            })
+        }
     }
 }
 
