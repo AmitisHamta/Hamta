@@ -274,7 +274,7 @@ a {
 .features-section {
     width: 100%;
     height: auto;
-    background-color: var(--orange);
+    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -297,13 +297,11 @@ a {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    color: var(--white);
     margin-left: 15%;
 }
 
 .features-title {
     font-size: 2.5rem;
-    color: var(--white);
     z-index: 3;
 }
 
@@ -340,7 +338,7 @@ a {
 
 #info-section {
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: var(--white);
     direction: rtl;
     display: flex;
@@ -348,25 +346,31 @@ a {
     justify-content: center;
 }
 
+#info-section .bg-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
 #info-list {
     width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    padding: 50px 200px;
+    padding: 50px 15%;
 }
 
 .info {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
 }
 
-.info-img-container {
+/* .info-img-container {
     width: 30%;
     height: 100%;
 }
@@ -374,7 +378,7 @@ a {
 .info-img-container img {
     width: 100%;
     height: 100%;
-}
+} */
 
 .info-details {
     width: 35%;
@@ -383,17 +387,30 @@ a {
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
+    color: var(--white);
 }
 
 .info-details p {
     text-align: justify;
     line-height: 30px;
+    position: relative;
+    height: auto;
+    padding-right: 10px;
 }
 
 .info-details h1 {
     font-size: 2.5rem;
     position: relative;
-    padding-bottom: 5px;
+    padding: 5px 10px;
+    background-color: var(--orange);
+    border-radius: 10px;
+}
+
+.info-details .rightline {
+    top: 0;
+    border: 2px solid var(--blue);
+    border-radius: 20px;
+    height: 100%;
 }
 
 #techno-section {
