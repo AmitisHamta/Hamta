@@ -185,7 +185,11 @@ class Header extends HTMLElement {
 
         window.addEventListener('DOMContentLoaded', () => {
             this.resizeHeader(header);
-            this.checkPage();
+            this.navColorChange();
+        })
+
+        window.addEventListener('resize', () => {
+            this.navColorChange();
         })
 
         window.addEventListener('scroll', () => {
@@ -305,12 +309,19 @@ class Header extends HTMLElement {
         })
     }
 
-    checkPage () {
-        if (location.href.includes('details')) {
+    navColorChange () {
+        if (location.href.includes('details') && $.documentElement.clientWidth >= 1280) {
+            console.log($.documentElement.clientWidth);
             const navBtns = this.shadowRoot.querySelectorAll('.nav-btn > a');
 
             navBtns.forEach(btn => {
                 btn.classList.add('color-white')
+            })
+        }else {
+            const navBtns = this.shadowRoot.querySelectorAll('.nav-btn > a');
+
+            navBtns.forEach(btn => {
+                btn.classList.remove('color-white')
             })
         }
     }

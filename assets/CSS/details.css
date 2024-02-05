@@ -948,6 +948,9 @@ a {
     }
 }
 
-@media screen and (min-width: 1601) {
-    
+@media screen and (min-width: 1601px) and (max-width: 1720px) {
+    #featureImg1 {
+        width: 28% !important;
+        height: 117% !important;
+    }
 }
