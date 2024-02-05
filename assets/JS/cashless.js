@@ -30,7 +30,7 @@ const products = [
         image: 'assets/Images/tsc021.png',
         features: ["ابعاد 49 × 34 × 24", 'نمایشگر 8 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله'],
         category: 'cashless',
-        pageLink: 'k9.html'
+        pageLink: '.html'
     },
     {
         id: 2, 
@@ -54,7 +54,7 @@ const products = [
         image: 'assets/Images/c960.png',
         features: ["سیستم اندرویدی", 'نمایشگر تاچ 10.1 اینچی', 'همراه با بستر ارتباطی ', "پشتیبانی کارتهای مغناطیسی"],
         category: 'cashless',
-        pageLink: 'k9.html'
+        pageLink: 'c960.html'
     },
 ]
 
