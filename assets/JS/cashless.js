@@ -21,35 +21,40 @@ const products = [
         title: "Centerm K9", 
         image: 'assets/Images/k9.png',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'همراه با سیمکارت ', 'گارانتی یک ساله'],
-        category: 'cashless'
+        category: 'cashless',
+        pageLink: 'k9.html'
     },
     {
         id: 1, 
         title: "TSC 021",
         image: 'assets/Images/tsc021.png',
         features: ["ابعاد 49 × 34 × 24", 'نمایشگر 8 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله'],
-        category: 'cashless'
+        category: 'cashless',
+        pageLink: 'k9.html'
     },
     {
         id: 2, 
         title: "TSC 030", 
         image: 'assets/Images/tsc030.png',
         features: ["ابعاد 71 × 49 × 20", 'نمایشگر تاچ 17 اینچی ', 'همراه با بستر ارتباطی', 'گارانتی یک ساله'],
-        category: 'cashless'
+        category: 'cashless',
+        pageLink: 'k9.html'
     },
     {
         id: 3, 
         title: "Amitis H1", 
         image: 'assets/Images/amitisH1.png',
         features: ["ابعاد 35 × 26 × 6", 'نمایشگر 10.1 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله'],
-        category: 'cashless'
+        category: 'cashless',
+        pageLink: 'k9.html'
     },
     {
         id: 4, 
         title: "Centerm C960F", 
         image: 'assets/Images/c960.png',
         features: ["سیستم اندرویدی", 'نمایشگر تاچ 10.1 اینچی', 'همراه با بستر ارتباطی ', "پشتیبانی کارتهای مغناطیسی"],
-        category: 'cashless'
+        category: 'cashless',
+        pageLink: 'k9.html'
     },
 ]
 

@@ -22,7 +22,8 @@ const products = [
         description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
         image: 'assets/Images/pos.png',
         features: ['استاندارد امنیت', 'نمایشگر 12.1 اینچی', "ابعاد 126 × 124 × 84", 'گارانتی سه ماهه'],
-        category: 'atm'
+        category: 'atm',
+        pageLink: 'k9.html'
     },
     {
         id: 1, 
@@ -30,7 +31,8 @@ const products = [
         description: `صفحه نمایش 5.5 اینچی HD پرینتر حرارتی با سرعت بالا پشتیبانی از تمامی روش های پرداخت طراحی ارگونومیک، آسان برای استفاده`,
         image: 'assets/Images/pos.png',
         features: ['استاندارد امنیت', 'نمایشگر 12.1 اینچی', "ابعاد 150 × 60 × 84", 'گارانتی سه ماهه'],
-        category: 'atm'
+        category: 'atm',
+        pageLink: 'k9.html'
     }
 ]
 
