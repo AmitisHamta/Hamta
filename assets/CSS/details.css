@@ -510,6 +510,7 @@ a {
 @media only screen and (max-width: 480px) {
     #main-content {
         padding-right: 20px;
+        color: var(--black);
     }
 
     #main-text {
@@ -522,13 +523,15 @@ a {
 
     .features-container {
         width: 100%;
-        margin: 0;
+        margin: 0 !important;
+        color: var(--black) !important;
     }
 
     .features-title {
         font-size: 1.5rem;
         text-align: center;
     }
+
 
     .bg-container {
         display: none;
@@ -549,6 +552,7 @@ a {
 
     .info-details {
         width: 80%;
+        color: var(--black);
     }
 
     .info-details h1 {
@@ -622,6 +626,7 @@ a {
 @media only screen and (min-width: 481px) and (max-width: 767px) {
     #main-content {
         padding-right: 20px;
+        color: var(--black);
     }
 
     #main-text {
@@ -634,7 +639,8 @@ a {
 
     .features-container {
         width: 100%;
-        margin: 0;
+        margin: 0 !important;
+        color: var(--black) !important;
     }
 
     .features-title {
@@ -661,6 +667,7 @@ a {
 
     .info-details {
         width: 80%;
+        color: var(--black);
     }
 
     .info-details h1 {
@@ -730,6 +737,7 @@ a {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     #main-content {
         padding-right: 20px;
+        color: var(--black);
     }
 
     #main-text {
@@ -742,7 +750,8 @@ a {
 
     .features-container {
         width: 100%;
-        margin: 0;
+        margin: 0 !important;
+        color: var(--black) !important;
     }
 
     .features-title {
@@ -756,6 +765,10 @@ a {
 
     #info-list {
         padding: 20px;
+    }
+
+    .info-details {
+        color: var(--black);
     }
 
     .info-details h1 {
@@ -819,7 +832,7 @@ a {
 
     .features-container {
         width: 100%;
-        margin: 0;
+        margin: 0 !important;
     }
 
     .features-title {
