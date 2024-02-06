@@ -30,7 +30,6 @@ const products = [
         image: 'assets/Images/tsc021.png',
         features: ["ابعاد 49 × 34 × 24", 'نمایشگر 8 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله'],
         category: 'cashless',
-        pageLink: '.html'
     },
     {
         id: 2, 
