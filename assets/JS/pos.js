@@ -36,7 +36,7 @@ const products = [
         image: 'assets/Images/aisinoV72.png',
         features: ["سیستم لینوکس", 'نمایشگر 2.8 اینچی', 'ظرفیت بالای باطری', 'گارانتی طلایی یک ساله'],
         category: 'pos',
-        pageLink: 'k9.html'
+        pageLink: 'v72.html'
     },
     {
         id: 3, 
@@ -68,7 +68,7 @@ const products = [
         image: 'assets/Images/morefunH9.png',
         features: ["سیستم لینوکس", "شبکه دو سیمکارت 4G", 'دارای وای فای', 'گارانتی 18 ماهه'],
         category: 'pos',
-        pageLink: 'k9.html'
+        pageLink: 'h9.html'
     },
     {
         id: 7, 
@@ -76,7 +76,7 @@ const products = [
         image: 'assets/Images/dspread.png',
         features: ['ظرفیت بالای باطری', 'دارای وای فای', "پشتیبانی کارتهای مغناطیسی", 'گارانتی یک ساله'],
         category: 'pos',
-        pageLink: 'k9.html'
+        pageLink: 'dspread.html'
     },
 ]
 
