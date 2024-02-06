@@ -46,7 +46,6 @@ const products = [
         image: 'assets/Images/amitisH1.png',
         features: ["ابعاد 35 × 26 × 6", 'نمایشگر 10.1 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله'],
         category: 'cashless',
-        pageLink: 'k9.html'
     },
     {
         id: 4, 

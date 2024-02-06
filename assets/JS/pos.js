@@ -28,7 +28,7 @@ const products = [
         image: 'assets/Images/anfu70.png',
         features: [ "شبکه دو سیمکارت 4G", 'دارای وای فای', "پشتیبانی کارتهای مغناطیسی", 'گارانتی 18 ماهه'],
         category: 'pos',
-        pageLink: 'k9.html'
+        pageLink: 'a70.html'
     },
     {
         id: 2, 
@@ -44,7 +44,7 @@ const products = [
         image: 'assets/Images/aisinoA75.png',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'دارای دوربین', 'گارانتی یک ساله'],
         category: 'pos',
-        pageLink: 'k9.html'
+        pageLink: 'a75.html'
     },
     {
         id: 4, 
@@ -60,7 +60,7 @@ const products = [
         image: 'assets/Images/posk9.png',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'دارای دوربین', 'گارانتی یک ساله'],
         category: 'pos',
-        pageLink: 'k9.html'
+        pageLink: 'k9p.html'
     },
     {
         id: 6, 

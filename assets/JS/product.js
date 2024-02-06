@@ -51,8 +51,10 @@ const generateProductCards = (products, productsFragment) => {
 
         const btnLink = $.createElement('a');
         btnLink.textContent = 'جزئیات';
-        btnLink.href = product.pageLink;
-
+        if (product.pageLink) {
+            btnLink.href = product.pageLink;
+        }
+        
         const arrowBtn = $.createElement('button');
         arrowBtn.classList.add('arrow-btn');
 

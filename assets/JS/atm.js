@@ -23,7 +23,6 @@ const products = [
         image: 'assets/Images/pos.png',
         features: ['استاندارد امنیت', 'نمایشگر 12.1 اینچی', "ابعاد 126 × 124 × 84", 'گارانتی سه ماهه'],
         category: 'atm',
-        pageLink: 'k9.html'
     },
     {
         id: 1, 
@@ -32,7 +31,6 @@ const products = [
         image: 'assets/Images/pos.png',
         features: ['استاندارد امنیت', 'نمایشگر 12.1 اینچی', "ابعاد 150 × 60 × 84", 'گارانتی سه ماهه'],
         category: 'atm',
-        pageLink: 'k9.html'
     }
 ]
 
