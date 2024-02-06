@@ -41,7 +41,7 @@ template.innerHTML = `
                                 </a>
                             </button>
                             <button class="social-btns" aria-label="instagram-btn">
-                                <a href="https://www.instagram.com/hamta.psp" target="_blank" title="Instagram">
+                                <a href="https://www.instagram.com/amitishamta/" target="_blank" title="Instagram">
                                     <i class="bi bi-instagram"></i>
                                 </a>
                             </button>
@@ -97,7 +97,7 @@ template.innerHTML = `
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/hamta.psp" target="_blank">
+                                    <a href="https://www.instagram.com/amitishamta/" target="_blank">
                                         اینیستاگرام
                                     </a>
                                 </li>

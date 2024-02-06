@@ -52,7 +52,7 @@ const products = [
         image: 'assets/Images/centermB70.png',
         features: ["سیستم لینوکس", 'ظرفیت بالای باطری', 'پرینتر سریع', 'گارانتی یک ساله'],
         category: 'pos',
-        pageLink: 'k9.html'
+        pageLink: 'b70.html'
     },
     {
         id: 5, 
