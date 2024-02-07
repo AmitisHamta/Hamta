@@ -30,6 +30,7 @@ const products = [
         image: 'assets/Images/tsc021.webp',
         features: ["ابعاد 49 × 34 × 24", 'نمایشگر 8 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله'],
         category: 'cashless',
+        pageLink: 'tsc021.html'
     },
     {
         id: 2, 
@@ -37,6 +38,7 @@ const products = [
         image: 'assets/Images/tsc030.webp',
         features: ["ابعاد 71 × 49 × 20", 'نمایشگر تاچ 17 اینچی ', 'همراه با بستر ارتباطی', 'گارانتی یک ساله'],
         category: 'cashless',
+        pageLink: 'tsc030.html'
     },
     {
         id: 3, 

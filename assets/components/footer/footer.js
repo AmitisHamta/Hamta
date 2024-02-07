@@ -7,7 +7,7 @@ template.innerHTML = `
 <link rel="stylesheet" href="assets/components/footer/footer.css">
 <footer id="footer">
             <div class="wave-bg">
-                <img src="assets/Images/wave-haikei (3).svg" alt="شرکت همتا">
+                <img src="assets/Images/wave-haikei3.svg" alt="شرکت همتا">
             </div>
             <div id="footer-content">
                 <h1>
@@ -98,7 +98,7 @@ template.innerHTML = `
                                 </li>
                                 <li>
                                     <a href="https://www.instagram.com/amitishamta/" target="_blank">
-                                        اینیستاگرام
+                                        اینستاگرام
                                     </a>
                                 </li>
                             </ul>
