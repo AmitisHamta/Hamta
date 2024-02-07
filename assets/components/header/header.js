@@ -216,13 +216,13 @@ class Header extends HTMLElement {
             this.hideProductsMenu(productsDropdown);
         })
 
-        serviceBtn.addEventListener('mouseenter', () => {
-            this.showProductsMenu(serviceList, serviceDropdownBox, serviceDropdown);
-        })
+        // serviceBtn.addEventListener('mouseenter', () => {
+        //     this.showProductsMenu(serviceList, serviceDropdownBox, serviceDropdown);
+        // })
         
-        serviceBtn.addEventListener('mouseleave', () => {
-            this.hideProductsMenu(serviceDropdown);
-        })
+        // serviceBtn.addEventListener('mouseleave', () => {
+        //     this.hideProductsMenu(serviceDropdown);
+        // })
 
         menuBtn.addEventListener('click', () => {
             this.showMenu();
