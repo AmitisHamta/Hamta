@@ -25,7 +25,7 @@ const products = [
     {
         id: 1, 
         title: "ANFU 70",
-        image: 'assets/Images/anfu70.png',
+        image: 'assets/Images/anfu70.webp',
         features: [ "شبکه دو سیمکارت 4G", 'دارای وای فای', "پشتیبانی کارتهای مغناطیسی", 'گارانتی 18 ماهه'],
         category: 'pos',
         pageLink: 'a70.html'
@@ -33,7 +33,7 @@ const products = [
     {
         id: 2, 
         title: "Aisino V72",
-        image: 'assets/Images/aisinoV72.png',
+        image: 'assets/Images/aisinoV72.webp',
         features: ["سیستم لینوکس", 'نمایشگر 2.8 اینچی', 'ظرفیت بالای باطری', 'گارانتی طلایی یک ساله'],
         category: 'pos',
         pageLink: 'v72.html'
@@ -41,7 +41,7 @@ const products = [
     {
         id: 3, 
         title: "Aisino A75",
-        image: 'assets/Images/aisinoA75.png',
+        image: 'assets/Images/aisinoA75.webp',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'دارای دوربین', 'گارانتی یک ساله'],
         category: 'pos',
         pageLink: 'a75.html'
@@ -49,7 +49,7 @@ const products = [
     {
         id: 4, 
         title: "Centerm B70",
-        image: 'assets/Images/centermB70.png',
+        image: 'assets/Images/centermB70.webp',
         features: ["سیستم لینوکس", 'ظرفیت بالای باطری', 'پرینتر سریع', 'گارانتی یک ساله'],
         category: 'pos',
         pageLink: 'b70.html'
@@ -57,7 +57,7 @@ const products = [
     {
         id: 5, 
         title: "Centerm K9",
-        image: 'assets/Images/posk9.png',
+        image: 'assets/Images/posk9.webp',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'دارای دوربین', 'گارانتی یک ساله'],
         category: 'pos',
         pageLink: 'k9p.html'
@@ -65,7 +65,7 @@ const products = [
     {
         id: 6, 
         title: "Morefun H9",
-        image: 'assets/Images/morefunH9.png',
+        image: 'assets/Images/morefunH9.webp',
         features: ["سیستم لینوکس", "شبکه دو سیمکارت 4G", 'دارای وای فای', 'گارانتی 18 ماهه'],
         category: 'pos',
         pageLink: 'h9.html'
@@ -73,7 +73,7 @@ const products = [
     {
         id: 7, 
         title: "Dspread Trio",
-        image: 'assets/Images/dspread.png',
+        image: 'assets/Images/dspread.webp',
         features: ['ظرفیت بالای باطری', 'دارای وای فای', "پشتیبانی کارتهای مغناطیسی", 'گارانتی یک ساله'],
         category: 'pos',
         pageLink: 'dspread.html'

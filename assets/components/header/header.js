@@ -8,7 +8,7 @@ template.innerHTML = `
 <header id="header">
             <nav id="navbar">
                 <a id="header-logo" href="index.html">
-                    <img src="./assets/Images/HamtaLogo.png" alt="شرکت آمیتیس همتا">
+                    <img src="./assets/Images/HamtaLogo.webp" alt="شرکت آمیتیس همتا">
                     <!-- <h1 id="header-logo-name">
                         آمیتیس همتا
                     </h1> -->

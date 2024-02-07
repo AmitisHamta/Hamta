@@ -12,7 +12,7 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
 <div id="request-container">
             <form id="request-form">
                 <div id="form-title">
-                    <img src="assets/Images/HamtaLogo.png" alt="شرکت آمیتیس همتا" id="form-logo">
+                    <img src="assets/Images/HamtaLogo.webp" alt="شرکت آمیتیس همتا" id="form-logo">
                     <h1 id="request-title">درخواست محصول</h1>
                 </div>
                 <div id="request-inputs">
