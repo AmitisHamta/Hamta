@@ -167,6 +167,17 @@ a {
     font-size: 2rem;
 }
 
+#form-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#form-caption i {
+    color: var(--orange);
+}
+
 .inputs-container {
     display: flex;
     align-items: center;
@@ -399,7 +410,7 @@ label i {
     transition: box-shadow 0.2s;
 }
 
-.info p i:hover {
+.info p i:hover, #aparat:hover {
     box-shadow: 0 0 0 0.2rem #dc8501a3;
 }
 
