@@ -81,26 +81,30 @@ const setLines = () => {
 }
 
 const moveToSection = () => {
-    const scrollTop = $.documentElement.scrollTop;
+    const activity = $.getElementById('activity');
+    const structure = $.getElementById('structure');
+    const experience = $.getElementById('experience');
+    const facility = $.getElementById('facility');
+
 
     if (location.hash.includes('activity')) {
         $.documentElement.scrollTo({
-            top: 800,
+            top: activity.offsetTop,
             behavior: 'smooth'
         })
     }else if (location.hash.includes('structure')) {
         $.documentElement.scrollTo({
-            top: 300,
+            top: structure.offsetTop,
             behavior: 'smooth'
         })
     }else if (location.hash.includes('experience')) {
         $.documentElement.scrollTo({
-            top: 2200,
+            top: experience.offsetTop,
             behavior: 'smooth'
         })
     }else if (location.hash.includes('facility')) {
         $.documentElement.scrollTo({
-            top: 1400,
+            top: facility.offsetTop,
             behavior: 'smooth'
         })
     }
