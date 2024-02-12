@@ -199,14 +199,15 @@ a {
 }
 
 .product-btns{
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     direction: rtl;
     position: relative;
 }
 
-.details-btn {
+.details-btn, .form-btn {
     width: 100px;
     height: 30px;
     outline: none;
@@ -223,7 +224,7 @@ a {
     transition: all 0.2s;
 }
 
-.details-btn a {
+.details-btn a, .form-btn a {
     color: var(--white);
     width: 100%;
     height: 100%;
@@ -232,40 +233,17 @@ a {
     justify-content: center;
 }
 
-.arrow-btn {
-    outline: none;
-    border: 1px solid var(--orange);
-    border-radius: 20px;
-    background-color: var(--orange);
-    color: var(--white);
-    padding: 0 3px 0 5px;
-    height: 30px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-    border-radius: 50% 0% 0% 50%;
-    position: absolute;
-    right: 60px;
-    z-index: 1;
-    transition: all 0.2s;
-}
-  
-.details-btn:hover {
-    border-radius: 0px 20px 20px 0px;
-}
-  
-.details-btn:hover ~ .arrow-btn {
-    animation: swipeLeft 0.2s linear;
-    right: 101px;
+.form-btn {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
 }
 
-@keyframes swipeLeft {
-    from {
-      right: 60px;
-    }
-    to {
-      right: 101px;
-    }
+.details-btn:hover {
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
+}
+
+.form-btn:hover {
+    box-shadow: 0 0 0 0.2rem #106ea579;
 }
 
 @media screen and (max-width: 480px) {

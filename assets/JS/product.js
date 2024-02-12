@@ -28,7 +28,6 @@ const generateProductCards = (products, productsFragment) => {
         featureList.classList.add('feature-list');
 
         product.features.forEach(feature => {
-            console.log(product.features);
             const features = $.createElement('div');
             features.classList.add('feature')
 
@@ -54,16 +53,18 @@ const generateProductCards = (products, productsFragment) => {
         if (product.pageLink) {
             btnLink.href = product.pageLink;
         }
-        
-        const arrowBtn = $.createElement('button');
-        arrowBtn.classList.add('arrow-btn');
 
-        const arrow = $.createElement('i');
-        arrow.classList.add('bi', 'bi-arrow-left-short');
+        const formBtn = $.createElement('button');
+        formBtn.classList.add('form-btn');
+
+        const formLink = $.createElement('a');
+        formLink.textContent = 'ثبت درخواست';
+        formLink.href = 'form';
 
         detailsBtn.append(btnLink);
-        arrowBtn.appendChild(arrow);
-        productBtns.append(detailsBtn, arrowBtn);
+        formBtn.append(formLink);
+
+        productBtns.append(detailsBtn, formBtn);
 
         productDetails.append(title, featureList, productBtns);
         productContainer.append(imgContainer, productDetails);

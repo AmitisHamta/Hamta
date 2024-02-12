@@ -172,6 +172,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    text-align: justify;
 }
 
 #form-caption i {
@@ -512,10 +513,20 @@ label i {
         margin: 50px;
         align-items: center;
         gap: 65px;
+        padding: 0 15px;
     }
 
     #contact-info, #contact-form {
         width: 100%;
+    }
+
+    #contact-info {
+        margin-top: 100px;
+    }
+
+    #social-links {
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .centerline {
@@ -524,6 +535,7 @@ label i {
 
     #contact .underline {
         display: inline;
+        top: 40%;
     }
 
     .info > i {
@@ -537,10 +549,20 @@ label i {
         margin: 50px;
         align-items: center;
         gap: 65px;
+        padding: 0 15px;
     }
 
     #contact-info, #contact-form {
         width: 100%;
+    }
+
+    #contact-info {
+        margin-top: 100px;
+    }
+
+    #social-links {
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .centerline {
@@ -549,6 +571,7 @@ label i {
 
     #contact .underline {
         display: inline;
+        top: 46%;
     }
 
     .info > i {
@@ -562,10 +585,20 @@ label i {
         margin: 50px;
         align-items: center;
         gap: 65px;
+        padding: 0 15px;
     }
 
     #contact-info, #contact-form {
         width: 100%;
+    }
+
+    #contact-info {
+        margin-top: 100px;
+    }
+
+    #social-links {
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .centerline {
@@ -592,5 +625,17 @@ label i {
 
     .info > i {
         font-size: 2rem;
+    }
+
+    #social-links {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+    #social-links {
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }

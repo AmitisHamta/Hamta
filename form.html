@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" شرکت آمیتیس همتا فروشنده دستاگه های پرداخت هوشمند و خدمات زیر سوئیچ بانکی مانند دستگاه کش لس، مارتخوان، خودپرداز، صندوق فروشگاهی و ملزومات بانکی">
+    <script defer src="https://kit.fontawesome.com/86ec138018.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" aria-disabled="true" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/CSS/form.css">
+    <link rel="shortcut icon" href="assets/Images/HamtaLogo.webp" type="image/x-icon">
+    <title>آمیتیس همتا | ثبت درخواست</title>
+</head>
+<body>
+    <site-loader></site-loader>
+    <div id="container">
+        <site-header></site-header>
+        <div id="content">
+            <div id="form-container">
+                <form id="form">
+                    <div id="form-inputs">
+                        <div class="data-section">
+                            <h1>اطلاعات شخصی:</h1>
+                            <div class="inputs-container">
+                                <div class="inputs">
+                                    <input type="text" class="input" id="name">
+                                    <label for="name">نام
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="input" id="lastname">
+                                    <label for="lastname">نام خانوادگی
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="input" id="number" maxlength="11">
+                                    <label for="number">شماره موبایل
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="input" id="staticnum">
+                                    <label for="staticnum">تلفن ثابت
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="input" id="birthday">
+                                    <label for="birthday">تاریخ تولد
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="input" id="idcard" maxlength="10">
+                                    <label for="idcard">شماره ملی
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="input" id="idnum" maxlength="10">
+                                    <label for="idnum">شماره شناسنامه
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="input" id="father-name">
+                                    <label for="father-name">نام پدر
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-section">
+                            <h1>اطلاعات بانکی:</h1>
+                            <div class="inputs-container">
+                                <div class="inputs">
+                                    <input type="text" class="input" id="bankname">
+                                    <label for="bankname">نام بانک
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="input" id="sheba-num" maxlength="26">
+                                    <label for="sheba-num">شماره شبا
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="input" id="cardnum" maxlength="16">
+                                    <label for="cardnum">شماره کارت
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="ex-input" id="taxcode">
+                                    <label for="taxcode">کد مالیاتی (اختیاری)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-section">
+                            <h1>اطلاعات کسب و کار:</h1>
+                            <div class="inputs-container">
+                                <div class="inputs">
+                                    <input type="text" class="input" id="industry">
+                                    <label for="industry">صنف
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="input" id="shopname">
+                                    <label for="shopname">نام فروشگاه
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="input" id="address">
+                                    <label for="address">آدرس فروشگاه
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" class="input" id="postid">
+                                    <label for="postid"> کد پستی فروشگاه
+                                        <i class="fa-solid fa-asterisk"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="form-btn">
+                        <button id="submit-btn">ثبت درخواست</button>
+                        <small id="message"></small>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <site-footer></site-footer>
+    </div>
+    <script type="module" src="assets/JS/form.js"></script>
+</body>
+</html>
