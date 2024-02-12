@@ -419,6 +419,25 @@ label i {
     gap: 5px;
 }
 
+#floors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.floor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 0.8rem;
+}
+
+.floor i {
+    color: var(--blue);
+}
+
 .centerline {
     height: 100%;
     background-color: var(--orange);
