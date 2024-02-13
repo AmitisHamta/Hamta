@@ -22,7 +22,8 @@ const products = [
         image: 'assets/Images/k9.webp',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'همراه با سیمکارت ', 'گارانتی یک ساله'],
         category: 'cashless',
-        pageLink: 'k9.html'
+        pageLink: 'k9.html',
+        formLink: 'cashless-request.html'
     },
     {
         id: 1, 
@@ -30,7 +31,8 @@ const products = [
         image: 'assets/Images/tsc021.webp',
         features: ["ابعاد 49 × 34 × 24", 'نمایشگر 8 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله'],
         category: 'cashless',
-        pageLink: 'tsc021.html'
+        pageLink: 'tsc021.html',
+        formLink: 'cashless-request.html'
     },
     {
         id: 2, 
@@ -38,7 +40,8 @@ const products = [
         image: 'assets/Images/tsc030.webp',
         features: ["ابعاد 71 × 49 × 20", 'نمایشگر تاچ 17 اینچی ', 'همراه با بستر ارتباطی', 'گارانتی یک ساله'],
         category: 'cashless',
-        pageLink: 'tsc030.html'
+        pageLink: 'tsc030.html',
+        formLink: 'cashless-request.html'
     },
     {
         id: 3, 
@@ -46,6 +49,7 @@ const products = [
         image: 'assets/Images/amitisH1.webp',
         features: ["ابعاد 35 × 26 × 6", 'نمایشگر 10.1 اینچی', 'همراه با بستر ارتباطی', 'گارانتی یک ساله'],
         category: 'cashless',
+        formLink: 'cashless-request.html'
     },
     {
         id: 4, 
@@ -53,7 +57,8 @@ const products = [
         image: 'assets/Images/c960.webp',
         features: ["سیستم اندرویدی", 'نمایشگر تاچ 10.1 اینچی', 'همراه با بستر ارتباطی ', "پشتیبانی کارتهای مغناطیسی"],
         category: 'cashless',
-        pageLink: 'c960.html'
+        pageLink: 'c960.html',
+        formLink: 'cashless-request.html'
     },
 ]
 

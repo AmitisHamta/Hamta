@@ -228,7 +228,7 @@ class Form extends HTMLElement {
 
     resetInputs () {
         this.inputs.forEach(input => {
-            input.textContent = '';
+            input.value = '';
         })
     }
 

@@ -59,7 +59,11 @@ const generateProductCards = (products, productsFragment) => {
 
         const formLink = $.createElement('a');
         formLink.textContent = 'ثبت درخواست';
-        formLink.href = 'form';
+        if (product.formLink) {
+            formLink.href = product.formLink
+        }else {
+            formLink.href = 'form';
+        }
 
         detailsBtn.append(btnLink);
         formBtn.append(formLink);

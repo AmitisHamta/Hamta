@@ -1,0 +1,354 @@
+html, body {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue) var(--white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iransans;
+}
+
+:root {
+    --white: #f5f5f5;
+    --black: #333;
+    --orange: #dc8501;
+    --blue: #106ea5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--blue);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--white);
+}
+
+@font-face {
+  font-family: iransans;
+  src: url(../fonts/woff/IRANSansX-Regular.woff);
+  font-display: swap;
+}
+
+@font-face {
+    font-family: iransans-black;
+    src: url(../fonts/woff/IRANSansX-Black.woff);
+    font-display: swap;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    overflow: hidden;
+    filter: blur(5px);
+}
+
+#request-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    transition: height 0.2s;
+    background-color: var(--white);
+    margin-top: 20vh;
+}
+
+#request-form {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid var(--orange);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0px 5px 0 var(--orange);
+    margin: 10x;
+    z-index: 2;
+    transition: all 0.2s;
+}
+
+#form-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-logo {
+    width: 100px;
+    height: 100px;
+}
+
+#request-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 85%;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.input {
+    outline: none;
+    border: none;
+    border: 1px solid var(--orange);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#request-btn {
+    width: 85%;
+    height: 40px;
+    outline: none;
+    border: 1px solid var(--orange);
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+}
+
+#request-btn:hover {
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
+}
+
+.msg {
+    font-size: 0.75rem;
+    text-align: start;
+    width: 77%;
+    display: none;
+}
+
+.error {
+    display: inline;
+    color: tomato;
+}
+
+.success {
+    display: inline;
+    color: var(--blue);
+}
+
+.form-floating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    direction: rtl;
+}
+
+.form-control {
+    font-size: 0.8rem;
+}
+
+.form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
+    min-height: 47px;
+    height: 47px;
+    padding-bottom: 1rem;
+}
+
+.form-floating>label {
+    right: 0;
+    padding: 0.7rem 0.7rem;
+    border: none;
+}
+
+.form-floating>.form-control-plaintext:focus, .form-floating>.form-control-plaintext:not(:placeholder-shown), 
+.form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+    padding-top: 2rem;
+    padding-bottom: 0.9rem;
+}
+
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, 
+.form-floating>.form-control:not(:placeholder-shown)~label, 
+.form-floating>.form-select~label {
+    transform: scale(.85) translateY(-.3rem) translateX(2.1rem);
+    font-size: 0.82rem;
+}
+
+.form-control:focus {
+    border-color:var(--blue);
+}
+
+.form-floating>.form-control-plaintext~label::after, 
+.form-floating>.form-control:focus~label::after, 
+.form-floating>.form-control:not(:placeholder-shown) ~ label::after, .form-floating>.form-select~label::after {
+    background-color: transparent;
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.form-check-input:checked {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+.form-check-input:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
+}
+
+.btn {
+    width: 100%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+    direction: rtl;
+    background-color: var(--white);
+    border: 1px solid var(--orange);
+    border-radius: 10px;
+    color: var(--black);
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
+}
+
+.btn:hover {
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
+}
+
+.dropdown-menu {
+    border: 1px solid var(--orange);
+    text-align: right;
+    width: 100%;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+.dropdown-menu li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    border-radius: 4px;
+    padding: 4px 7px;
+    color: var(--black);
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.checkBoxes {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+    display: none;
+}
+
+.form-check-input, .form-check-label {
+    cursor: pointer;
+}
+
+.display-flex {
+    display: flex;
+}
+
+@media only screen and (max-width: 480px) {
+    #request-form {
+        width: 90%;
+    }
+    
+    #request-inputs {
+        width: 95%;
+    }
+
+    #request-btn {
+        width: 95%;
+    }
+
+    .form-floating > label {
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #request-form {
+        width: 70%;
+    }
+    
+    #request-inputs {
+        width: 90%;
+    }
+
+    #request-btn {
+        width: 90%;
+    }
+
+    .form-floating > label {
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    #request-form {
+        width: 60%;
+    }
+    
+    #request-inputs {
+        width: 90%;
+    }
+
+    #request-btn {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+    #request-form {
+        width: 40%;
+    }
+    
+    #request-inputs {
+        width: 90%;
+    }
+
+    #request-btn {
+        width: 90%;
+    }
+}
