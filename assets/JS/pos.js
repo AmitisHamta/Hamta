@@ -28,7 +28,8 @@ const products = [
         image: 'assets/Images/anfu70.webp',
         features: [ "شبکه دو سیمکارت 4G", 'دارای وای فای', "پشتیبانی کارتهای مغناطیسی", 'گارانتی 18 ماهه'],
         category: 'pos',
-        pageLink: 'a70.html'
+        pageLink: 'a70.html',
+        formLink: 'pos-request.html'
     },
     {
         id: 2, 
@@ -36,7 +37,8 @@ const products = [
         image: 'assets/Images/aisinoV72.webp',
         features: ["سیستم لینوکس", 'نمایشگر 2.8 اینچی', 'ظرفیت بالای باطری', 'گارانتی طلایی یک ساله'],
         category: 'pos',
-        pageLink: 'v72.html'
+        pageLink: 'v72.html',
+        formLink: 'pos-request.html'
     },
     {
         id: 3, 
@@ -44,7 +46,8 @@ const products = [
         image: 'assets/Images/aisinoA75.webp',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'دارای دوربین', 'گارانتی یک ساله'],
         category: 'pos',
-        pageLink: 'a75.html'
+        pageLink: 'a75.html',
+        formLink: 'pos-request.html'
     },
     {
         id: 4, 
@@ -52,7 +55,8 @@ const products = [
         image: 'assets/Images/centermB70.webp',
         features: ["سیستم لینوکس", 'ظرفیت بالای باطری', 'پرینتر سریع', 'گارانتی یک ساله'],
         category: 'pos',
-        pageLink: 'b70.html'
+        pageLink: 'b70.html',
+        formLink: 'pos-request.html'
     },
     {
         id: 5, 
@@ -60,7 +64,8 @@ const products = [
         image: 'assets/Images/posk9.webp',
         features: ["سیستم اندرویدی", 'نمایشگر 5.5 اینچی', 'دارای دوربین', 'گارانتی یک ساله'],
         category: 'pos',
-        pageLink: 'k9p.html'
+        pageLink: 'k9p.html',
+        formLink: 'pos-request.html'
     },
     {
         id: 6, 
@@ -68,7 +73,8 @@ const products = [
         image: 'assets/Images/morefunH9.webp',
         features: ["سیستم لینوکس", "شبکه دو سیمکارت 4G", 'دارای وای فای', 'گارانتی 18 ماهه'],
         category: 'pos',
-        pageLink: 'h9.html'
+        pageLink: 'h9.html',
+        formLink: 'pos-request.html'
     },
     {
         id: 7, 
@@ -76,7 +82,8 @@ const products = [
         image: 'assets/Images/dspread.webp',
         features: ['ظرفیت بالای باطری', 'دارای وای فای', "پشتیبانی کارتهای مغناطیسی", 'گارانتی یک ساله'],
         category: 'pos',
-        pageLink: 'dspread.html'
+        pageLink: 'dspread.html',
+        formLink: 'pos-request.html'
     },
 ]
 

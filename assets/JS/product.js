@@ -54,21 +54,35 @@ const generateProductCards = (products, productsFragment) => {
             btnLink.href = product.pageLink;
         }
 
+        detailsBtn.append(btnLink);
+
+        const formBtnsContainer = $.createElement('div');
+        formBtnsContainer.classList.add('form-btns');
+
         const formBtn = $.createElement('button');
         formBtn.classList.add('form-btn');
 
         const formLink = $.createElement('a');
-        formLink.textContent = 'ثبت درخواست';
+        formLink.textContent = 'ثبت درخواست نماینده';
         if (product.formLink) {
             formLink.href = product.formLink
         }else {
             formLink.href = 'form';
         }
 
-        detailsBtn.append(btnLink);
         formBtn.append(formLink);
 
-        productBtns.append(detailsBtn, formBtn);
+        const form2Btn = $.createElement('button');
+        form2Btn.classList.add('form-btn', 'bg-orange');
+
+        const form2Link = $.createElement('a');
+        form2Link.textContent = 'ثبت درخواست پذیرنده';
+        form2Link.href = 'form.html';
+
+        form2Btn.append(form2Link);
+        formBtnsContainer.append(formBtn, form2Btn)
+
+        productBtns.append(detailsBtn, formBtnsContainer);
 
         productDetails.append(title, featureList, productBtns);
         productContainer.append(imgContainer, productDetails);

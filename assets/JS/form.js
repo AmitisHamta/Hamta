@@ -57,7 +57,7 @@ async function setInfo () {
     }
     
     const { data, error } = await supabase
-    .from('posUsers')
+    .from('pazirande')
     .insert({
         name: inputs[0].value,
         lastName: inputs[1].value,

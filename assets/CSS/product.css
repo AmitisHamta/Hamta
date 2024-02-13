@@ -201,21 +201,31 @@ a {
 .product-btns{
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
     direction: rtl;
     position: relative;
 }
 
+.form-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
 .details-btn, .form-btn {
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 35px;
     outline: none;
-    background-color: var(--orange);
-    border: 1px solid var(--orange);
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
     border-radius: 20px;
     color: var(--white);
-    font-size: 0.9rem;
+    font-size: 1rem;
     cursor: pointer;
     z-index: 2;
     display: flex;
@@ -234,16 +244,23 @@ a {
 }
 
 .form-btn {
-    background-color: var(--blue);
-    border: 1px solid var(--blue);
-}
-
-.details-btn:hover {
-    box-shadow: 0 0 0 0.2rem #dc8501a3;
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    width: 120px;
+    font-size: 0.7rem;
 }
 
 .form-btn:hover {
+    box-shadow: 0 0 0 0.2rem #dc8501a3;
+}
+
+.details-btn:hover {
     box-shadow: 0 0 0 0.2rem #106ea579;
+}
+
+.bg-orange {
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
 }
 
 @media screen and (max-width: 480px) {
