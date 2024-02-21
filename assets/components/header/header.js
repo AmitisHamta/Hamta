@@ -91,6 +91,15 @@ template.innerHTML = `
                     </button>
                 </div>
                 <div id="navbar-buttons">
+                    <button class="panel-btn" id="wheel-btn">
+                        <a href="" target="_blank">
+                            برنده باش
+                        </a>
+                        <img src="assets/Images/gift.jpg" alt="جوایز همتا"/>
+                        <video muted autoplay loop>
+                            <source src="assets/Videos/win.webm" type="video/webm">
+                        </video>
+                    </button>
                     <button class="panel-btn bg-blue">
                         <a href="https://plus.hamtabank.com" target="_blank">
                             پنل نمایندگان

@@ -193,14 +193,42 @@ a {
   justify-content: center;
 }
 
+#wheel-btn {
+  background-color: #ffb100;
+  border: 1px solid #ffb100;
+  position: relative;
+}
+
+#wheel-btn a {
+  padding-left: 20px;
+  justify-content: flex-start;
+}
+
+#wheel-btn img {
+  width: 45%;
+  height: auto;
+  position: absolute;
+  right: -15%;
+  transform: rotate(15deg);
+}
+
+#wheel-btn video {
+  display: none;
+  width: 200%;
+  position: absolute;
+}
+
+#wheel-btn:hover video {
+  display: block;
+}
+
 .panel-btn:hover a{
   color: var(--black);
 } 
 
 .panel-btn:hover {
-  background-color: var(--white);
+  background-color: var(--white) !important;
 }
-
 
 /* header style onscroll */
 .moved {
