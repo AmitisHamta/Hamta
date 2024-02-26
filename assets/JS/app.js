@@ -51,6 +51,22 @@ const removeFilter = () => {
     container.style.filter = 'none';
 }
 
+const preventRightClick = () => {
+    const images = $.querySelectorAll('img');
+    const videos = $.querySelectorAll('video')
+    images.forEach(img => {
+        img.addEventListener('contextmenu', event => {
+            event.preventDefault()
+        })
+    })
+
+    videos.forEach(video => {
+        video.addEventListener('contextmenu', event => {
+            event.preventDefault()
+        })
+    })
+}
+
 const setBoxesAnimation = () => {
     textBoxes.forEach(box => {
         box.classList.add('swipe-in-out-right')
@@ -205,6 +221,7 @@ const generateNews = (newsData, fragment) => {
 window.addEventListener('load', () => {
     getNewsData();
     removeFilter();
+    preventRightClick()
     setBoxesAnimation();
     showMainTexts();
     setLines();
