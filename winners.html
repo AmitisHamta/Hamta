@@ -20,8 +20,25 @@
             <img src="assets/Images/gift.jpg" alt="" id="img2">
             <img src="assets/Images/gift.jpg" alt="" id="img3">
             <img src="assets/Images/gift.jpg" alt="" id="img4">
-            <div id="box">
-                <div class="info">
+            <div id="modal-form">
+                <h1>با همتا همیشه برنده ای</h1>
+                <form class="form">
+                    <div class="form-control">
+                        <label for="phone-input">
+                            <i class="fa-solid fa-asterisk"></i>
+                            شماره تلفن همراه:
+                        </label>
+                        <input type="text" placeholder="شماره تلفن" id="phone-input" maxlength="11"/>
+                    </div>
+                    <button id="submit-btn">تایید</button>
+                    <small class="err"></small>
+                </form>
+            </div>
+            <div id="loader-box">
+                <div class="loader"></div>
+            </div>
+            <div id="data-box">
+                <!-- <div class="info">
                     <h1>نمایندگان</h1>
                     <i class="fa-solid fa-user-tie" id="agent-icon"></i>
                     <button class="btn">
@@ -34,6 +51,12 @@
                     <button class="btn">
                         <a href="https://docs.google.com/spreadsheets/d/1WUjJQZsmQ88XlWuVLUzmJjcNzBbjsFKR/edit?usp=drive_link&ouid=107552112049923604126&rtpof=true&sd=true" target="_blank">برندگان</a>
                     </button>
+                </div> -->
+                <div class="info">
+                    <h1 id="title">میلاد اصغری</h1>
+                    <p >شماره تلفن: <span id="phone">9027144558</span></p>
+                    <p>جوایز:  <span id="prize">حواله خرید 3 کش لس دیواری</span></p> 
+                    <p>به مبلغ:<span id="price">100,000,000</span></p>
                 </div>
             </div>
         </div>
