@@ -1,0 +1,181 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue) var(--white);
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iransans;
+}
+
+:root {
+    --white: #f5f5f5;
+    --black: #333;
+    --orange: #dc8501;
+    --blue: #106ea5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    direction: rtl;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--blue);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--white);
+}
+
+@font-face {
+  font-family: iransans;
+  src: url(../fonts/woff/IRANSansX-Regular.woff) format(woff);
+  font-display: swap;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#header {
+    width: 100%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    direction: rtl;
+}
+
+#header img {
+    width: 10%;
+    height: auto;
+}
+
+.nav-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links-container {
+    width: 100%;
+    height: 82%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.link {
+    width: 25%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    height: 10%;
+    color: var(--white);
+    font-size: 1.5rem;
+    background: rgb(17,138,209);
+    background: linear-gradient(240deg, rgba(17,138,209,1) 0%, rgba(0,109,173,1) 100%);
+}
+
+.link i {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+    #header img {
+        width: 30%;
+    }
+
+    .nav-title {
+        font-size: 0.8rem;
+    }
+
+    .link {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    #header img {
+        width: 20%;
+    }
+
+    .nav-title {
+        font-size: 0.9rem;
+    }
+
+    .link {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #header img {
+        width: 15%;
+    }
+
+    .nav-title {
+        font-size: 1rem;
+    }
+
+    .link {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+    #header img {
+        width: 12%;
+    }
+
+    .link {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+    #header img {
+        width: 12%;
+    }
+
+    .link {
+        width: 30%;
+    }
+}
